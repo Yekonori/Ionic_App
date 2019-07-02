@@ -9,9 +9,54 @@
 
 <ion-content>
   <ion-grid>
-    <ion-row text-center>
-      <ion-col size="6">
-        <p>TEST</p>
+    <!-- BLACK EAGLES -->
+    <ion-row (click)="collapseCharacters('blackEagles')">
+      <ion-col size="8">Black Eagles</ion-col>
+      <ion-col size="1" offset="3"><ion-icon name="arrow-dropdown" id="blackEaglesDrop"></ion-icon></ion-col>
+    </ion-row>
+    <ion-row text-center id="blackEagles" class="hiddenElements">
+      <ion-col size="6" *ngFor="let blackEaglesCharacter of blackEaglesCharacters">
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/images/Characters_Faces/Black_Eagles/{{ blackEaglesCharacter.name }}_Face.jpg"
+              alt="{{ blackEaglesCharacter.name }}" title="{{ blackEaglesCharacter.name }}">
+            <ion-card-title>{{ blackEaglesCharacter.name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <!-- BLUE LIONS -->
+    <ion-row (click)="collapseCharacters('blueLions')">
+      <ion-col size="8">Blue Lions</ion-col>
+      <ion-col size="1" offset="3"><ion-icon name="arrow-dropdown" id="blueLionsDrop"></ion-icon></ion-col>
+    </ion-row>
+    <ion-row text-center id="blueLions" class="hiddenElements">
+      <ion-col size="6" *ngFor="let blueLionsCharacter of blueLionsCharacters">
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/images/Characters_Faces/Blue_Lions/{{ blueLionsCharacter.name }}_Face.jpg"
+              alt="{{ blueLionsCharacter.name }}" title="{{ blueLionsCharacter.name }}">
+            <ion-card-title>{{ blueLionsCharacter.name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <!-- GOLDEN DEER -->
+    <ion-row (click)="collapseCharacters('goldenDeer')">
+      <ion-col size="8">Golden Deer</ion-col>
+      <ion-col size="1" offset="3"><ion-icon name="arrow-dropdown" id="goldenDeerDrop"></ion-icon></ion-col>
+    </ion-row>
+    <ion-row text-center id="goldenDeer" class="hiddenElements">
+      <ion-col size="6" *ngFor="let goldenDeerCharacter of goldenDeerCharacters">
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/images/Characters_Faces/Golden_Deer/{{ goldenDeerCharacter.name }}_Face.jpg"
+              alt="{{ goldenDeerCharacter.name }}" title="{{ goldenDeerCharacter.name }}">
+            <ion-card-title>{{ goldenDeerCharacter.name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>

@@ -5,6 +5,19 @@ ion-content {
 
         ion-row {
 
+            &.hiddenElements { 
+                height: 0;
+                opacity: 0;
+             }
+
+            &#blackEagles,
+            &#blueLions,
+            &#goldenDeer {
+                opacity: 0;
+            }
+
+            &#blackEagles { background-color: #000000; }
+
             ion-col {
 
                 // Must be use to resize the padding column value
