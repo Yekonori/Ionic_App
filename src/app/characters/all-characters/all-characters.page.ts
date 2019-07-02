@@ -31,9 +31,9 @@ export class AllCharactersPage implements OnInit {
       element.classList.remove("hiddenElements");
       element.style.height = "auto";
       element.style.opacity = "1";
-      element.style.transition = "all 0.3s";
+      // element.style.transition = "all .2s";
       elementDrop.style.transform = "rotate(180deg)";
-      elementDrop.style.transition = "all 0.3s";
+      // elementDrop.style.transition = "all .2s";
     } else {
       /**
        * Hide the students list
@@ -42,9 +42,9 @@ export class AllCharactersPage implements OnInit {
       element.classList.add("hiddenElements");
       element.style.height = "0";
       element.style.opacity = "0";
-      element.style.transition = "all 0.3s";
+      // element.style.transition = "all .2s";
       elementDrop.style.transform = "rotate(0deg)";
-      elementDrop.style.transition = "all 0.3s";
+      // elementDrop.style.transition = "all .2s";
     }
   }
 
