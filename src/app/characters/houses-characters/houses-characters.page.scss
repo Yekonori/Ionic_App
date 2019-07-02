@@ -1,0 +1,11 @@
+
+ion-content {
+
+    --padding-bottom: var(--ion-tabs-height);
+}
+
+ion-tabs {
+    top: auto;
+
+    height: var(--ion-tabs-height);
+}

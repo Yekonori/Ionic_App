@@ -7,9 +7,18 @@ const routes: Routes = [
     redirectTo: 'all-characters',
     pathMatch: 'full'
   },
-  { path: 'all-characters', loadChildren: './characters/all-characters/all-characters.module#AllCharactersPageModule' },
-  { path: 'houses-characters/:houseName', loadChildren: './characters/houses-characters/houses-characters.module#HousesCharactersPageModule' },
-  { path: 'character-details', loadChildren: './characters/character-details/character-details.module#CharacterDetailsPageModule' }
+  {
+    path: 'all-characters',
+    loadChildren: './characters/all-characters/all-characters.module#AllCharactersPageModule'
+  },
+  {
+    path: 'houses-characters/:houseName',
+    loadChildren: './characters/houses-characters/houses-characters.module#HousesCharactersPageModule'
+  },
+  {
+    path: 'character-details',
+    loadChildren: './characters/character-details/character-details.module#CharacterDetailsPageModule'
+  }
 ];
 
 @NgModule({
