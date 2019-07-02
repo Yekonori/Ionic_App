@@ -18,6 +18,21 @@ export class AppComponent {
       title: 'Characters',
       url: '/all-characters',
       icon: 'person'
+    },
+    {
+      title: 'Black Eagles Characters',
+      url: '/houses-characters/blackEagles',
+      icon: 'person'
+    },
+    {
+      title: 'Blue Lions Characters',
+      url: '/houses-characters/blueLions',
+      icon: 'person'
+    },
+    {
+      title: 'Golden Deer Characters',
+      url: '/houses-characters/goldenDeer',
+      icon: 'person'
     }
   ];
 

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ titleHouse }} Characters</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col size="6" *ngFor="let student of allStudents">
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/images/Characters_Faces/{{ titleHouse.replace(' ', '_') }}/{{ student.name }}_Face.jpg"
+              alt="{{ student.name }}" title="{{ student.name }}">
+            <ion-card-title>{{ student.name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
