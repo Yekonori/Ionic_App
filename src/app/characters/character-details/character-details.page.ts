@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { charactersDetails } from 'src/environments/environment';
 
 @Component({
   selector: 'app-character-details',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CharacterDetailsPage implements OnInit {
 
-  constructor() { }
+  characterDetails = {
+    name: "",
+    fullName: "",
+    house: "",
+    crest: ""
+  };
+
+  constructor(
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit() {
+    this.getCharacterParameter();
+  }
+
+  /**
+   * Get the `characterName` parameter of the route in `characterParameter`
+   * 
+   * and attribute to `characterDetails` the value of charactersDetails[`characterParameter`]
+   */
+  getCharacterParameter() {
+    let characterParameter = this.activatedRoute.snapshot.paramMap.get("characterName");
+
+    this.characterDetails = charactersDetails[characterParameter];
+
+    console.log(this.characterDetails);
   }
 
 }

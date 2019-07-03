@@ -9,13 +9,18 @@
 
 <ion-content>
   <ion-grid>
+
     <!-- BLACK EAGLES -->
     <ion-row>
       <ion-col size="8">Black Eagles</ion-col>
-      <ion-col size="1" offset="3"><ion-icon name="arrow-dropdown"></ion-icon></ion-col>
+      <ion-col size="1" offset="3">
+        <ion-icon name="arrow-dropdown"></ion-icon>
+      </ion-col>
     </ion-row>
+
     <ion-row text-center>
-      <ion-col size="6" *ngFor="let blackEaglesCharacter of blackEaglesCharacters">
+      <ion-col size="6" *ngFor="let blackEaglesCharacter of blackEaglesCharacters"
+        [routerLink]="['/character-details', blackEaglesCharacter.name]">
         <ion-card>
           <ion-card-header>
             <img src="/assets/images/Characters_Faces/Black_Eagles/{{ blackEaglesCharacter.name }}_Face.jpg"
@@ -29,10 +34,14 @@
     <!-- BLUE LIONS -->
     <ion-row>
       <ion-col size="8">Blue Lions</ion-col>
-      <ion-col size="1" offset="3"><ion-icon name="arrow-dropdown"></ion-icon></ion-col>
+      <ion-col size="1" offset="3">
+        <ion-icon name="arrow-dropdown"></ion-icon>
+      </ion-col>
     </ion-row>
+
     <ion-row text-center>
-      <ion-col size="6" *ngFor="let blueLionsCharacter of blueLionsCharacters">
+      <ion-col size="6" *ngFor="let blueLionsCharacter of blueLionsCharacters"
+        [routerLink]="['/character-details', blueLionsCharacter.name]">
         <ion-card>
           <ion-card-header>
             <img src="/assets/images/Characters_Faces/Blue_Lions/{{ blueLionsCharacter.name }}_Face.jpg"
@@ -46,10 +55,14 @@
     <!-- GOLDEN DEER -->
     <ion-row>
       <ion-col size="8">Golden Deer</ion-col>
-      <ion-col size="1" offset="3"><ion-icon name="arrow-dropdown"></ion-icon></ion-col>
+      <ion-col size="1" offset="3">
+        <ion-icon name="arrow-dropdown"></ion-icon>
+      </ion-col>
     </ion-row>
+
     <ion-row text-center>
-      <ion-col size="6" *ngFor="let goldenDeerCharacter of goldenDeerCharacters">
+      <ion-col size="6" *ngFor="let goldenDeerCharacter of goldenDeerCharacters"
+        [routerLink]="['/character-details', goldenDeerCharacter.name]">
         <ion-card>
           <ion-card-header>
             <img src="/assets/images/Characters_Faces/Golden_Deer/{{ goldenDeerCharacter.name }}_Face.jpg"
@@ -59,24 +72,25 @@
         </ion-card>
       </ion-col>
     </ion-row>
+
   </ion-grid>
 </ion-content>
 
-<ion-tabs>
+<!-- <ion-tabs>
   <ion-tab-bar slot="bottom">
-    <ion-tab-button class="blackEagles" tab="blackEagles">
+    <ion-tab-button class="blackEagles" [routerLink]="['/houses-characters', 'blackEagles']">
       <ion-icon name="person"></ion-icon>
       <ion-label>Black Eagles</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button class="blueLions" tab="blueLions">
+    <ion-tab-button class="blueLions" [routerLink]="['/houses-characters', 'blueLions']">
       <ion-icon name="person"></ion-icon>
       <ion-label>Blue Lions</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button class="goldenDeer" tab="goldenDeer">
+    <ion-tab-button class="goldenDeer" [routerLink]="['/houses-characters', 'goldenDeer']">
       <ion-icon name="person"></ion-icon>
       <ion-label>Golden Deer</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
-</ion-tabs>
+</ion-tabs> -->

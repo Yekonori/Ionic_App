@@ -11,26 +11,6 @@ const routes: Routes = [
   {
     path: '',
     component: AllCharactersPage,
-    children: [
-      {
-        path: 'blackEagles',
-        // loadChildren: './characters/houses-characters/houses-characters.module#HousesCharactersPageModule'
-        loadChildren: './characters/all-characters/all-characters.module#AllCharactersPageModule'
-
-      },
-      {
-        path: 'blueLions',
-        // loadChildren: './characters/houses-characters/houses-characters.module#HousesCharactersPageModule'
-        loadChildren: './characters/all-characters/all-characters.module#AllCharactersPageModule'
-
-      },
-      {
-        path: 'goldenDeer',
-        // loadChildren: './characters/houses-characters/houses-characters.module#HousesCharactersPageModule'
-        loadChildren: './characters/all-characters/all-characters.module#AllCharactersPageModule'
-
-      }
-    ]
   }
 ];
 

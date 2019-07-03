@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { environment } from 'src/environments/environment';
+import { housesCharacters } from 'src/environments/environment';
 
 @Component({
   selector: 'app-houses-characters',
@@ -19,7 +19,7 @@ export class HousesCharactersPage implements OnInit {
   allStudents = [];
 
   constructor(
-    private activatedroute: ActivatedRoute
+    private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit() {
@@ -27,14 +27,12 @@ export class HousesCharactersPage implements OnInit {
   }
 
   /**
-   * Get the `houseName` parameter of the route
+   * Get the `houseName` parameter of the route in `this.houseName`
    * 
    * and use the `houseName` to get the correct array of house's students
-   * 
-   * Call setActiveTab() function to change the color of the ion-tab-button
    */
   getHouseParameter() {
-    this.houseName = this.activatedroute.snapshot.paramMap.get("houseName");
+    this.houseName = this.activatedRoute.snapshot.paramMap.get("houseName");
 
     this.getHouseStudents(this.houseName);
   }
@@ -49,15 +47,15 @@ export class HousesCharactersPage implements OnInit {
     switch (houseName) {
       case 'blackEagles':
         this.titleHouse = "Black Eagles";
-        this.allStudents = environment.blackEagles;
+        this.allStudents = housesCharacters.blackEagles;
         break;
       case 'blueLions':
         this.titleHouse = "Blue Lions";
-        this.allStudents = environment.blueLions;
+        this.allStudents = housesCharacters.blueLions;
         break;
       case 'goldenDeer':
         this.titleHouse = "Golden Deer";
-        this.allStudents = environment.goldenDeer;
+        this.allStudents = housesCharacters.goldenDeer;
         break;
     }
   }

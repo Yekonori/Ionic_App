@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { housesCharacters } from 'src/environments/environment';
 
 @Component({
   selector: 'app-all-characters',
@@ -29,15 +29,15 @@ export class AllCharactersPage implements OnInit {
   }
 
   getBlackEaglesCharacters() {
-    this.blackEaglesCharacters = environment.blackEagles;
+    this.blackEaglesCharacters = housesCharacters.blackEagles;
   }
 
   getBlueLionsCharacters() {
-    this.blueLionsCharacters = environment.blueLions;
+    this.blueLionsCharacters = housesCharacters.blueLions;
   }
 
   getGoldenDeerCharacters() {
-    this.goldenDeerCharacters = environment.goldenDeer;
+    this.goldenDeerCharacters = housesCharacters.goldenDeer;
   }
 
 }

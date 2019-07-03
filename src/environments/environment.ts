@@ -4,7 +4,16 @@
 
 export const environment = {
   production: false,
-  // Black Eagles Characters
+};
+
+export const housesCharacters = {
+  /**
+   * Houses' Characters : 
+   * 
+   *  - Black Eagles
+   *  - Blue Lions
+   *  - Golde Deer
+   */
   blackEagles: [
     { name: "Edelgard" },
     { name: "Hubert" },
@@ -13,9 +22,8 @@ export const environment = {
     { name: "Ferdinand" },
     { name: "Dorothea" },
     { name: "Caspar" },
-    { name: "Petra" },
+    { name: "Petra" }
   ],
-  // Blue Lions Characters
   blueLions: [
     { name: "Dimitri" },
     { name: "Dedue" },
@@ -24,9 +32,8 @@ export const environment = {
     { name: "Felix" },
     { name: "Mercedes" },
     { name: "Sylvain" },
-    { name: "Ingrid" },
+    { name: "Ingrid" }
   ],
-  // Golden Deer Characters
   goldenDeer: [
     { name: "Claude" },
     { name: "Lorenz" },
@@ -35,8 +42,193 @@ export const environment = {
     { name: "Ignatz" },
     { name: "Lysithea" },
     { name: "Leonie" },
-    { name: "Raphael" },
+    { name: "Raphael" }
   ],
+};
+
+export const charactersDetails = {
+  /**
+   * Black Eagles Details :
+   * 
+   * - Edelgard
+   * - Hubert
+   * - Bernadetta
+   * - Linhardt
+   * - Ferdinand
+   * - Dorothea
+   * - Caspar
+   * - Petra
+   */
+  Edelgard: {
+    name: "Edelgard",
+    fullName: "Edelgard von Hresvelg",
+    house: "Black Eagles",
+    crest: "Seiros"
+  },
+  Hubert: {
+    name: "Hubert",
+    fullName: "Hubert von Bestla",
+    house: "Black Eagles",
+    crest: ""
+  },
+  Bernadetta: {
+    name: "Bernadetta",
+    fullName: "Bernadetta von Varley",
+    house: "Black Eagles",
+    crest: "Indech"
+  },
+  Linhardt: {
+    name: "Linhardt",
+    fullName: "Linhardt von Hevring",
+    house: "Black Eagles",
+    crest: "Cethlenn"
+  },
+  Ferdinand: {
+    name: "Ferdinand",
+    fullName: "Ferdinand von Aegir",
+    house: "Black Eagles",
+    crest: "Cichol"
+  },
+  Dorothea: {
+    name: "Dorothea",
+    fullName: "Dorothea Arnold",
+    house: "Black Eagles",
+    crest: ""
+  },
+  Caspar: {
+    name: "Caspar",
+    fullName: "Caspar von Bergliez",
+    house: "Black Eagles",
+    crest: ""
+  },
+  Petra: {
+    name: "Petra",
+    fullName: "Petra McNairy",
+    house: "Black Eagles",
+    crest: ""
+  },
+
+  /**
+   * Blue Lions Details :
+   * 
+   * - Dimitri
+   * - Dedue
+   * - Annette
+   * - Ashe
+   * - Felix
+   * - Mercedes
+   * - Sylvain
+   * - Ingrid
+   */
+  Dimitri: {
+    name: "Dimitri",
+    fullName: "Dimitri Alexandre Blaiddyd",
+    house: "Blue Lions",
+    crest: "Blaiddyd"
+  },
+  Dedue: {
+    name: "Dedue",
+    fullName: "Dedue Molinaro",
+    house: "Blue Lions",
+    crest: ""
+  },
+  Annette: {
+    name: "Annette",
+    fullName: "Annette Fantine Dominique",
+    house: "Blue Lions",
+    crest: "Dominique"
+  },
+  Ashe: {
+    name: "Ashe",
+    fullName: "Ashe Duran",
+    house: "Blue Lions",
+    crest: ""
+  },
+  Felix: {
+    name: "Felix",
+    fullName: "Felix Hugo Fraldarius",
+    house: "Blue Lions",
+    crest: "Fraldarius"
+  },
+  Mercedes: {
+    name: "Mercedes",
+    fullName: "Mercedes von Marltritz",
+    house: "Blue Lions",
+    crest: "Lamine"
+  },
+  Sylvain: {
+    name: "Sylvain",
+    fullName: "Sylvain Jose Gautier",
+    house: "Blue Lions",
+    crest: "Gautier"
+  },
+  Ingrid: {
+    name: "Ingrid",
+    fullName: "Ingrid Brandol Galatea",
+    house: "Blue Lions",
+    crest: "Daphnel"
+  },
+
+  /**
+   * Golden Deer Details :
+   * 
+   * - Claude
+   * - Lorenz
+   * - Hilda
+   * - Marianne
+   * - Ignatz
+   * - Lysithea
+   * - Leonie
+   * - Raphael
+   */
+  Claude: {
+    name: "Claude",
+    fullName: "Claude von Riegan",
+    house: "Golden Deer",
+    crest: "Riegan"
+  },
+  Lorenz: {
+    name: "Lorenz",
+    fullName: "Lorenz Hermann Gloucester",
+    house: "Golden Deer",
+    crest: "Gloucester"
+  },
+  Hilda: {
+    name: "Hilda",
+    fullName: "Hilda Valentin Goneril",
+    house: "Golden Deer",
+    crest: "Goneril"
+  },
+  Marianne: {
+    name: "Marianne",
+    fullName: "Marianne von Edmund",
+    house: "Golden Deer",
+    crest: "???"
+  },
+  Ignatz: {
+    name: "Ignatz",
+    fullName: "Ignatz Victor",
+    house: "Golden Deer",
+    crest: ""
+  },
+  Lysithea: {
+    name: "Lysithea",
+    fullName: "Lysithea von Cordelia",
+    house: "Golden Deer",
+    crest: "Charon"
+  },
+  Leonie: {
+    name: "Leonie",
+    fullName: "Leonie Pinelli",
+    house: "Golden Deer",
+    crest: ""
+  },
+  Raphael: {
+    name: "Raphael",
+    fullName: "Raphael Kirsten",
+    house: "Golden Deer",
+    crest: ""
+  }
 };
 
 /*

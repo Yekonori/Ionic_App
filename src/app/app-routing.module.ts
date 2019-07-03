@@ -16,7 +16,7 @@ const routes: Routes = [
     loadChildren: './characters/houses-characters/houses-characters.module#HousesCharactersPageModule'
   },
   {
-    path: 'character-details',
+    path: 'character-details/:characterName',
     loadChildren: './characters/character-details/character-details.module#CharacterDetailsPageModule'
   }
 ];
