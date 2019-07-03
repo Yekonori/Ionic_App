@@ -23,7 +23,17 @@ export class HousesCharactersPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    // Get the `houseName` parameter of the route
+    this.getHouseParameter();
+  }
+
+  /**
+   * Get the `houseName` parameter of the route
+   * 
+   * and use the `houseName` to get the correct array of house's students
+   * 
+   * Call setActiveTab() function to change the color of the ion-tab-button
+   */
+  getHouseParameter() {
     this.houseName = this.activatedroute.snapshot.paramMap.get("houseName");
 
     this.getHouseStudents(this.houseName);
@@ -35,6 +45,7 @@ export class HousesCharactersPage implements OnInit {
    * @param houseName = parameter of the route
    */
   getHouseStudents(houseName: string) {
+
     switch (houseName) {
       case 'blackEagles':
         this.titleHouse = "Black Eagles";

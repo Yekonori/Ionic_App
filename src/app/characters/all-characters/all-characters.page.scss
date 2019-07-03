@@ -1,16 +1,17 @@
-
 ion-content {
 
-    ion-grid {
+    --padding-bottom: var(--ion-tabs-height);
+}
 
-        ion-row {
+ion-tabs {
+    top: auto;
 
-            // HiddenElements in collapse system
-            &.hiddenElements { 
-                max-height: 0;
-                overflow: hidden;
-                opacity: 0;
-            }
+    height: var(--ion-tabs-height);
+
+    ion-tab-bar {
+
+        ion-tab-button {
+            color: #000000;
         }
     }
 }

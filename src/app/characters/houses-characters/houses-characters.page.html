@@ -9,7 +9,7 @@
 
 <ion-content>
   <ion-grid>
-    <ion-row text-center>
+    <ion-row class="studentRow" text-center>
       <ion-col size="6" *ngFor="let student of allStudents">
         <ion-card>
           <ion-card-header>
@@ -23,24 +23,21 @@
   </ion-grid>
 </ion-content>
 
-<ion-tabs>
+<!-- <ion-tabs>
   <ion-tab-bar slot="bottom">
-    <!-- tab="/houses-characters/blackEagles" -->
-    <ion-tab-button [routerLink]="['/houses-characters', 'blackEagles']">
+    <ion-tab-button class="blackEagles" [routerLink]="['/houses-characters', 'blackEagles']">
       <ion-icon name="person"></ion-icon>
       <ion-label>Black Eagles</ion-label>
     </ion-tab-button>
 
-    <!-- tab="/houses-characters/blueLions" -->
-    <ion-tab-button [routerLink]="['/houses-characters', 'blueLions']">
+    <ion-tab-button class="blueLions" [routerLink]="['/houses-characters', 'blueLions']">
       <ion-icon name="person"></ion-icon>
       <ion-label>Blue Lions</ion-label>
     </ion-tab-button>
 
-    <!-- tab="/houses-characters/goldenDeer" -->
-    <ion-tab-button [routerLink]="['/houses-characters', 'goldenDeer']">
+    <ion-tab-button class="goldenDeer" [routerLink]="['/houses-characters', 'goldenDeer']">
       <ion-icon name="person"></ion-icon>
       <ion-label>Golden Deer</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
-</ion-tabs>
+</ion-tabs> -->
