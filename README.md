@@ -9,3 +9,7 @@
 ### Characters Pages Details : 
 
 #### All-Characters
+
+#### Houses-Characters
+
+#### Character-Detail
