@@ -203,7 +203,7 @@ export const charactersDetails = {
     name: "Marianne",
     fullName: "Marianne von Edmund",
     house: "Golden Deer",
-    crest: "???"
+    crest: ""
   },
   Ignatz: {
     name: "Ignatz",
@@ -230,6 +230,147 @@ export const charactersDetails = {
     crest: ""
   }
 };
+
+export const crests = [
+  {
+    name: "",
+    status: "Major",
+    owner: "Byleth",
+    effect: ""
+  },
+  {
+    name: "Flames",
+    status: "Major",
+    owner: "Byleth",
+    effect: ""
+  },
+  {
+    name: "Seiros",
+    status: "Minor",
+    owner: "Edelgard",
+    effect: ""
+  },
+  {
+    name: "Cichol",
+    status: "Minor",
+    owner: "Ferdinand",
+    effect: ""
+  },
+  {
+    name: "",
+    status: "",
+    owner: "",
+    effect: ""
+  },
+  {
+    name: "",
+    status: "",
+    owner: "",
+    effect: ""
+  },
+  {
+    name: "Dominique",
+    status: "Minor",
+    owner: "Annette",
+    effect: ""
+  },
+  {
+    name: "Fraldarius",
+    status: "Major",
+    owner: "Felix",
+    effect: ""
+  },
+  {
+    name: "",
+    status: "",
+    owner: "",
+    effect: ""
+  },
+  {
+    name: "Daphnel",
+    status: "Minor",
+    owner: "Ingrid",
+    effect: ""
+  },
+  {
+    name: "Blaiddyd",
+    status: "Minor",
+    owner: "Dimitri",
+    effect: ""
+  },
+  {
+    name: "Gloucester",
+    status: "Minor",
+    owner: "Lorenz",
+    effect: ""
+  },
+  {
+    name: "Goneril",
+    status: "Minor",
+    owner: "Hilda",
+    effect: ""
+  },
+  {
+    name: "",
+    status: "",
+    owner: "",
+    effect: ""
+  },
+  {
+    name: "Gautier",
+    status: "Minor",
+    owner: "Sylvain",
+    effect: ""
+  },
+  {
+    name: "",
+    status: "Minor",
+    owner: "Marianne",
+    effect: ""
+  },
+  {
+    name: "Charon",
+    status: "Minor",
+    owner: "Lysithea",
+    effect: ""
+  },
+  {
+    name: "",
+    status: "",
+    owner: "",
+    effect: ""
+  },
+  {
+    name: "Riegan",
+    status: "Minor",
+    owner: "Claude",
+    effect: ""
+  },
+  {
+    name: "",
+    status: "",
+    owner: "",
+    effect: ""
+  },
+  {
+    name: "Lamine",
+    status: "Minor",
+    owner: "Mercedes",
+    effect: ""
+  },
+  {
+    name: "Indech",
+    status: "Minor",
+    owner: "Bernadetta",
+    effect: ""
+  },
+  {
+    name: "Cethlenn",
+    status: "Minor",
+    owner: "Linhardt",
+    effect: ""
+  }
+];
 
 /*
  * For easier debugging in development mode, you can import the following file
