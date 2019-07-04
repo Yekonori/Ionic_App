@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { housesCharacters } from 'src/environments/environment';
 
@@ -8,6 +8,9 @@ import { housesCharacters } from 'src/environments/environment';
   styleUrls: ['./houses-characters.page.scss'],
 })
 export class HousesCharactersPage implements OnInit {
+
+  @Output() character = new EventEmitter<Object>();
+  @Output() houseFileName = new EventEmitter<string>();
 
   /**
    * houseName    = for getHouseStudents() of the good House

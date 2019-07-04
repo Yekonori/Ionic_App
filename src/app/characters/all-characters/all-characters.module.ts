@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { AllCharactersPage } from './all-characters.page';
 
+import { CharacterCardComponent } from './../component/character-card/character-card.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -21,6 +23,9 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [AllCharactersPage]
+  declarations: [
+    AllCharactersPage,
+    CharacterCardComponent
+  ]
 })
 export class AllCharactersPageModule { }

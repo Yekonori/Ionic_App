@@ -21,13 +21,7 @@
     <ion-row text-center>
       <ion-col size="6" *ngFor="let blackEaglesCharacter of blackEaglesCharacters"
         [routerLink]="['/character-details', blackEaglesCharacter.name]">
-        <ion-card>
-          <ion-card-header>
-            <img src="/assets/images/Characters_Faces/Black_Eagles/{{ blackEaglesCharacter.name }}_Face.jpg"
-              alt="{{ blackEaglesCharacter.name }}" title="{{ blackEaglesCharacter.name }}">
-            <ion-card-title>{{ blackEaglesCharacter.name }}</ion-card-title>
-          </ion-card-header>
-        </ion-card>
+        <app-character-card [character]="blackEaglesCharacter" [houseNameFile]="'Black_Eagles'"></app-character-card>
       </ion-col>
     </ion-row>
 
@@ -42,13 +36,7 @@
     <ion-row text-center>
       <ion-col size="6" *ngFor="let blueLionsCharacter of blueLionsCharacters"
         [routerLink]="['/character-details', blueLionsCharacter.name]">
-        <ion-card>
-          <ion-card-header>
-            <img src="/assets/images/Characters_Faces/Blue_Lions/{{ blueLionsCharacter.name }}_Face.jpg"
-              alt="{{ blueLionsCharacter.name }}" title="{{ blueLionsCharacter.name }}">
-            <ion-card-title>{{ blueLionsCharacter.name }}</ion-card-title>
-          </ion-card-header>
-        </ion-card>
+        <app-character-card [character]="blueLionsCharacter" [houseNameFile]="'Blue_Lions'"></app-character-card>
       </ion-col>
     </ion-row>
 
@@ -63,13 +51,7 @@
     <ion-row text-center>
       <ion-col size="6" *ngFor="let goldenDeerCharacter of goldenDeerCharacters"
         [routerLink]="['/character-details', goldenDeerCharacter.name]">
-        <ion-card>
-          <ion-card-header>
-            <img src="/assets/images/Characters_Faces/Golden_Deer/{{ goldenDeerCharacter.name }}_Face.jpg"
-              alt="{{ goldenDeerCharacter.name }}" title="{{ goldenDeerCharacter.name }}">
-            <ion-card-title>{{ goldenDeerCharacter.name }}</ion-card-title>
-          </ion-card-header>
-        </ion-card>
+        <app-character-card [character]="goldenDeerCharacter" [houseNameFile]="'Golden_Deer'"></app-character-card>
       </ion-col>
     </ion-row>
 

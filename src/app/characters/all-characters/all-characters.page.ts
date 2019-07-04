@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { housesCharacters } from 'src/environments/environment';
 
 @Component({
@@ -8,7 +8,12 @@ import { housesCharacters } from 'src/environments/environment';
 })
 export class AllCharactersPage implements OnInit {
 
-  // Students Characters Array
+  @Output() character = new EventEmitter<Object>();
+  @Output() houseFileName = new EventEmitter<string>();
+
+  /**
+   * Students Characters Array
+   */
   blackEaglesCharacters: Array<any> = [];
   blueLionsCharacters: Array<any> = [];
   goldenDeerCharacters: Array<any> = [];
