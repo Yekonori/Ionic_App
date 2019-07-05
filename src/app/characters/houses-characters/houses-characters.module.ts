@@ -7,7 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { HousesCharactersPage } from './houses-characters.page';
 
-import { CharacterCardComponent } from './../component/character-card/character-card.component';
+import { ComponentCharactersModule } from './../component/component-characters.module';
+
 
 const routes: Routes = [
   {
@@ -21,11 +22,11 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ComponentCharactersModule
   ],
   declarations: [
-    HousesCharactersPage,
-    CharacterCardComponent
+    HousesCharactersPage
   ]
 })
 export class HousesCharactersPageModule {}

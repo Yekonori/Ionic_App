@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { AllCharactersPage } from './all-characters.page';
 
-import { CharacterCardComponent } from './../component/character-card/character-card.component';
+import { ComponentCharactersModule } from './../component/component-characters.module';
 
 const routes: Routes = [
   {
@@ -21,11 +21,11 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ComponentCharactersModule
   ],
   declarations: [
-    AllCharactersPage,
-    CharacterCardComponent
+    AllCharactersPage
   ]
 })
 export class AllCharactersPageModule { }
