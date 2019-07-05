@@ -6,10 +6,10 @@
 - Houses-Characters
 - Character-Detail
 
-### Characters Pages Details : 
+## Characters Pages Details : 
 
-#### All-Characters
+### All-Characters
 
-#### Houses-Characters
+### Houses-Characters
 
-#### Character-Detail
+### Character-Detail
