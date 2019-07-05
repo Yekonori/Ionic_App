@@ -10,6 +10,20 @@
 
 ### All-Characters
 
+Display all the houses' characters.
+
 ### Houses-Characters
 
+Display all the selected houses' characters.
+
 ### Character-Detail
+
+Display the details of the selected character
+
+## Next Update : V0.2
+
+- [ ] Create a user environment
+- [ ] Make him choose a House between the Three
+- [ ] Possibility to change the House
+- [ ] All-Characters Page will now display the characters with your House
+- [ ] Houses-Characters will no longer be available
