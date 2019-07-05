@@ -24,9 +24,11 @@ Display the details of the selected character
 
 - [ ] Collapse in All-Characters Page
 - [ ] Collapse in Character's part Menu
-- [ ] Remake the Data Storage
-  - [ ] Prepare him to the next Update and review
-- [ ] Make Services Call
+- [ ] Remake the datas' structure
+  - [ ] Prepare him to the next update
+  - [ ] Review the existing structure
+- [ ] Make Services
+- [ ] Update calls' datas
 
 ## Next Update : V0.2
 
