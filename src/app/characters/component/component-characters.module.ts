@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 
 import { CharacterCardComponent } from './character-card/character-card.component';
 
@@ -9,7 +10,8 @@ import { CharacterCardComponent } from './character-card/character-card.componen
 @NgModule({
     imports: [
         CommonModule,
-        IonicModule
+        IonicModule,
+        RouterModule
     ],
     declarations: [
         CharacterCardComponent

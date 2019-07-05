@@ -6,6 +6,34 @@ export const environment = {
   production: false,
 };
 
+export const usersChoices = {
+
+  /**
+   * Determine the house' choice
+   * to know wich `{houseName}Choice` to use
+   */
+  userChoices : {
+    house: "SERVIIIICE!!!",
+  },
+
+  /**
+   * Determine the sex and name of Byleth
+   * for each house' choice
+   */
+  blackEaglesChoice : {
+    bylethSex: "",
+    bylethName: ""
+  },
+  blueLionsChoice : {
+    bylethSex: "",
+    bylethName: ""
+  },
+  goldenDeerChoice : {
+    bylethSex: "",
+    bylethName: ""
+  }
+}
+
 export const housesCharacters = {
   /**
    * Houses' Characters : 
@@ -45,6 +73,10 @@ export const housesCharacters = {
     { name: "Raphael" }
   ],
 };
+
+export const commonCharacters = [
+  { name: "Byleth" }
+];
 
 export const charactersDetails = {
   /**

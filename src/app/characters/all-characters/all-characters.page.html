@@ -19,8 +19,7 @@
     </ion-row>
 
     <ion-row text-center>
-      <ion-col size="6" *ngFor="let blackEaglesCharacter of blackEaglesCharacters"
-        [routerLink]="['/character-details', blackEaglesCharacter.name]">
+      <ion-col size="6" *ngFor="let blackEaglesCharacter of blackEaglesCharacters">
         <app-character-card [character]="blackEaglesCharacter" [houseNameFile]="'Black_Eagles'"></app-character-card>
       </ion-col>
     </ion-row>
@@ -34,8 +33,7 @@
     </ion-row>
 
     <ion-row text-center>
-      <ion-col size="6" *ngFor="let blueLionsCharacter of blueLionsCharacters"
-        [routerLink]="['/character-details', blueLionsCharacter.name]">
+      <ion-col size="6" *ngFor="let blueLionsCharacter of blueLionsCharacters">
         <app-character-card [character]="blueLionsCharacter" [houseNameFile]="'Blue_Lions'"></app-character-card>
       </ion-col>
     </ion-row>
@@ -49,8 +47,7 @@
     </ion-row>
 
     <ion-row text-center>
-      <ion-col size="6" *ngFor="let goldenDeerCharacter of goldenDeerCharacters"
-        [routerLink]="['/character-details', goldenDeerCharacter.name]">
+      <ion-col size="6" *ngFor="let goldenDeerCharacter of goldenDeerCharacters">
         <app-character-card [character]="goldenDeerCharacter" [houseNameFile]="'Golden_Deer'"></app-character-card>
       </ion-col>
     </ion-row>

@@ -20,16 +20,6 @@ Display all the selected houses' characters.
 
 Display the details of the selected character
 
-## Next Update : V0.1.7
-
-- [ ] Collapse in All-Characters Page
-- [ ] Collapse in Character's part Menu
-- [ ] Remake the datas' structure
-  - [ ] Prepare him to the next update
-  - [ ] Review the existing structure
-- [ ] Make Services
-- [ ] Update calls' datas
-
 ## Next Update : V0.2
 
 - [ ] Create a user environment

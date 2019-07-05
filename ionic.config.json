@@ -1,5 +1,7 @@
 {
   "name": "FE_Three_Houses",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
