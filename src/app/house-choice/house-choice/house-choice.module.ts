@@ -5,15 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HousesCharactersPage } from './houses-characters.page';
-
-import { ComponentCharactersModule } from './../component/component-characters.module';
-
+import { HouseChoicePage } from './house-choice.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: HousesCharactersPage
+    component: HouseChoicePage
   }
 ];
 
@@ -22,11 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
-    ComponentCharactersModule
+    RouterModule.forChild(routes)
   ],
-  declarations: [
-    HousesCharactersPage
-  ]
+  declarations: [HouseChoicePage]
 })
-export class HousesCharactersPageModule {}
+export class HouseChoicePageModule {}

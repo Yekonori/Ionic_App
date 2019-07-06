@@ -10,66 +10,11 @@
 <ion-content>
   <ion-grid>
 
-    <!-- BLACK EAGLES -->
-    <ion-row>
-      <ion-col size="8">Black Eagles</ion-col>
-      <ion-col size="1" offset="3">
-        <ion-icon name="arrow-dropdown"></ion-icon>
-      </ion-col>
-    </ion-row>
-
     <ion-row text-center>
-      <ion-col size="6" *ngFor="let blackEaglesCharacter of blackEaglesCharacters">
-        <app-character-card [character]="blackEaglesCharacter" [houseNameFile]="'Black_Eagles'"></app-character-card>
-      </ion-col>
-    </ion-row>
-
-    <!-- BLUE LIONS -->
-    <ion-row>
-      <ion-col size="8">Blue Lions</ion-col>
-      <ion-col size="1" offset="3">
-        <ion-icon name="arrow-dropdown"></ion-icon>
-      </ion-col>
-    </ion-row>
-
-    <ion-row text-center>
-      <ion-col size="6" *ngFor="let blueLionsCharacter of blueLionsCharacters">
-        <app-character-card [character]="blueLionsCharacter" [houseNameFile]="'Blue_Lions'"></app-character-card>
-      </ion-col>
-    </ion-row>
-
-    <!-- GOLDEN DEER -->
-    <ion-row>
-      <ion-col size="8">Golden Deer</ion-col>
-      <ion-col size="1" offset="3">
-        <ion-icon name="arrow-dropdown"></ion-icon>
-      </ion-col>
-    </ion-row>
-
-    <ion-row text-center>
-      <ion-col size="6" *ngFor="let goldenDeerCharacter of goldenDeerCharacters">
-        <app-character-card [character]="goldenDeerCharacter" [houseNameFile]="'Golden_Deer'"></app-character-card>
+      <ion-col size="6" *ngFor="let studentHouseCharacter of studentsHouseCharacter">
+        <app-character-card [character]="studentHouseCharacter" [houseNameFile]=studentsHouseName></app-character-card>
       </ion-col>
     </ion-row>
 
   </ion-grid>
 </ion-content>
-
-<!-- <ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button class="blackEagles" [routerLink]="['/houses-characters', 'blackEagles']">
-      <ion-icon name="person"></ion-icon>
-      <ion-label>Black Eagles</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button class="blueLions" [routerLink]="['/houses-characters', 'blueLions']">
-      <ion-icon name="person"></ion-icon>
-      <ion-label>Blue Lions</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button class="goldenDeer" [routerLink]="['/houses-characters', 'goldenDeer']">
-      <ion-icon name="person"></ion-icon>
-      <ion-label>Golden Deer</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs> -->

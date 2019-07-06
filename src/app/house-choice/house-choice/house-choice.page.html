@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>House Choice</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <form action="#" method="POST" (change)="setStoryName()">
+          <ion-input placeholder="Choose the Story Name" [(ngModel)]="storyObject.name" name="name"></ion-input>
+        </form>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col (click)="setStoryHouse('blackEagles')">Black Eagles</ion-col>
+      <ion-col (click)="setStoryHouse('blueLions')">Blue Lions</ion-col>
+      <ion-col (click)="setStoryHouse('goldenDeer')">Golden Deer</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button *ngIf="confirmStoryName && confirmHouse; else disabledButton" expand="full"
+          (click)="createStory()">Create the Story</ion-button>
+        <ng-template #disabledButton>
+          <ion-button expand="full" disabled (click)="createStory()">Create the Story</ion-button>
+        </ng-template>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

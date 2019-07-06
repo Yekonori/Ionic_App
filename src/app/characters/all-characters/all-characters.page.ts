@@ -1,6 +1,8 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { housesCharacters } from 'src/environments/environment';
 
+import { Storage } from '@ionic/storage';
+
 @Component({
   selector: 'app-all-characters',
   templateUrl: './all-characters.page.html',
@@ -14,35 +16,48 @@ export class AllCharactersPage implements OnInit {
   /**
    * Students Characters Array
    */
+  studentsHouseCharacter: Array<any> = [];
+  studentsHouseName: string = "";
   blackEaglesCharacters: Array<any> = [];
   blueLionsCharacters: Array<any> = [];
   goldenDeerCharacters: Array<any> = [];
 
-  constructor() { }
+  constructor(
+    private storage: Storage
+  ) { }
 
   ngOnInit() {
-    this.getHousesStudents();
+    this.storage.get("currentStory").then(currentStory => {
+      switch (currentStory.house) {
+        case "blackEagles":
+          this.getBlackEaglesCharacters();
+          break;
+        case "blueLions":
+          this.getBlueLionsCharacters();
+          break;
+        case "goldenDeer":
+          this.getGoldenDeerCharacters();
+          break;
+      }
+    })
   }
 
   /**
-   * Call each get{HouseName}Characters
+   * Get the House's Characters
    */
-  getHousesStudents() {
-    this.getBlackEaglesCharacters();
-    this.getBlueLionsCharacters();
-    this.getGoldenDeerCharacters();
-  }
-
   getBlackEaglesCharacters() {
-    this.blackEaglesCharacters = housesCharacters.blackEagles;
+    this.studentsHouseCharacter = housesCharacters.blackEagles;
+    this.studentsHouseName = "Black_Eagles";
   }
 
   getBlueLionsCharacters() {
-    this.blueLionsCharacters = housesCharacters.blueLions;
+    this.studentsHouseCharacter = housesCharacters.blueLions;
+    this.studentsHouseName = "Blue_Lions";
   }
 
   getGoldenDeerCharacters() {
-    this.goldenDeerCharacters = housesCharacters.goldenDeer;
+    this.studentsHouseCharacter = housesCharacters.goldenDeer;
+    this.studentsHouseName = "Golden_Deer";
   }
 
 }
