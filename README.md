@@ -27,7 +27,7 @@ Display the details of the selected character
 - [x] Possibility to create a Story
 - [ ] Possibility to edit the current Story
 - [ ] Possibility to create a new Story
-- [ ] Possibility to delete the current Story
+- [ ] Possibility to delete a Story
 - [ ] Possibility to change the current Story
 - [x] All-Characters Page will now display the characters with your House
 - [x] Houses-Characters will no longer be available

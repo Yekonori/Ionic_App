@@ -16,15 +16,21 @@
     </ion-row>
 
     <ion-row>
-      <ion-col (click)="setStoryHouse('blackEagles')">Black Eagles</ion-col>
-      <ion-col (click)="setStoryHouse('blueLions')">Blue Lions</ion-col>
-      <ion-col (click)="setStoryHouse('goldenDeer')">Golden Deer</ion-col>
+      <ion-col (click)="setStoryHouse('blackEagles')">
+        <p>Black Eagles</p>
+      </ion-col>
+      <ion-col (click)="setStoryHouse('blueLions')">
+        <p>Blue Lions</p>
+      </ion-col>
+      <ion-col (click)="setStoryHouse('goldenDeer')">
+        <p>Golden Deer</p>
+      </ion-col>
     </ion-row>
 
     <ion-row>
       <ion-col>
-        <ion-button *ngIf="confirmStoryName && confirmHouse; else disabledButton" expand="full"
-          (click)="createStory()">Create the Story</ion-button>
+        <ion-button *ngIf="confirmStoryName && confirmHouse; else disabledButton" expand="full" (click)="createStory()">
+          Create the Story</ion-button>
         <ng-template #disabledButton>
           <ion-button expand="full" disabled (click)="createStory()">Create the Story</ion-button>
         </ng-template>

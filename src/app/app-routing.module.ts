@@ -12,13 +12,17 @@ const routes: Routes = [
     loadChildren: './house-choice/house-choice/house-choice.module#HouseChoicePageModule'
   },
   {
+    path: 'stories',
+    loadChildren: './house-choice/stories/stories.module#StoriesPageModule'
+  },
+  {
     path: 'all-characters',
     loadChildren: './characters/all-characters/all-characters.module#AllCharactersPageModule'
   },
   {
     path: 'character-details/:characterName',
     loadChildren: './characters/character-details/character-details.module#CharacterDetailsPageModule'
-  }
+  },
 ];
 
 @NgModule({

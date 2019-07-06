@@ -15,6 +15,7 @@ export class HouseChoicePage implements OnInit {
    * - House
    */
   storyObject = {
+    id: "",
     name: "",
     house: ""
   }
@@ -84,6 +85,8 @@ export class HouseChoicePage implements OnInit {
    */
   createStory() {
     this.storage.get("stories").then(storiesLocal => {
+
+      this.storyObject.id = storiesLocal.length + 1;
 
       storiesLocal.push(this.storyObject);
 
