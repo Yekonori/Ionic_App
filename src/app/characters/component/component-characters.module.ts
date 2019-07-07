@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 
 import { CharacterCardComponent } from './character-card/character-card.component';
 
-
 @NgModule({
     imports: [
         CommonModule,

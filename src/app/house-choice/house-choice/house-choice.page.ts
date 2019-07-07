@@ -36,11 +36,11 @@ export class HouseChoicePage implements OnInit {
       if (exist && statusParameter === "begin") {
         this.router.navigate(['/all-characters']);
       }
-    })
+    });
 
-    this.storage.get("stories").then(exist => {
+    this.storage.get("storyId").then(exist => {
       if (!exist) {
-        this.storage.set("stories", []);
+        this.storage.set("storyId", 0);
       }
     });
 
@@ -79,21 +79,38 @@ export class HouseChoicePage implements OnInit {
   }
 
   /**
+   * Set the `storyObject.id`
+   * and update the value of `storyId` local
+   */
+  setStoryId() {
+    this.storage.get("storyId").then(id => {
+      this.storyObject.id = id;
+
+      this.storage.set("storyId", id + 1).then(() => {
+        this.createStory();
+      });
+    });
+  }
+
+  /**
    * If the two confirm boolean are true : 
    * - Create the Story in the Local
    * - Call the `setCurrentStory()` to make him the actual one
    */
   createStory() {
-    this.storage.get("stories").then(storiesLocal => {
+    this.storage.get("storyId").then(id => {
+      this.storyObject.id = id;
 
-      this.storyObject.id = storiesLocal.length + 1;
+      this.storage.set("storyId", id + 1);
+      this.storage.get("stories").then(storiesLocal => {
 
-      storiesLocal.push(this.storyObject);
+        storiesLocal.push(this.storyObject);
 
-      this.storage.set("stories", storiesLocal).then(() => {
-        this.setCurrentStory();
+        this.storage.set("stories", storiesLocal).then(() => {
+          this.setCurrentStory();
+        });
       });
-    })
+    });
   }
 
   setCurrentStory() {

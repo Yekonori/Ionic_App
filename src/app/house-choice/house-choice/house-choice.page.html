@@ -29,10 +29,10 @@
 
     <ion-row>
       <ion-col>
-        <ion-button *ngIf="confirmStoryName && confirmHouse; else disabledButton" expand="full" (click)="createStory()">
+        <ion-button *ngIf="confirmStoryName && confirmHouse; else disabledButton" expand="full" (click)="setStoryId()">
           Create the Story</ion-button>
         <ng-template #disabledButton>
-          <ion-button expand="full" disabled (click)="createStory()">Create the Story</ion-button>
+          <ion-button expand="full" disabled>Create the Story</ion-button>
         </ng-template>
       </ion-col>
     </ion-row>
