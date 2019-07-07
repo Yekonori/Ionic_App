@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
+import { Events } from '@ionic/angular';
 
 @Component({
   selector: 'app-house-choice',
@@ -23,17 +24,33 @@ export class HouseChoicePage implements OnInit {
   confirmStoryName = false;
   confirmHouse = false;
 
+  statusParameter = "";
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private storage: Storage
+    private storage: Storage,
+    private events: Events
   ) { }
 
+  /**
+   * Stock the value of `status` parameter in `statusParameter`
+   * 
+   * If `statusParameter` is edit, apply to `storyObject` the correct values
+   * 
+   * If a `currentStory` local exist, navigate to All Characters Page
+   * 
+   * If the `storyId` local doesn't exist, create one and initialize him to 0
+   */
   ngOnInit() {
-    let statusParameter = this.activatedRoute.snapshot.paramMap.get("status");
+    this.statusParameter = this.activatedRoute.snapshot.paramMap.get("status");
+
+    if (this.statusParameter === "edit") {
+      this.editStory();
+    }
 
     this.storage.get("currentStory").then(exist => {
-      if (exist && statusParameter === "begin") {
+      if (exist && this.statusParameter === "begin") {
         this.router.navigate(['/all-characters']);
       }
     });
@@ -46,6 +63,10 @@ export class HouseChoicePage implements OnInit {
 
     // this.storage.clear();
   }
+
+  /*************************************************************************************************/
+  /************************************** Story Creation Part **************************************/
+  /*************************************************************************************************/
 
   /**
    * Set the `storyObject.name` and make sure no one has the same name
@@ -98,24 +119,63 @@ export class HouseChoicePage implements OnInit {
    * - Call the `setCurrentStory()` to make him the actual one
    */
   createStory() {
-    this.storage.get("storyId").then(id => {
-      this.storyObject.id = id;
+    this.storage.get("stories").then(storiesLocal => {
 
-      this.storage.set("storyId", id + 1);
-      this.storage.get("stories").then(storiesLocal => {
+      storiesLocal.push(this.storyObject);
 
-        storiesLocal.push(this.storyObject);
-
-        this.storage.set("stories", storiesLocal).then(() => {
-          this.setCurrentStory();
-        });
+      this.storage.set("stories", storiesLocal).then(() => {
+        this.setCurrentStory();
       });
     });
   }
 
+  /**
+   * Set the created Story at the `currentStory` local
+   * 
+   * And navigate to the All Characters Page
+   */
   setCurrentStory() {
     this.storage.set("currentStory", this.storyObject).then(() => {
       this.router.navigate(['/all-characters']);
+    });
+  }
+
+  /*************************************************************************************************/
+  /************************************** Story Edition Part ***************************************/
+  /*************************************************************************************************/
+
+  /**
+   * Set the `storyObject` with the values of the `editStory` local
+   */
+  editStory() {
+    this.storage.get("editStory").then(story => {
+      this.storyObject = {
+        id: story.id,
+        name: story.name,
+        house: story.house
+      }
+    });
+  }
+
+  /**
+   * Edit the `stories` with the new values of `editStory`
+   */
+  applyEdit() {
+    this.storage.get("stories").then(stories => {
+      // Get the index of the story
+      let storyIndex = stories.findIndex(story => story.id === this.storyObject.id);
+
+      // Replace the story with here new values
+      stories.splice(storyIndex, 1, this.storyObject);
+
+      // Set the new value for the local stories
+      this.storage.set("stories", stories).then(actualizeStories => {
+        this.events.publish("stories", actualizeStories);
+
+        this.storage.remove("editStory").then(() => {
+          this.setCurrentStory();
+        });
+      });
     });
   }
 

@@ -33,12 +33,21 @@ export class PopoverComponent implements OnInit {
     this.currentStory = this.navParams.data.currentStory;
   }
 
-  editStory(storyId) {
-    console.log(storyId);
+  /**
+   * Store in `editStory` local the story
+   * 
+   * Navigate to House Choice Page with `edit` in params
+   */
+  editStory(story) {
+    this.storage.set("editStory", story);
+    this.router.navigate(["/house-choice", "edit"]);
+    this.close();
   }
 
   /**
    * Delete the story
+   * 
+   * Publish an events to actualize the Stories
    */
   deleteStory(storyId) {
     this.storage.get("stories").then(stories => {
@@ -50,7 +59,8 @@ export class PopoverComponent implements OnInit {
       stories.splice(storyIndex, 1);
 
       // Set the new value for the local stories
-      this.storage.set("stories", stories).then(() => {
+      this.storage.set("stories", stories).then(actualizeStories => {
+        this.events.publish("stories", actualizeStories);
         this.close();
       });
     });
@@ -62,10 +72,6 @@ export class PopoverComponent implements OnInit {
    * Dismiss the popover
    */
   close() {
-    this.storage.get("stories").then(stories => {
-      this.events.publish("stories", stories);
-    });
-
     this.popoverController.dismiss();
   }
 

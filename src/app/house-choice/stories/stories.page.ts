@@ -36,6 +36,9 @@ export class StoriesPage implements OnInit {
     });
   }
 
+  /**
+   * Change the `currentStory` local by story
+   */
   newCurrentStory(story) {
     console.log(story);
     this.storage.set("currentStory", story).then(current => {

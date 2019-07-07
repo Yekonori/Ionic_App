@@ -10,7 +10,8 @@
     <ion-row>
       <ion-col>
         <form action="#" method="POST" (change)="setStoryName()">
-          <ion-input placeholder="Choose the Story Name" [(ngModel)]="storyObject.name" name="name"></ion-input>
+          <ion-input placeholder="Choose the Story Name" [(ngModel)]="storyObject.name" name="storyObject.name">
+          </ion-input>
         </form>
       </ion-col>
     </ion-row>
@@ -27,15 +28,24 @@
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row *ngIf="statusParameter === 'edit'; else noEdit">
       <ion-col>
-        <ion-button *ngIf="confirmStoryName && confirmHouse; else disabledButton" expand="full" (click)="setStoryId()">
-          Create the Story</ion-button>
-        <ng-template #disabledButton>
-          <ion-button expand="full" disabled>Create the Story</ion-button>
-        </ng-template>
+        <ion-button *ngIf="storyObject.name != ''" expand="full" (click)="applyEdit()">Edit the Story</ion-button>
       </ion-col>
     </ion-row>
+
+    <ng-template #noEdit>
+      <ion-row>
+        <ion-col>
+          <ion-button *ngIf="confirmStoryName && confirmHouse; else disabledButton" expand="full"
+            (click)="setStoryId()">
+            Create the Story</ion-button>
+          <ng-template #disabledButton>
+            <ion-button expand="full" disabled>Create the Story</ion-button>
+          </ng-template>
+        </ion-col>
+      </ion-row>
+    </ng-template>
 
   </ion-grid>
 </ion-content>
