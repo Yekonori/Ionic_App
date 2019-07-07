@@ -1,25 +1,5 @@
 # Fire Emblem Three Houses - Ionic App
 
-## Pages List : 
-
-- All-Characters
-- Houses-Characters
-- Character-Detail
-
-## Characters Pages Details : 
-
-### All-Characters
-
-Display all the houses' characters.
-
-### Houses-Characters
-
-Display all the selected houses' characters.
-
-### Character-Detail
-
-Display the details of the selected character
-
 ## Last Update : V0.2
 
 - [x] Create a user environment
@@ -34,19 +14,14 @@ Display the details of the selected character
 
 ## New Update : V0.3
 
-- [ ] Create a classes and classesDetails environment
+- [x] Create a classes and classesDetails environment
 - [ ] Create a All Classes Page
     - [ ] Display all Classes by Tier
     - [ ] A Classe's Card must show : 
         - [ ] Picture
         - [ ] Name
-        - [ ] Proficient
-        - [ ] Suggested
 - [ ] Create a Classe's Details Page
     - [ ] Picture
     - [ ] Name
     - [ ] Tier
-    - [ ] Description
-    - [ ] Proficient
-    - [ ] Suggested
     - [ ] Stat's Graph

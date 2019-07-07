@@ -6,6 +6,10 @@ export const environment = {
   production: false,
 };
 
+/****************************************************************************************/
+/************************************** CHARACTERS **************************************/
+/****************************************************************************************/
+
 export const housesCharacters = {
   /**
    * Houses' Characters : 
@@ -235,6 +239,9 @@ export const charactersDetails = {
   }
 };
 
+/****************************************************************************************/
+/**************************************** CRESTS ****************************************/
+/****************************************************************************************/
 export const crests = [
   {
     name: "",
@@ -375,6 +382,537 @@ export const crests = [
     effect: ""
   }
 ];
+
+/****************************************************************************************/
+/*************************************** CLASSES ****************************************/
+/****************************************************************************************/
+
+export const classes = {
+  /**
+   * Tier 0 - Initial Classes : 
+   * - Commoner
+   * - Noble
+   */
+  initialClasses: [
+    { name: "Commoner" },
+    { name: "Noble" }
+  ],
+
+  /**
+   * Tier 1 - Beginer Classes : 
+   * - Myrmidon
+   * - Soldier
+   * - Fighter
+   * - Monk
+   */
+  beginnerClasses: [
+    { name: "Myrmidon" },
+    { name: "Soldier" },
+    { name: "Fighter" },
+    { name: "Monk" }
+  ],
+
+  /**
+   * Tier 2 - Intermediate Classes : 
+   * - Lord
+   * - Mercenary
+   * - Thief
+   * - Armored Knight
+   * - Cavalier
+   * - Brigand
+   * - Archer
+   * - Mage
+   * - Dark Mage
+   * - Priest
+   * - Pegasus Knight
+   */
+  intermediateClasses: [
+    { name: "Lord" },
+    { name: "Mercenary" },
+    { name: "Thief" },
+    { name: "Armored Knight" },
+    { name: "Cavalier" },
+    { name: "Brigand" },
+    { name: "Archer" },
+    { name: "Brawler" },
+    { name: "Mage" },
+    { name: "Dark Mage" },
+    { name: "Priest" },
+    { name: "Pegasus Knight" }
+  ],
+
+  /**
+   * Tier 3 - Advanced  Classes : 
+   * - Hero
+   * - Swordmaster
+   * - Assassin
+   * - Fortress
+   * - Paladin
+   * - Wyvern Rider
+   * - Warrior
+   * - Sniper
+   * - Grappler
+   * - Warlock
+   * - Dark Bishop
+   * - Bishop
+   */
+  advancedClasses: [
+    { name: "Hero" },
+    { name: "Swordmaster" },
+    { name: "Assassin" },
+    { name: "Fortress" },
+    { name: "Paladin" },
+    { name: "Wyvern Rider" },
+    { name: "Warrior" },
+    { name: "Brawler" },
+    { name: "Sniper" },
+    { name: "Grappler" },
+    { name: "Warlock" },
+    { name: "Dark Bishop" },
+    { name: "Bishop" },
+  ]
+
+}
+
+export const classesDetails = {
+
+  /**
+   * Tier 0 - Initial Classes
+   */
+  Commoner: {
+    name: "Commoner",
+    tier: "Initial",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    }
+  },
+  Noble: {
+    name: "Noble",
+    tier: "Initial",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    }
+  },
+
+
+  /**
+   * Tier 1 - Beginner Classes
+   */
+  Myrmidon: {
+    name: "Myrmidon",
+    tier: "Beginner",
+    stats: {
+      HP: 1,
+      STR: 2,
+      DEF: 2,
+      DEX: 1,
+      SPD: 3,
+      MAG: 1,
+      RES: 2,
+      MOV: 1
+    }
+  },
+  Soldier: {
+    name: "Soldier",
+    tier: "Beginner",
+    stats: {
+      HP: 1,
+      STR: 2,
+      DEF: 2,
+      DEX: 2,
+      SPD: 2,
+      MAG: 1,
+      RES: 2,
+      MOV: 1
+    }
+  },
+  Fighter: {
+    name: "Fighter",
+    tier: "Beginner",
+    stats: {
+      HP: 1,
+      STR: 3,
+      DEF: 2,
+      DEX: 1,
+      SPD: 2,
+      MAG: 1,
+      RES: 2,
+      MOV: 1
+    }
+  },
+  Monk: {
+    name: "Monk",
+    tier: "Beginner",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 2,
+      DEX: 1,
+      SPD: 2,
+      MAG: 2,
+      RES: 3,
+      MOV: 1
+    }
+  },
+
+  /**
+   * Tier 2 - Intermediate Classes
+   */
+  Lord: {
+    name: "Lord",
+    tier: "Intermediate",
+    stats: {
+      HP: 3,
+      STR: 2,
+      DEF: 2,
+      DEX: 3,
+      SPD: 3,
+      MAG: 2,
+      RES: 2,
+      MOV: 2
+    }
+  },
+  Mercenary: {
+    name: "Mercenary",
+    tier: "Intermediate",
+    stats: {
+      HP: 3,
+      STR: 3,
+      DEF: 2,
+      DEX: 2,
+      SPD: 3,
+      MAG: 2,
+      RES: 2,
+      MOV: 2
+    }
+  },
+  Thief: {
+    name: "Thief",
+    tier: "Intermediate",
+    stats: {
+      HP: 2,
+      STR: 2,
+      DEF: 2,
+      DEX: 3,
+      SPD: 4,
+      MAG: 2,
+      RES: 2,
+      MOV: 2
+    }
+  },
+  ArmorerdKnight: {
+    name: "Armored Knight",
+    tier: "Intermediate",
+    stats: {
+      HP: 4,
+      STR: 2,
+      DEF: 4,
+      DEX: 2,
+      SPD: 1,
+      MAG: 2,
+      RES: 1,
+      MOV: 1
+    }
+  },
+  Cavalier: {
+    name: "Cavalier",
+    tier: "Intermediate",
+    stats: {
+      HP: 3,
+      STR: 3,
+      DEF: 3,
+      DEX: 3,
+      SPD: 1,
+      MAG: 2,
+      RES: 3,
+      MOV: 4
+    }
+  },
+  Brigand: {
+    name: "Brigand",
+    tier: "Intermediate",
+    stats: {
+      HP: 4,
+      STR: 4,
+      DEF: 2,
+      DEX: 2,
+      SPD: 2,
+      MAG: 2,
+      RES: 2,
+      MOV: 2
+    }
+  },
+  Archer: {
+    name: "Archer",
+    tier: "Intermediate",
+    stats: {
+      HP: 2,
+      STR: 2,
+      DEF: 2,
+      DEX: 3,
+      SPD: 2,
+      MAG: 2,
+      RES: 2,
+      MOV: 2
+    }
+  },
+  Brawler: {
+    name: "Brawler",
+    tier: "Intermediate",
+    stats: {
+      HP: 3,
+      STR: 2,
+      DEF: 2,
+      DEX: 3,
+      SPD: 4,
+      MAG: 2,
+      RES: 1,
+      MOV: 2
+    }
+  },
+  Mage: {
+    name: "Mage",
+    tier: "Intermediate",
+    stats: {
+      HP: 2,
+      STR: 1,
+      DEF: 2,
+      DEX: 2,
+      SPD: 2,
+      MAG: 3,
+      RES: 4,
+      MOV: 1
+    }
+  },
+  DarkMage: {
+    name: "Dark Mage",
+    tier: "Intermediate",
+    stats: {
+      HP: 2,
+      STR: 1,
+      DEF: 2,
+      DEX: 2,
+      SPD: 2,
+      MAG: 4,
+      RES: 4,
+      MOV: 1
+    }
+  },
+  Priest: {
+    name: "Priest",
+    tier: "Intermediate",
+    stats: {
+      HP: 2,
+      STR: 1,
+      DEF: 2,
+      DEX: 2,
+      SPD: 2,
+      MAG: 2,
+      RES: 4,
+      MOV: 1
+    }
+  },
+  PegasusKnight: {
+    name: "Pegasus Knight",
+    tier: "Intermediate",
+    stats: {
+      HP: 2,
+      STR: 2,
+      DEF: 2,
+      DEX: 3,
+      SPD: 4,
+      MAG: 2,
+      RES: 4,
+      MOV: 3
+    }
+  },
+
+  /**
+   * Tier 3 - Advanced Classes
+   */
+  Hero: {
+    name: "Hero",
+    tier: "Advanced",
+    stats: {
+      HP: 4,
+      STR: 4,
+      DEF: 3,
+      DEX: 3,
+      SPD: 4,
+      MAG: 2,
+      RES: 3,
+      MOV: 2
+    }
+  },
+  Swordmaster: {
+    name: "Swordmaster",
+    tier: "Advanced",
+    stats: {
+      HP: 3,
+      STR: 4,
+      DEF: 3,
+      DEX: 3,
+      SPD: 5,
+      MAG: 2,
+      RES: 3,
+      MOV: 2
+    }
+  },
+  Assassin: {
+    name: "Assassin",
+    tier: "Advanced",
+    stats: {
+      HP: 2,
+      STR: 3,
+      DEF: 2,
+      DEX: 4,
+      SPD: 5,
+      MAG: 2,
+      RES: 3,
+      MOV: 3
+    }
+  },
+  Fortress: {
+    name: "Fortress",
+    tier: "Advanced",
+    stats: {
+      HP: 5,
+      STR: 3,
+      DEF: 5,
+      DEX: 3,
+      SPD: 1,
+      MAG: 2,
+      RES: 3,
+      MOV: 1
+    }
+  },
+  Paladin: {
+    name: "Paladin",
+    tier: "Advanced",
+    stats: {
+      HP: 4,
+      STR: 4,
+      DEF: 4,
+      DEX: 4,
+      SPD: 1,
+      MAG: 2,
+      RES: 4,
+      MOV: 5
+    }
+  },
+  WyvernRider: {
+    name: "Wyvern Rider",
+    tier: "Advanced",
+    stats: {
+      HP: 3,
+      STR: 5,
+      DEF: 4,
+      DEX: 3,
+      SPD: 4,
+      MAG: 2,
+      RES: 3,
+      MOV: 4
+    }
+  },
+  Warrior: {
+    name: "Warrior",
+    tier: "Advanced",
+    stats: {
+      HP: 4,
+      STR: 5,
+      DEF: 3,
+      DEX: 3,
+      SPD: 4,
+      MAG: 2,
+      RES: 3,
+      MOV: 2
+    }
+  },
+  Sniper: {
+    name: "Sniper",
+    tier: "Advanced",
+    stats: {
+      HP: 2,
+      STR: 3,
+      DEF: 2,
+      DEX: 5,
+      SPD: 3,
+      MAG: 2,
+      RES: 3,
+      MOV: 1
+    }
+  },
+  Grappler: {
+    name: "Grappler",
+    tier: "Advanced",
+    stats: {
+      HP: 4,
+      STR: 3,
+      DEF: 3,
+      DEX: 4,
+      SPD: 4,
+      MAG: 2,
+      RES: 2,
+      MOV: 3
+    }
+  },
+  Warlock: {
+    name: "Warlock",
+    tier: "Advanced",
+    stats: {
+      HP: 2,
+      STR: 2,
+      DEF: 2,
+      DEX: 3,
+      SPD: 4,
+      MAG: 5,
+      RES: 4,
+      MOV: 1
+    }
+  },
+  DarkBishop: {
+    name: "Dark Bishop",
+    tier: "Advanced",
+    stats: {
+      HP: 2,
+      STR: 2,
+      DEF: 2,
+      DEX: 4,
+      SPD: 3,
+      MAG: 5,
+      RES: 4,
+      MOV: 1
+    }
+  },
+  Bishop: {
+    name: "Bishop",
+    tier: "Advanced",
+    stats: {
+      HP: 3,
+      STR: 2,
+      DEF: 2,
+      DEX: 3,
+      SPD: 3,
+      MAG: 4,
+      RES: 5,
+      MOV: 1
+    }
+  }
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
