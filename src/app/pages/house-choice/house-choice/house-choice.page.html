@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start" *ngIf="statusParameter != 'begin'">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>House Choice</ion-title>
   </ion-toolbar>
 </ion-header>

@@ -1,4 +1,4 @@
-import { PopoverComponent } from './../component/popover/popover.component';
+import { PopoverComponent } from '../../../components/popover/popover.component';
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { PopoverController, Events } from '@ionic/angular';

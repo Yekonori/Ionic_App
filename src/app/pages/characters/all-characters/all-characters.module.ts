@@ -5,14 +5,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { StoriesPage } from './stories.page';
+import { AllCharactersPage } from './all-characters.page';
 
-import { PopoverComponent } from './../component/popover/popover.component';
+import { ComponentsModule } from './../../../components/components.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: StoriesPage
+    component: AllCharactersPage,
   }
 ];
 
@@ -21,14 +21,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ComponentsModule
   ],
-  entryComponents: [
-    PopoverComponent
-  ],
-  declarations: [
-    StoriesPage,
-    PopoverComponent
-  ]
+  declarations: [AllCharactersPage]
 })
-export class StoriesPageModule {}
+export class AllCharactersPageModule { }

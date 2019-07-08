@@ -15,13 +15,13 @@
 ## New Update : V0.3
 
 - [x] Create a classes and classesDetails environment
-- [ ] Create a All Classes Page
-    - [ ] Display all Classes by Tier
-    - [ ] A Classe's Card must show : 
-        - [ ] Picture
-        - [ ] Name
-- [ ] Create a Classe's Details Page
-    - [ ] Picture
-    - [ ] Name
-    - [ ] Tier
-    - [ ] Stat's Graph
+- [x] Create a All Classes Page
+    - [x] Display all Classes by Tier
+    - [x] A Classe's Card must show : 
+        - [x] Picture
+        - [x] Name
+- [x] Create a Classe's Details Page
+    - [x] Picture
+    - [x] Name
+    - [x] Tier
+    - [x] Stat's Graph

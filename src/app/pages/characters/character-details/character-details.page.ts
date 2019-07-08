@@ -41,7 +41,7 @@ export class CharacterDetailsPage implements OnInit {
    * Get the `characterName` parameter of the route in `characterParameter`
    * and attribute to `characterDetails` the value of charactersDetails[`characterParameter`]
    * 
-   * Call `getCharacterParameter()` function to get crest details
+   * Call `getCrestDetails()` function to get crest details
    */
   getCharacterParameter() {
     let characterParameter = this.activatedRoute.snapshot.paramMap.get("characterName");

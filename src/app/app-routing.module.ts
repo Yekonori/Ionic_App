@@ -9,19 +9,27 @@ const routes: Routes = [
   },
   {
     path: 'house-choice/:status',
-    loadChildren: './house-choice/house-choice/house-choice.module#HouseChoicePageModule'
+    loadChildren: './pages/house-choice/house-choice/house-choice.module#HouseChoicePageModule'
   },
   {
     path: 'stories',
-    loadChildren: './house-choice/stories/stories.module#StoriesPageModule'
+    loadChildren: './pages/house-choice/stories/stories.module#StoriesPageModule'
   },
   {
     path: 'all-characters',
-    loadChildren: './characters/all-characters/all-characters.module#AllCharactersPageModule'
+    loadChildren: './pages/characters/all-characters/all-characters.module#AllCharactersPageModule'
   },
   {
     path: 'character-details/:characterName',
-    loadChildren: './characters/character-details/character-details.module#CharacterDetailsPageModule'
+    loadChildren: './pages/characters/character-details/character-details.module#CharacterDetailsPageModule'
+  },
+  {
+    path: 'all-classes',
+    loadChildren: './pages/classes/all-classes/all-classes.module#AllClassesPageModule'
+  },
+  {
+    path: 'classe-details/:classeName',
+    loadChildren: './pages/classes/classe-details/classe-details.module#ClasseDetailsPageModule'
   },
 ];
 

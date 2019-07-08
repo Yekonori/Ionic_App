@@ -5,14 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AllCharactersPage } from './all-characters.page';
-
-import { ComponentCharactersModule } from './../component/component-characters.module';
+import { AllClassesPage } from './all-classes.page';
+import { ComponentsModule } from './../../../components/components.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: AllCharactersPage,
+    component: AllClassesPage
   }
 ];
 
@@ -22,10 +21,8 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    ComponentCharactersModule
+    ComponentsModule
   ],
-  declarations: [
-    AllCharactersPage
-  ]
+  declarations: [AllClassesPage]
 })
-export class AllCharactersPageModule { }
+export class AllClassesPageModule { }

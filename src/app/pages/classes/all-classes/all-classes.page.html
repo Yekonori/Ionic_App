@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>All Classes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col size="12">
+        <p>Initial Classes</p>
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col size="6" *ngFor="let initialClasse of initialClasses">
+        <app-class-card [classe]="initialClasse" [classeTier]="'initial'"></app-class-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row text-center>
+      <ion-col size="12">
+        <p>Beginner Classes</p>
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col size="6" *ngFor="let beginnerClasse of beginnerClasses">
+        <app-class-card [classe]="beginnerClasse" [classeTier]="'beginner'"></app-class-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row text-center>
+      <ion-col size="12">
+        <p>Intermediate Classes</p>
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col size="6" *ngFor="let intermediateClasse of intermediateClasses">
+        <app-class-card [classe]="intermediateClasse" [classeTier]="'intermediate'"></app-class-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row text-center>
+      <ion-col size="12">
+        <p>Advanced Classes</p>
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col size="6" *ngFor="let advancedClasse of advancedClasses">
+        <app-class-card [classe]="advancedClasse" [classeTier]="'Advanced'"></app-class-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

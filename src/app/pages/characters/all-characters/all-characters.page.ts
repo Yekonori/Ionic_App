@@ -18,9 +18,6 @@ export class AllCharactersPage implements OnInit {
    */
   studentsHouseCharacter: Array<any> = [];
   studentsHouseName: string = "";
-  blackEaglesCharacters: Array<any> = [];
-  blueLionsCharacters: Array<any> = [];
-  goldenDeerCharacters: Array<any> = [];
 
   constructor(
     private storage: Storage

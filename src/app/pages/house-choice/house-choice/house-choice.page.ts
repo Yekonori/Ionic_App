@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
-import { Events } from '@ionic/angular';
+import { Events, MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-house-choice',
@@ -30,7 +30,8 @@ export class HouseChoicePage implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private storage: Storage,
-    private events: Events
+    private events: Events,
+    private menuController: MenuController
   ) { }
 
   /**
@@ -45,21 +46,23 @@ export class HouseChoicePage implements OnInit {
   ngOnInit() {
     this.statusParameter = this.activatedRoute.snapshot.paramMap.get("status");
 
-    if (this.statusParameter === "edit") {
+    if (this.statusParameter === "begin") {
+      this.storage.get("currentStory").then(exist => {
+        if (exist) {
+          this.router.navigate(['/all-characters']);
+        }
+      });
+
+      this.storage.get("storyId").then(exist => {
+        if (!exist) {
+          this.storage.set("storyId", 0);
+        }
+      });
+
+      this.menuController.enable(false);
+    } else if (this.statusParameter === "edit") {
       this.editStory();
     }
-
-    this.storage.get("currentStory").then(exist => {
-      if (exist && this.statusParameter === "begin") {
-        this.router.navigate(['/all-characters']);
-      }
-    });
-
-    this.storage.get("storyId").then(exist => {
-      if (!exist) {
-        this.storage.set("storyId", 0);
-      }
-    });
 
     // this.storage.clear();
   }

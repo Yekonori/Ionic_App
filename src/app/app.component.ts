@@ -18,14 +18,19 @@ export class AppComponent {
    */
   public appPages = [
     {
+      title: 'Stories',
+      url: '/stories',
+      icon: 'bookmark'
+    },
+    {
       title: 'Characters',
       url: '/all-characters',
       icon: 'person'
     },
     {
-      title: 'Stories',
-      url: '/stories',
-      icon: 'bookmark'
+      title: 'Classes',
+      url: '/all-classes',
+      icon: 'ribbon'
     }
   ];
 
