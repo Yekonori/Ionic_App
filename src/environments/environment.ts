@@ -614,7 +614,7 @@ export const classesDetails = {
       MOV: 2
     }
   },
-  ArmorerdKnight: {
+  ArmoredKnight: {
     name: "Armored Knight",
     tier: "Intermediate",
     stats: {
