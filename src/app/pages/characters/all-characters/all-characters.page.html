@@ -12,7 +12,7 @@
 
     <ion-row text-center>
       <ion-col size="6" *ngFor="let studentHouseCharacter of studentsHouseCharacter">
-        <app-character-card [character]="studentHouseCharacter" [houseNameFile]=studentsHouseName></app-character-card>
+        <app-card [cardType]="'character'" [character]="studentHouseCharacter" [houseNameFile]=studentsHouseName></app-card>
       </ion-col>
     </ion-row>
 

@@ -1,7 +1,8 @@
-import { PopoverComponent } from '../../../components/popover/popover.component';
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { PopoverController, Events } from '@ionic/angular';
+
+import { PopoverStoriesComponent } from 'src/app/components/popover/popover-stories/popover-stories.component';
 
 @Component({
   selector: 'app-stories',
@@ -48,7 +49,7 @@ export class StoriesPage implements OnInit {
 
   async presentPopover(ev: any, story: Object) {
     const popover = await this.popoverController.create({
-      component: PopoverComponent,
+      component: PopoverStoriesComponent,
       componentProps: {
         story: story,
         currentStory: this.currentStory

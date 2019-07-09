@@ -10,6 +10,7 @@ import { Storage } from '@ionic/storage';
 })
 export class AllCharactersPage implements OnInit {
 
+  @Output() cardType = new EventEmitter<string>();
   @Output() character = new EventEmitter<Object>();
   @Output() houseFileName = new EventEmitter<string>();
 

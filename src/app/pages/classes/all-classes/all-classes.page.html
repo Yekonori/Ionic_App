@@ -17,7 +17,7 @@
     </ion-row>
     <ion-row text-center>
       <ion-col size="6" *ngFor="let initialClasse of initialClasses">
-        <app-class-card [classe]="initialClasse" [classeTier]="'initial'"></app-class-card>
+        <app-card [cardType]="'classe'" [classe]="initialClasse" [classeTier]="'initial'"></app-card>
       </ion-col>
     </ion-row>
 
@@ -28,7 +28,7 @@
     </ion-row>
     <ion-row text-center>
       <ion-col size="6" *ngFor="let beginnerClasse of beginnerClasses">
-        <app-class-card [classe]="beginnerClasse" [classeTier]="'beginner'"></app-class-card>
+        <app-card [cardType]="'classe'" [classe]="beginnerClasse" [classeTier]="'beginner'"></app-card>
       </ion-col>
     </ion-row>
 
@@ -39,7 +39,7 @@
     </ion-row>
     <ion-row text-center>
       <ion-col size="6" *ngFor="let intermediateClasse of intermediateClasses">
-        <app-class-card [classe]="intermediateClasse" [classeTier]="'intermediate'"></app-class-card>
+        <app-card [cardType]="'classe'" [classe]="intermediateClasse" [classeTier]="'intermediate'"></app-card>
       </ion-col>
     </ion-row>
 
@@ -50,7 +50,7 @@
     </ion-row>
     <ion-row text-center>
       <ion-col size="6" *ngFor="let advancedClasse of advancedClasses">
-        <app-class-card [classe]="advancedClasse" [classeTier]="'Advanced'"></app-class-card>
+        <app-card [cardType]="'classe'" [classe]="advancedClasse" [classeTier]="'Advanced'"></app-card>
       </ion-col>
     </ion-row>
   </ion-grid>

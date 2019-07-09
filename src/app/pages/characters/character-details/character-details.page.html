@@ -40,7 +40,29 @@
             <p>{{ characterDetails.crest }}</p>
           </ion-col>
         </ion-row>
+
+        <ion-row *ngIf="characterDetails.personalAbility" (click)="presentPopover($event)">
+          <ion-col>
+            <p>Personal Ability's Logo : </p>
+          </ion-col>
+          <ion-col>
+            <p>{{ characterDetails.personalAbility }}</p>
+          </ion-col>
+        </ion-row>
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="informations">
+      <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-label>Informations</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="classes">
+      <ion-icon name="person"></ion-icon>
+      <ion-label>Classes</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

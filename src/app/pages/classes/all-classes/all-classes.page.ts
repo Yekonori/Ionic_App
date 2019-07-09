@@ -8,6 +8,7 @@ import { classes } from 'src/environments/environment';
 })
 export class AllClassesPage implements OnInit {
 
+  @Output() cardType = new EventEmitter<string>();
   @Output() classe = new EventEmitter<Object>();
   @Output() classeTier = new EventEmitter<string>();
 

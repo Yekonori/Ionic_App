@@ -30,7 +30,7 @@ const routes: Routes = [
   {
     path: 'classe-details/:classeName',
     loadChildren: './pages/classes/classe-details/classe-details.module#ClasseDetailsPageModule'
-  },
+  }
 ];
 
 @NgModule({

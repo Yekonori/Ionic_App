@@ -4,12 +4,12 @@ import { Storage } from '@ionic/storage';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-popover',
-  templateUrl: './popover.component.html',
-  styleUrls: ['./popover.component.scss'],
+  selector: 'app-popover-stories',
+  templateUrl: './popover-stories.component.html',
+  styleUrls: ['./popover-stories.component.scss'],
 })
-export class PopoverComponent implements OnInit {
-
+export class PopoverStoriesComponent implements OnInit {
+  
   story;
   currentStory;
 

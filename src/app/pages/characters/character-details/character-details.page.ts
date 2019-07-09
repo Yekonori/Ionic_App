@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { charactersDetails, crests } from 'src/environments/environment';
+import { PopoverController } from '@ionic/angular';
+
+import { charactersDetails, crests, personalAbilities } from 'src/environments/environment';
+import { PopoverPersonalAbilityComponent } from 'src/app/components/popover/popover-personal-ability/popover-personal-ability.component';
 
 @Component({
   selector: 'app-character-details',
@@ -10,27 +13,23 @@ import { charactersDetails, crests } from 'src/environments/environment';
 export class CharacterDetailsPage implements OnInit {
 
   /**
-   * Chracter's Details Object
+   * Character's Details Object
    */
-  characterDetails = {
-    name: "",
-    fullName: "",
-    house: "",
-    crest: ""
-  };
+  characterDetails;
 
   /**
    * Crest's Details Object
    */
-  crest = {
-    name: "",
-    status: "",
-    owner: "",
-    effect: ""
-  }
+  crest;
+
+  /**
+   * Personal Ability's Details Object
+   */
+  personalAbility;
 
   constructor(
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private popoverController: PopoverController
   ) { }
 
   ngOnInit() {
@@ -42,19 +41,36 @@ export class CharacterDetailsPage implements OnInit {
    * and attribute to `characterDetails` the value of charactersDetails[`characterParameter`]
    * 
    * Call `getCrestDetails()` function to get crest details
+   * Call `getPersonalAbilityDetails()` function to get crest details
    */
   getCharacterParameter() {
     let characterParameter = this.activatedRoute.snapshot.paramMap.get("characterName");
 
     this.characterDetails = charactersDetails[characterParameter];
 
-    this.getCrestDetails();
+    this.getCrest();
+
+    this.getPersonalAbilityDetails();
   }
 
-  getCrestDetails() {
+  getCrest() {
     this.crest = crests.find(crest => crest.owner === this.characterDetails.name);
+  }
 
-    console.log(this.crest);
+  getPersonalAbilityDetails() {
+    this.personalAbility = personalAbilities[this.characterDetails.personalAbility.replace(/\ |\'/g, '')];
+  }
+
+  async presentPopover(ev: any, story: Object) {
+    const popover = await this.popoverController.create({
+      component: PopoverPersonalAbilityComponent,
+      componentProps: {
+        personalAbility: this.personalAbility
+      },
+      event: ev
+    });
+
+    return await popover.present();
   }
 
 }

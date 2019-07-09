@@ -55,6 +55,7 @@ export const commonCharacters = [
 ];
 
 export const charactersDetails = {
+
   /**
    * Black Eagles Details :
    * 
@@ -71,49 +72,57 @@ export const charactersDetails = {
     name: "Edelgard",
     fullName: "Edelgard von Hresvelg",
     house: "Black Eagles",
-    crest: "Seiros"
+    crest: "Seiros",
+    personalAbility: "Imperial Bloodline"
   },
   Hubert: {
     name: "Hubert",
     fullName: "Hubert von Bestla",
     house: "Black Eagles",
-    crest: ""
+    crest: "",
+    personalAbility: "Strategist"
   },
-  Bernadetta: {
+  Paranoia: {
     name: "Bernadetta",
     fullName: "Bernadetta von Varley",
     house: "Black Eagles",
-    crest: "Indech"
+    crest: "Indech",
+    personalAbility: "Paranoia"
   },
   Linhardt: {
     name: "Linhardt",
     fullName: "Linhardt von Hevring",
     house: "Black Eagles",
-    crest: "Cethlenn"
+    crest: "Cethlenn",
+    personalAbility: "Doze Off"
   },
   Ferdinand: {
     name: "Ferdinand",
     fullName: "Ferdinand von Aegir",
     house: "Black Eagles",
-    crest: "Cichol"
+    crest: "Cichol",
+    personalAbility: "Confidence"
   },
   Dorothea: {
     name: "Dorothea",
     fullName: "Dorothea Arnold",
     house: "Black Eagles",
-    crest: ""
+    crest: "",
+    personalAbility: "Songstress"
   },
   Caspar: {
     name: "Caspar",
     fullName: "Caspar von Bergliez",
     house: "Black Eagles",
-    crest: ""
+    crest: "",
+    personalAbility: "Quarreler"
   },
   Petra: {
     name: "Petra",
     fullName: "Petra McNairy",
     house: "Black Eagles",
-    crest: ""
+    crest: "",
+    personalAbility: "Hunter's Law"
   },
 
   /**
@@ -132,49 +141,57 @@ export const charactersDetails = {
     name: "Dimitri",
     fullName: "Dimitri Alexandre Blaiddyd",
     house: "Blue Lions",
-    crest: "Blaiddyd"
+    crest: "Blaiddyd",
+    personalAbility: "Royal Bloodline"
   },
   Dedue: {
     name: "Dedue",
     fullName: "Dedue Molinaro",
     house: "Blue Lions",
-    crest: ""
+    crest: "",
+    personalAbility: "Liege's Shield"
   },
   Annette: {
     name: "Annette",
     fullName: "Annette Fantine Dominique",
     house: "Blue Lions",
-    crest: "Dominique"
+    crest: "Dominique",
+    personalAbility: "Hard Worker"
   },
   Ashe: {
     name: "Ashe",
     fullName: "Ashe Duran",
     house: "Blue Lions",
-    crest: ""
+    crest: "",
+    personalAbility: "Wisdom to Live"
   },
   Felix: {
     name: "Felix",
     fullName: "Felix Hugo Fraldarius",
     house: "Blue Lions",
-    crest: "Fraldarius"
+    crest: "Fraldarius",
+    personalAbility: "Solitary Wolf"
   },
   Mercedes: {
     name: "Mercedes",
     fullName: "Mercedes von Marltritz",
     house: "Blue Lions",
-    crest: "Lamine"
+    crest: "Lamine",
+    personalAbility: "Live to Serve"
   },
   Sylvain: {
     name: "Sylvain",
     fullName: "Sylvain Jose Gautier",
     house: "Blue Lions",
-    crest: "Gautier"
+    crest: "Gautier",
+    personalAbility: "Ladies' Man"
   },
   Ingrid: {
     name: "Ingrid",
     fullName: "Ingrid Brandol Galatea",
     house: "Blue Lions",
-    crest: "Daphnel"
+    crest: "Daphnel",
+    personalAbility: "Lady Knight"
   },
 
   /**
@@ -193,49 +210,57 @@ export const charactersDetails = {
     name: "Claude",
     fullName: "Claude von Riegan",
     house: "Golden Deer",
-    crest: "Riegan"
+    crest: "Riegan",
+    personalAbility: "Alliance Bloodline"
   },
   Lorenz: {
     name: "Lorenz",
     fullName: "Lorenz Hermann Gloucester",
     house: "Golden Deer",
-    crest: "Gloucester"
+    crest: "Gloucester",
+    personalAbility: "Prestigious Noble"
   },
   Hilda: {
     name: "Hilda",
     fullName: "Hilda Valentin Goneril",
     house: "Golden Deer",
-    crest: "Goneril"
+    crest: "Goneril",
+    personalAbility: "Plead"
   },
   Marianne: {
     name: "Marianne",
     fullName: "Marianne von Edmund",
     house: "Golden Deer",
-    crest: ""
+    crest: "",
+    personalAbility: "Animal Lover"
   },
   Ignatz: {
     name: "Ignatz",
     fullName: "Ignatz Victor",
     house: "Golden Deer",
-    crest: ""
+    crest: "",
+    personalAbility: "Keen Observation"
   },
   Lysithea: {
     name: "Lysithea",
     fullName: "Lysithea von Cordelia",
     house: "Golden Deer",
-    crest: "Charon"
+    crest: "Charon",
+    personalAbility: "Prodigy"
   },
   Leonie: {
     name: "Leonie",
     fullName: "Leonie Pinelli",
     house: "Golden Deer",
-    crest: ""
+    crest: "",
+    personalAbility: "Hates to Lose"
   },
   Raphael: {
     name: "Raphael",
     fullName: "Raphael Kirsten",
     house: "Golden Deer",
-    crest: ""
+    crest: "",
+    personalAbility: "Scavenge"
   }
 };
 
@@ -382,6 +407,118 @@ export const crests = [
     effect: ""
   }
 ];
+
+/****************************************************************************************/
+/********************************** PERSONAL ABILITIES **********************************/
+/****************************************************************************************/
+export const personalAbilities = {
+
+  /**
+   * Personal Abilities
+   */
+  TeachersGuidance: {
+    name: "Teacher's Guidance",
+    effect: "Boosts user and adjacent ally's experience gain by 1.2"
+  },
+
+  ImperialBloodline: {
+    name: "Imperial Bloodline",
+    effect: "Boosts user's experience gain by 1.2"
+  },
+  RoyalBloodline: {
+    name: "Royal Bloodline",
+    effect: "Boosts user's experience gain by 1.2"
+  },
+  AllianceBloodline: {
+    name: "Alliance Bloodline",
+    effect: "Boosts user's experience gain by 1.2"
+  },
+
+  Strategist: {
+    name: "Strategist",
+    effect: "Boosts Gambit Might by 5"
+  },
+  Songstress: {
+    name: "Songstress",
+    effect: "At the start of each turn, restores adjacent allies' HP by 10%"
+  },
+  LiegesShield: {
+    name: "	Liege's Shield",
+    effect: "If user waits without acting, Defence +4 for one turn"
+  },
+  SolitaryWolf	: {
+    name: "Solitary Wolf	",
+    effect: "When a battalion is not deployed or when battalion health is zero, damage dealt +5"
+  },
+  PrestigiousNoble: {
+    name: "Prestigious Noble",
+    effect: "When a battalion is deployed, damage dealt +2"
+  },
+  Plead: {
+    name: "Plead",
+    effect: "When an adjacent male ally enters battle, ally's damage dealt +3"
+  },
+  Confidence: {
+    name: "Confidence",
+    effect: "Hit rate and Avoid +15 when user's HP is full"
+  },
+  LivetoServe: {
+    name: "Live to Serve",
+    effect: ""
+  },
+  Scavenge: {
+    name: "Scavenge",
+    effect: "User has a Luck% chance to restore 10% HP at the start of each turn"
+  },
+  Paranoia: {
+    name: "Paranoia",
+    effect: "If user's HP isn't full, Attack +5"
+  },
+  WisdomtoLive: {
+    name: "Wisdom to Live",
+    effect: "User can open doors and chests without keys"
+  },
+  Prodigy: {
+    name: "Prodigy",
+    effect: "Experience points towards skill levels earned during battles is doubled"
+  },
+  Quarreler: {
+    name: "Quarreler",
+    effect: "Adjacent foes receive Avoid -10 during combat"
+  },
+  HardWorker: {
+    name: "Hard Worker",
+    effect: "When Rally command is used on ally, grants Strength +4 to target"
+  },
+  KeenObservation: {
+    name: "Keen Observation",
+    effect: "Hit rate +20"
+  },
+  HuntersLaw: {
+    name: "Hunter's Law",
+    effect: "When foe has less than 50% HP, Critical rate +20"
+  },
+  LadiesMan: {
+    name: "Ladies' Man",
+    effect: "When adjacent to a female ally, damage dealt to foe +2, damage received from foe -2"
+  },
+  AnimalLover: {
+    name: "Animal Lover",
+    effect: "When adjacent to a horseback or flying ally, restores 20% HP at the start of the turn"
+  },
+  DozeOff: {
+    name: "Doze Off",
+    effect: "If unit waits without acting, restores 10% HP"
+  },
+  LadyKnight: {
+    name: "Lady Knight",
+    effect: "When using a Gambit, Might +3 and Hit Rate +5"
+  },
+  HatestoLose: {
+    name: "Hates to Lose",
+    effect: "When adjacent to a male ally, damage dealt to foe +2, damage received from foe -2"
+  }
+}
 
 /****************************************************************************************/
 /*************************************** CLASSES ****************************************/

@@ -4,8 +4,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
-import { CharacterCardComponent } from './character-card/character-card.component';
-import { ClassCardComponent } from './class-card/class-card.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
     imports: [
@@ -14,12 +13,10 @@ import { ClassCardComponent } from './class-card/class-card.component';
         RouterModule
     ],
     declarations: [
-        CharacterCardComponent,
-        ClassCardComponent
+        CardComponent
     ],
     exports: [
-        CharacterCardComponent,
-        ClassCardComponent
+        CardComponent
     ]
 })
 export class ComponentsModule { }
