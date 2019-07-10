@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PopoverController } from '@ionic/angular';
+import { IonTabs } from '@ionic/angular';
 
 import { charactersDetails } from 'src/environments/environment';
 
@@ -11,6 +11,8 @@ import { charactersDetails } from 'src/environments/environment';
 })
 export class CharacterDetailsPage implements OnInit {
 
+  @ViewChild("characterTabs") characterTab: IonTabs;
+
   characterDetails;
 
   constructor(
@@ -19,6 +21,10 @@ export class CharacterDetailsPage implements OnInit {
 
   ngOnInit() {
     this.getCharacterParameter();
+  }
+
+  ionViewWillEnter(){
+    this.characterTab.select("informations");
   }
 
   /**

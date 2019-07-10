@@ -73,56 +73,96 @@ export const charactersDetails = {
     fullName: "Edelgard von Hresvelg",
     house: "Black Eagles",
     crest: "Seiros",
-    personalAbility: "Imperial Bloodline"
+    personalAbility: "Imperial Bloodline",
+    restrictions: {
+      isLord: true,
+      isMan: false,
+      isWoman: true
+    }
   },
   Hubert: {
     name: "Hubert",
     fullName: "Hubert von Bestla",
     house: "Black Eagles",
     crest: "",
-    personalAbility: "Strategist"
+    personalAbility: "Strategist",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   },
   Bernadetta: {
     name: "Bernadetta",
     fullName: "Bernadetta von Varley",
     house: "Black Eagles",
     crest: "Indech",
-    personalAbility: "Paranoia"
+    personalAbility: "Paranoia",
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: true
+    }
   },
   Linhardt: {
     name: "Linhardt",
     fullName: "Linhardt von Hevring",
     house: "Black Eagles",
     crest: "Cethlenn",
-    personalAbility: "Doze Off"
+    personalAbility: "Doze Off",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   },
   Ferdinand: {
     name: "Ferdinand",
     fullName: "Ferdinand von Aegir",
     house: "Black Eagles",
     crest: "Cichol",
-    personalAbility: "Confidence"
+    personalAbility: "Confidence",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   },
   Dorothea: {
     name: "Dorothea",
     fullName: "Dorothea Arnold",
     house: "Black Eagles",
     crest: "",
-    personalAbility: "Songstress"
+    personalAbility: "Songstress",
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: true
+    }
   },
   Caspar: {
     name: "Caspar",
     fullName: "Caspar von Bergliez",
     house: "Black Eagles",
     crest: "",
-    personalAbility: "Quarreler"
+    personalAbility: "Quarreler",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   },
   Petra: {
     name: "Petra",
     fullName: "Petra McNairy",
     house: "Black Eagles",
     crest: "",
-    personalAbility: "Hunter's Law"
+    personalAbility: "Hunter's Law",
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: true
+    }
   },
 
   /**
@@ -142,56 +182,96 @@ export const charactersDetails = {
     fullName: "Dimitri Alexandre Blaiddyd",
     house: "Blue Lions",
     crest: "Blaiddyd",
-    personalAbility: "Royal Bloodline"
+    personalAbility: "Royal Bloodline",
+    restrictions: {
+      isLord: true,
+      isMan: true,
+      isWoman: false
+    }
   },
   Dedue: {
     name: "Dedue",
     fullName: "Dedue Molinaro",
     house: "Blue Lions",
     crest: "",
-    personalAbility: "Liege's Shield"
+    personalAbility: "Liege's Shield",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   },
   Annette: {
     name: "Annette",
     fullName: "Annette Fantine Dominique",
     house: "Blue Lions",
     crest: "Dominique",
-    personalAbility: "Hard Worker"
+    personalAbility: "Hard Worker",
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: false
+    }
   },
   Ashe: {
     name: "Ashe",
     fullName: "Ashe Duran",
     house: "Blue Lions",
     crest: "",
-    personalAbility: "Wisdom to Live"
+    personalAbility: "Wisdom to Live",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   },
   Felix: {
     name: "Felix",
     fullName: "Felix Hugo Fraldarius",
     house: "Blue Lions",
     crest: "Fraldarius",
-    personalAbility: "Solitary Wolf"
+    personalAbility: "Solitary Wolf",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   },
   Mercedes: {
     name: "Mercedes",
     fullName: "Mercedes von Marltritz",
     house: "Blue Lions",
     crest: "Lamine",
-    personalAbility: "Live to Serve"
+    personalAbility: "Live to Serve",
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: true
+    }
   },
   Sylvain: {
     name: "Sylvain",
     fullName: "Sylvain Jose Gautier",
     house: "Blue Lions",
     crest: "Gautier",
-    personalAbility: "Ladies' Man"
+    personalAbility: "Ladies' Man",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   },
   Ingrid: {
     name: "Ingrid",
     fullName: "Ingrid Brandol Galatea",
     house: "Blue Lions",
     crest: "Daphnel",
-    personalAbility: "Lady Knight"
+    personalAbility: "Lady Knight",
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: true
+    }
   },
 
   /**
@@ -211,56 +291,96 @@ export const charactersDetails = {
     fullName: "Claude von Riegan",
     house: "Golden Deer",
     crest: "Riegan",
-    personalAbility: "Alliance Bloodline"
+    personalAbility: "Alliance Bloodline",
+    restrictions: {
+      isLord: true,
+      isMan: true,
+      isWoman: false
+    }
   },
   Lorenz: {
     name: "Lorenz",
     fullName: "Lorenz Hermann Gloucester",
     house: "Golden Deer",
     crest: "Gloucester",
-    personalAbility: "Prestigious Noble"
+    personalAbility: "Prestigious Noble",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   },
   Hilda: {
     name: "Hilda",
     fullName: "Hilda Valentin Goneril",
     house: "Golden Deer",
     crest: "Goneril",
-    personalAbility: "Plead"
+    personalAbility: "Plead",
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: true
+    }
   },
   Marianne: {
     name: "Marianne",
     fullName: "Marianne von Edmund",
     house: "Golden Deer",
     crest: "",
-    personalAbility: "Animal Lover"
+    personalAbility: "Animal Lover",
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: true
+    }
   },
   Ignatz: {
     name: "Ignatz",
     fullName: "Ignatz Victor",
     house: "Golden Deer",
     crest: "",
-    personalAbility: "Keen Observation"
+    personalAbility: "Keen Observation",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   },
   Lysithea: {
     name: "Lysithea",
     fullName: "Lysithea von Cordelia",
     house: "Golden Deer",
     crest: "Charon",
-    personalAbility: "Prodigy"
+    personalAbility: "Prodigy",
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: true
+    }
   },
   Leonie: {
     name: "Leonie",
     fullName: "Leonie Pinelli",
     house: "Golden Deer",
     crest: "",
-    personalAbility: "Hates to Lose"
+    personalAbility: "Hates to Lose",
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: true
+    }
   },
   Raphael: {
     name: "Raphael",
     fullName: "Raphael Kirsten",
     house: "Golden Deer",
     crest: "",
-    personalAbility: "Scavenge"
+    personalAbility: "Scavenge",
+    restrictions: {
+      isLord: false,
+      isMan: true,
+      isWoman: false
+    }
   }
 };
 
@@ -628,6 +748,12 @@ export const classesDetails = {
       MAG: 1,
       RES: 1,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Noble: {
@@ -642,6 +768,12 @@ export const classesDetails = {
       MAG: 1,
       RES: 1,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
 
@@ -661,6 +793,12 @@ export const classesDetails = {
       MAG: 1,
       RES: 2,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Soldier: {
@@ -675,6 +813,12 @@ export const classesDetails = {
       MAG: 1,
       RES: 2,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Fighter: {
@@ -689,6 +833,12 @@ export const classesDetails = {
       MAG: 1,
       RES: 2,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Monk: {
@@ -703,6 +853,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 3,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
 
@@ -721,6 +877,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 2,
       MOV: 2
+    },
+    restrictions: {
+      isLordOnly: true,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: false
     }
   },
   Mercenary: {
@@ -735,6 +897,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 2,
       MOV: 2
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Thief: {
@@ -749,6 +917,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 2,
       MOV: 2
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   ArmoredKnight: {
@@ -763,6 +937,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 1,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Cavalier: {
@@ -777,6 +957,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 3,
       MOV: 4
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Brigand: {
@@ -791,6 +977,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 2,
       MOV: 2
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Archer: {
@@ -805,6 +997,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 2,
       MOV: 2
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Brawler: {
@@ -819,6 +1017,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 1,
       MOV: 2
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: true,
+      isWomanOnly: false,
+      noRestricted: false
     }
   },
   Mage: {
@@ -833,6 +1037,12 @@ export const classesDetails = {
       MAG: 3,
       RES: 4,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   DarkMage: {
@@ -847,6 +1057,12 @@ export const classesDetails = {
       MAG: 4,
       RES: 4,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: true,
+      isWomanOnly: false,
+      noRestricted: false
     }
   },
   Priest: {
@@ -861,6 +1077,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 4,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   PegasusKnight: {
@@ -875,6 +1097,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 4,
       MOV: 3
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: true,
+      noRestricted: false
     }
   },
 
@@ -893,6 +1121,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 3,
       MOV: 2
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: true,
+      isWomanOnly: false,
+      noRestricted: false
     }
   },
   Swordmaster: {
@@ -907,6 +1141,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 3,
       MOV: 2
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Assassin: {
@@ -921,6 +1161,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 3,
       MOV: 3
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Fortress: {
@@ -935,6 +1181,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 3,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Paladin: {
@@ -949,6 +1201,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 4,
       MOV: 5
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   WyvernRider: {
@@ -963,6 +1221,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 3,
       MOV: 4
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Warrior: {
@@ -977,6 +1241,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 3,
       MOV: 2
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Sniper: {
@@ -991,6 +1261,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 3,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   Grappler: {
@@ -1005,6 +1281,12 @@ export const classesDetails = {
       MAG: 2,
       RES: 2,
       MOV: 3
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: true,
+      isWomanOnly: false,
+      noRestricted: false
     }
   },
   Warlock: {
@@ -1019,6 +1301,12 @@ export const classesDetails = {
       MAG: 5,
       RES: 4,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   },
   DarkBishop: {
@@ -1033,6 +1321,12 @@ export const classesDetails = {
       MAG: 5,
       RES: 4,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: true,
+      isWomanOnly: false,
+      noRestricted: false
     }
   },
   Bishop: {
@@ -1047,6 +1341,12 @@ export const classesDetails = {
       MAG: 4,
       RES: 5,
       MOV: 1
+    },
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      noRestricted: true
     }
   }
 }

@@ -15,11 +15,11 @@ const routes: Routes = [
     children: [
       {
         path: 'informations',
-        loadChildren: './pages/characters/character-details/character-informations/character-informations.module#CharacterInformationsPageModule'
+        loadChildren: './character-informations/character-informations.module#CharacterInformationsPageModule'
       },
       {
         path: 'classes',
-        loadChildren: './pages/characters/character-details/character-classes/character-classes.module#CharacterClassesPageModule'
+        loadChildren: './character-classes/character-classes.module#CharacterClassesPageModule'
       }
     ]
   }
