@@ -82,7 +82,7 @@ export const charactersDetails = {
     crest: "",
     personalAbility: "Strategist"
   },
-  Paranoia: {
+  Bernadetta: {
     name: "Bernadetta",
     fullName: "Bernadetta von Varley",
     house: "Black Eagles",

@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PopoverController } from '@ionic/angular';
 
-import { charactersDetails, crests, personalAbilities } from 'src/environments/environment';
-import { PopoverPersonalAbilityComponent } from 'src/app/components/popover/popover-personal-ability/popover-personal-ability.component';
+import { charactersDetails } from 'src/environments/environment';
 
 @Component({
   selector: 'app-character-details',
@@ -12,24 +11,10 @@ import { PopoverPersonalAbilityComponent } from 'src/app/components/popover/popo
 })
 export class CharacterDetailsPage implements OnInit {
 
-  /**
-   * Character's Details Object
-   */
   characterDetails;
 
-  /**
-   * Crest's Details Object
-   */
-  crest;
-
-  /**
-   * Personal Ability's Details Object
-   */
-  personalAbility;
-
   constructor(
-    private activatedRoute: ActivatedRoute,
-    private popoverController: PopoverController
+    private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit() {
@@ -47,30 +32,6 @@ export class CharacterDetailsPage implements OnInit {
     let characterParameter = this.activatedRoute.snapshot.paramMap.get("characterName");
 
     this.characterDetails = charactersDetails[characterParameter];
-
-    this.getCrest();
-
-    this.getPersonalAbilityDetails();
-  }
-
-  getCrest() {
-    this.crest = crests.find(crest => crest.owner === this.characterDetails.name);
-  }
-
-  getPersonalAbilityDetails() {
-    this.personalAbility = personalAbilities[this.characterDetails.personalAbility.replace(/\ |\'/g, '')];
-  }
-
-  async presentPopover(ev: any, story: Object) {
-    const popover = await this.popoverController.create({
-      component: PopoverPersonalAbilityComponent,
-      componentProps: {
-        personalAbility: this.personalAbility
-      },
-      event: ev
-    });
-
-    return await popover.present();
   }
 
 }

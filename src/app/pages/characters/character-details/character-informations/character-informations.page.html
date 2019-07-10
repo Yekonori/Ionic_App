@@ -1,0 +1,46 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <img
+          src="/assets/images/Characters_Faces/{{ characterDetails.house.replace(' ', '_') }}/{{ characterDetails.name }}_Face.jpg"
+          alt="{{ characterDetails.name }}" title="{{ characterDetails.name }}">
+      </ion-col>
+
+      <ion-col size="8" align-self-start>
+        <ion-row>
+          <ion-col>
+            <p>{{ characterDetails.name }}</p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="characterDetails.house">
+          <ion-col>
+            <p>House Logo : </p>
+          </ion-col>
+          <ion-col>
+            <p>{{ characterDetails.house }}</p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="characterDetails.crest">
+          <ion-col>
+            <p>Crest Logo : </p>
+          </ion-col>
+          <ion-col>
+            <p>{{ characterDetails.crest }}</p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="characterDetails.personalAbility" (click)="presentPopover($event)">
+          <ion-col>
+            <p>Personal Ability's Logo : </p>
+          </ion-col>
+          <ion-col>
+            <p>{{ characterDetails.personalAbility }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
