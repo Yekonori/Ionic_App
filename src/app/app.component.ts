@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Platform } from '@ionic/angular';
+import { Platform, MenuController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
@@ -36,6 +36,7 @@ export class AppComponent {
 
   constructor(
     private platform: Platform,
+    private menuCtrl: MenuController,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
     private screenOrientation: ScreenOrientation
@@ -47,6 +48,7 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.menuCtrl.enable(true);
     });
 
     if (this.platform.is('cordova')) {

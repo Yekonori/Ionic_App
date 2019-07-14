@@ -48,7 +48,7 @@ export class HouseChoicePage implements OnInit {
     private router: Router,
     private storage: Storage,
     private events: Events,
-    private menuController: MenuController
+    private menuCtrl: MenuController
   ) {
     window.addEventListener('keyboardWillShow', () => {
       this.keyboardOpen = true;
@@ -63,6 +63,10 @@ export class HouseChoicePage implements OnInit {
     this.getStatusParam();
 
     // this.storage.clear();
+  }
+
+  ionViewWillEnter(){
+   this.menuCtrl.enable(false);
   }
 
   /**
@@ -95,8 +99,6 @@ export class HouseChoicePage implements OnInit {
           this.storage.set("stories", []);
         }
       });
-
-      this.menuController.enable(false);
     } else if (this.statusParameter === "edit") {
       this.editStory();
     }
@@ -154,7 +156,7 @@ export class HouseChoicePage implements OnInit {
     this.slides.getActiveIndex().then(index => {
       switch (index) {
         case 0:
-          this.storyObject.house = 'blackEalges';
+          this.storyObject.house = 'blackEagles';
           break;
         case 1:
           this.storyObject.house = 'blueLions';
@@ -190,7 +192,8 @@ export class HouseChoicePage implements OnInit {
 
       storiesLocal.push(this.storyObject);
 
-      this.storage.set("stories", storiesLocal).then(() => {
+      this.storage.set("stories", storiesLocal).then(actualizeStories => {
+        this.events.publish("stories", actualizeStories);
         this.setCurrentStory();
       });
     });
