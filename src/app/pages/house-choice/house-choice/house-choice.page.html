@@ -3,52 +3,89 @@
     <ion-buttons slot="start" *ngIf="statusParameter != 'begin'">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>House Choice</ion-title>
+    <ion-title>{{ headerContent }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-grid>
 
+    <!-- Configuration/Story's Name -->
     <ion-row>
       <ion-col>
-        <form action="#" method="POST" (change)="setStoryName()">
-          <ion-input placeholder="Choose the Story Name" [(ngModel)]="storyObject.name" name="storyObject.name">
-          </ion-input>
-        </form>
+        <div class="group">
+          <input type="text" class="basicInput" value="storyObject.name" [(ngModel)]="storyObject.name"
+            [ngModelOptions]="{standalone: true}" (input)="setStoryName()" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Configuration/Story's Name</label>
+        </div>
       </ion-col>
     </ion-row>
 
+    <!-- Byleth Informations -->
+    <ion-row class="bylethRow">
+      <ion-col size="12">
+        <ion-row text-center>
+          <ion-col size="6">
+            <img src="https://via.placeholder.com/150" alt="Byleth M" title="Byleth M" (click)="setBylethSex('Male')"
+              [ngClass]="storyObject.byleth.sex === 'Male' ? 'selectedElement' : ''">
+          </ion-col>
+          <ion-col size="6">
+            <img src="https://via.placeholder.com/150" alt="Byleth F" title="Byleth F" (click)="setBylethSex('Female')"
+              [ngClass]="storyObject.byleth.sex === 'Female' ? 'selectedElement' : ''">
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="12" class="bylethNameCol">
+        <div class="group">
+          <input type="text" class="basicInput" value="storyObject.byleth.name" [(ngModel)]="storyObject.byleth.name"
+            [ngModelOptions]="{standalone: true}" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Byleth's Name</label>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- House Choice -->
     <ion-row>
-      <ion-col (click)="setStoryHouse('blackEagles')">
-        <p>Black Eagles</p>
-      </ion-col>
-      <ion-col (click)="setStoryHouse('blueLions')">
-        <p>Blue Lions</p>
-      </ion-col>
-      <ion-col (click)="setStoryHouse('goldenDeer')">
-        <p>Golden Deer</p>
-      </ion-col>
+      <ion-slides pager="true" [options]=slideOpts (ionSlideDidChange)="setStoryHouse()" #houseSlides>
+        <ion-slide>
+          <div>
+            <img src="https://via.placeholder.com/150" alt="Black Eagles" title="Black Eagles">
+            <p>Black Eagles</p>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div>
+            <img src="https://via.placeholder.com/150" alt="Blue Lions" title="Blue Lions">
+            <p>Blue Lions</p>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div>
+            <img src="https://via.placeholder.com/150" alt="Golden Deer" title="Golden Deer">
+            <p>Golden Deer</p>
+          </div>
+        </ion-slide>
+      </ion-slides>
     </ion-row>
-
-    <ion-row *ngIf="statusParameter === 'edit'; else noEdit">
-      <ion-col>
-        <ion-button *ngIf="storyObject.name != ''" expand="full" (click)="applyEdit()">Edit the Story</ion-button>
-      </ion-col>
-    </ion-row>
-
-    <ng-template #noEdit>
-      <ion-row>
-        <ion-col>
-          <ion-button *ngIf="confirmStoryName && confirmHouse; else disabledButton" expand="full"
-            (click)="setStoryId()">
-            Create the Story</ion-button>
-          <ng-template #disabledButton>
-            <ion-button expand="full" disabled>Create the Story</ion-button>
-          </ng-template>
-        </ion-col>
-      </ion-row>
-    </ng-template>
 
   </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="end" [ngClass]="keyboardOpen ? 'keyboardOpen' : ''" slot="fixed" *ngIf="statusParameter === 'edit'; else noEdit">
+    <ion-fab-button class="fabButton" (click)="applyEdit()">
+      <ion-icon name="save"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ng-template #noEdit>
+    <ion-fab vertical="bottom" horizontal="end" [ngClass]="keyboardOpen ? 'keyboardOpen' : ''">
+      <ion-fab-button [ngClass]="confirmStoryName ? 'fabButton' : 'disableFabButton'"
+        [attr.disabled.bool]="!confirmStoryName" (click)="setStoryId()">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ng-template>
 </ion-content>

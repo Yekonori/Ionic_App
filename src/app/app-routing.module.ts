@@ -4,8 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    // redirectTo: 'house-choice/begin',
-    redirectTo: 'character-details/Edelgard',
+    redirectTo: 'house-choice/begin',
     pathMatch: 'full'
   },
   {

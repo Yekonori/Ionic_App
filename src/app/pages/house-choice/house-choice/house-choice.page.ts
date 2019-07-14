@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
-import { Events, MenuController } from '@ionic/angular';
+import { Events, MenuController, IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-house-choice',
@@ -9,22 +9,39 @@ import { Events, MenuController } from '@ionic/angular';
   styleUrls: ['./house-choice.page.scss'],
 })
 export class HouseChoicePage implements OnInit {
+  @ViewChild('houseSlides') slides: IonSlides;
 
   /**
-   * StoryObject Model :
-   * - Name
-   * - House
+   * Slider Options
+   */
+  slideOpts = {
+    centeredSlides: true,
+    centerInsufficientSlides: true,
+    slideActiveClass: "selectedSlide"
+  }
+
+  /**
+   * The keyboard is open ?
+   */
+  keyboardOpen = false;
+
+  /**
+   * StoryObject :
    */
   storyObject = {
     id: "",
     name: "",
-    house: ""
-  }
+    house: "blackEagles",
+    byleth: {
+      sex: "",
+      name: ""
+    }
+  };
 
   confirmStoryName = false;
-  confirmHouse = false;
 
   statusParameter = "";
+  headerContent = "";
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -32,7 +49,21 @@ export class HouseChoicePage implements OnInit {
     private storage: Storage,
     private events: Events,
     private menuController: MenuController
-  ) { }
+  ) {
+    window.addEventListener('keyboardWillShow', () => {
+      this.keyboardOpen = true;
+    });
+
+    window.addEventListener('keyboardWillHide', () => {
+      this.keyboardOpen = false;
+    });
+  }
+
+  ngOnInit() {
+    this.getStatusParam();
+
+    // this.storage.clear();
+  }
 
   /**
    * Stock the value of `status` parameter in `statusParameter`
@@ -43,7 +74,7 @@ export class HouseChoicePage implements OnInit {
    * 
    * If the `storyId` local doesn't exist, create one and initialize him to 0
    */
-  ngOnInit() {
+  getStatusParam() {
     this.statusParameter = this.activatedRoute.snapshot.paramMap.get("status");
 
     if (this.statusParameter === "begin") {
@@ -59,12 +90,28 @@ export class HouseChoicePage implements OnInit {
         }
       });
 
+      this.storage.get("stories").then(exist => {
+        if (!exist) {
+          this.storage.set("stories", []);
+        }
+      });
+
       this.menuController.enable(false);
     } else if (this.statusParameter === "edit") {
       this.editStory();
     }
 
-    // this.storage.clear();
+    if (this.statusParameter === "begin" || this.statusParameter === "newStory") {
+      this.headerContent = "New Story/Configuration";
+    }
+  }
+
+  /*************************************************************************************************/
+  /****************************************** Byleth Part ******************************************/
+  /*************************************************************************************************/
+
+  setBylethSex(sex: string) {
+    this.storyObject.byleth.sex = sex;
   }
 
   /*************************************************************************************************/
@@ -83,23 +130,40 @@ export class HouseChoicePage implements OnInit {
        * Check if a story already exist with this name
        */
       this.storage.get("stories").then(storiesLocal => {
-        let existingName = storiesLocal.findIndex(story => story.name === this.storyObject.name);
+        if (storiesLocal) {
+          let existingName = storiesLocal.findIndex(story => story.name === this.storyObject.name);
 
-        if (existingName >= 0) {
-          this.confirmStoryName = false;
+          if (existingName >= 0) {
+            this.confirmStoryName = false;
+          } else {
+            this.confirmStoryName = true;
+          }
         } else {
           this.confirmStoryName = true;
         }
-      })
+      });
+    } else {
+      this.confirmStoryName = false;
     }
   }
 
   /**
    * Set the `storyObject.house`
    */
-  setStoryHouse(houseName: string) {
-    this.storyObject.house = houseName;
-    this.confirmHouse = true;
+  setStoryHouse() {
+    this.slides.getActiveIndex().then(index => {
+      switch (index) {
+        case 0:
+          this.storyObject.house = 'blackEalges';
+          break;
+        case 1:
+          this.storyObject.house = 'blueLions';
+          break;
+        case 2:
+          this.storyObject.house = 'goldenDeer';
+          break;
+      }
+    });
   }
 
   /**
@@ -152,34 +216,49 @@ export class HouseChoicePage implements OnInit {
    */
   editStory() {
     this.storage.get("editStory").then(story => {
-      this.storyObject = {
-        id: story.id,
-        name: story.name,
-        house: story.house
-      }
+      this.storyObject = story;
+
+      this.headerContent = this.storyObject.name;
+
+      this.houseStorySlide();
     });
+  }
+
+  houseStorySlide() {
+    switch (this.storyObject.house) {
+      case 'blackEagles':
+        this.slides.slideTo(0, 0);
+        break;
+      case 'blueLions':
+        this.slides.slideTo(1, 0);
+        break;
+      case 'goldenDeer':
+        this.slides.slideTo(2, 0);
+        break;
+    }
   }
 
   /**
    * Edit the `stories` with the new values of `editStory`
    */
   applyEdit() {
-    this.storage.get("stories").then(stories => {
-      // Get the index of the story
-      let storyIndex = stories.findIndex(story => story.id === this.storyObject.id);
+    if (this.storyObject.name != "") {
+      this.storage.get("stories").then(stories => {
+        // Get the index of the story
+        let storyIndex = stories.findIndex(story => story.id === this.storyObject.id);
 
-      // Replace the story with here new values
-      stories.splice(storyIndex, 1, this.storyObject);
+        // Replace the story with here new values
+        stories.splice(storyIndex, 1, this.storyObject);
 
-      // Set the new value for the local stories
-      this.storage.set("stories", stories).then(actualizeStories => {
-        this.events.publish("stories", actualizeStories);
+        // Set the new value for the local stories
+        this.storage.set("stories", stories).then(actualizeStories => {
+          this.events.publish("stories", actualizeStories);
 
-        this.storage.remove("editStory").then(() => {
-          this.setCurrentStory();
+          this.storage.remove("editStory").then(() => {
+            this.setCurrentStory();
+          });
         });
       });
-    });
+    }
   }
-
 }

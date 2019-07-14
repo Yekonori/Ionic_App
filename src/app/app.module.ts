@@ -11,6 +11,7 @@ import { IonicStorageModule } from '@ionic/storage';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 @NgModule({
   declarations: [
@@ -27,8 +28,9 @@ import { AppRoutingModule } from './app-routing.module';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    ScreenOrientation
+    ScreenOrientation,
+    Keyboard
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
