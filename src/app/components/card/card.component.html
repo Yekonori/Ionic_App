@@ -1,7 +1,7 @@
 <ng-container *ngIf="cardType === 'character'">
-  <ion-card [routerLink]="['/character-details', character.name]">
+  <ion-card [routerLink]="['/character-details', character.name]" routerDirection="forward">
     <ion-card-header>
-      <img src="/assets/images/Characters_Faces/{{ houseNameFile }}/{{ character.name }}_Face.jpg"
+      <img src="/assets/images/Characters/Portraits/{{ houseNameFile }}/{{ character.name }}_Portrait.png"
         alt="{{ character.name }}" title="{{ character.name }}">
       <ion-card-title>{{ character.name }}</ion-card-title>
     </ion-card-header>

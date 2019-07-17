@@ -1,8 +1,28 @@
 ion-content {
     ion-grid {
-        max-height: calc( 100vh - var(--ion-tabs-top) - var(--ion-tabs-bottom) );
+        max-height: calc(100vh - var(--ion-tabs-top) - var(--ion-tabs-bottom));
 
         margin-top: var(--ion-tabs-top);
         margin-bottom: var(--ion-tabs-bottom);
+
+        ion-row {
+            ion-col {
+                div {
+                    &.characterIdentity {
+                        position: relative;
+
+                        img {
+                            &.characterHouse {
+                                position: absolute;
+                                right: 0;
+                                bottom: -15px;
+
+                                height: 55px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

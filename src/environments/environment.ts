@@ -72,8 +72,51 @@ export const charactersDetails = {
     name: "Edelgard",
     fullName: "Edelgard von Hresvelg",
     house: "Black Eagles",
-    crest: "Seiros",
+    crest: [
+      2
+    ],
     personalAbility: "Imperial Bloodline",
+    masteryLearning: {
+      strong: [
+        "Sword", "Axe", "Authority", "Heavy Armor"
+      ],
+      weak: [
+        "Bow", "Faith"
+      ],
+      budding: [
+        "Reason"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E+",
+        lance: "E",
+        axe: "D",
+        bow: "E",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "D",
+        heavyArmor: "D",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Reading, solitary exploration, talented individuals, debating historical viewpoints and strategies, nature, beautiful scenery",
+      dislikes: "Outdated values, crests, rats, chains, swimming, losing control"
+    },
     restrictions: {
       isLord: true,
       isMan: false,
@@ -84,8 +127,49 @@ export const charactersDetails = {
     name: "Hubert",
     fullName: "Hubert von Bestla",
     house: "Black Eagles",
-    crest: "",
+    crest: [],
     personalAbility: "Strategist",
+    masteryLearning: {
+      strong: [
+        "Bow", "Reason", "Authority"
+      ],
+      weak: [
+        "Axe", "Faith", "Flying"
+      ],
+      budding: [
+        "Lance"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E",
+        lance: "E",
+        axe: "E",
+        bow: "E+",
+        brawling: "E",
+        reason: "D",
+        faith: "E",
+        authority: "E+",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Strategy and tactics research, protecting Edelgard, irony, coffee, intelligence, useful people",
+      dislikes: "The Church of Seiros, those who bother Edelgard, gambling, heights, nostalgia, laziness"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -96,8 +180,51 @@ export const charactersDetails = {
     name: "Bernadetta",
     fullName: "Bernadetta von Varley",
     house: "Black Eagles",
-    crest: "Indech",
+    crest: [
+      21
+    ],
     personalAbility: "Paranoia",
+    masteryLearning: {
+      strong: [
+        "Lance", "Bow"
+      ],
+      weak: [
+        "Sword", "Axe", "Brawling"
+      ],
+      budding: [
+        "Riding"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E",
+        lance: "E+",
+        axe: "E",
+        bow: "D",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Knitting and embroidery, writing and illustrating novels, reading, drawing, music, unusual creatures, stuffed animals, solitude",
+      dislikes: "Speaking to people, imposing figures, overbearing fathers"
+    },
     restrictions: {
       isLord: false,
       isMan: false,
@@ -108,8 +235,49 @@ export const charactersDetails = {
     name: "Linhardt",
     fullName: "Linhardt von Hevring",
     house: "Black Eagles",
-    crest: "Cethlenn",
+    crest: [
+      22
+    ],
     personalAbility: "Doze Off",
+    masteryLearning: {
+      strong: [
+        "Reason", "Faith"
+      ],
+      weak: [
+        "Axe", "Brawling"
+      ],
+      budding: []
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E",
+        lance: "E",
+        axe: "E",
+        bow: "E",
+        brawling: "E",
+        reason: "E+",
+        faith: "D+",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Sleeping, crest research, middnay naps, reading, fishing, sweets, freedomic, unusual creatures, stuffed animals, solitude",
+      dislikes: "Fighting, blood, weapons, duty, self-restraint, politics, ghosts"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -120,8 +288,49 @@ export const charactersDetails = {
     name: "Ferdinand",
     fullName: "Ferdinand von Aegir",
     house: "Black Eagles",
-    crest: "Cichol",
+    crest: [
+      3
+    ],
     personalAbility: "Confidence",
+    masteryLearning: {
+      strong: [
+        "Sword", "Lance", "Axe", "Riding"
+      ],
+      weak: [],
+      budding: [
+        "Heavy Armor"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E+",
+        lance: "D",
+        axe: "E+",
+        bow: "E",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "D",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Being noble, collecting armor, horseback riding, tea, justice, heights",
+      dislikes: "Slothfulness, nobles who are not noble"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -132,8 +341,49 @@ export const charactersDetails = {
     name: "Dorothea",
     fullName: "Dorothea Arnold",
     house: "Black Eagles",
-    crest: "",
+    crest: [],
     personalAbility: "Songstress",
+    masteryLearning: {
+      strong: [
+        "Sword", "Reason"
+      ],
+      weak: [
+        "Faith", "Riding", "Flying"
+      ],
+      budding: [
+        "Faith"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Commoner",
+      baseMastery: {
+        sword: "E+",
+        lance: "E",
+        axe: "E",
+        bow: "E",
+        brawling: "E",
+        reason: "D",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Singing, a bit of everything, acting, music, decorative ornaments and accessories, small animals",
+      dislikes: "Arrogant nobles, herself"
+    },
     restrictions: {
       isLord: false,
       isMan: false,
@@ -144,8 +394,47 @@ export const charactersDetails = {
     name: "Caspar",
     fullName: "Caspar von Bergliez",
     house: "Black Eagles",
-    crest: "",
+    crest: [],
     personalAbility: "Quarreler",
+    masteryLearning: {
+      strong: [
+        "Axe", "Brawling"
+      ],
+      weak: [
+        "Bow", "Reason", "Authority"
+      ],
+      budding: []
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E",
+        lance: "E",
+        axe: "D",
+        bow: "E",
+        brawling: "E+",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Training, early mornings and quick breakfasts, fighting, vanquishing evil",
+      dislikes: "Liars, injustice, wasting time, the rain"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -156,8 +445,47 @@ export const charactersDetails = {
     name: "Petra",
     fullName: "Petra McNairy",
     house: "Black Eagles",
-    crest: "",
+    crest: [],
     personalAbility: "Hunter's Law",
+    masteryLearning: {
+      strong: [
+        "Sword", "Axe", "Bow", "Flying"
+      ],
+      weak: [
+        "Reason", "Faith"
+      ],
+      budding: []
+    },
+    baseInformations: {
+      baseClasse: "Commoner",
+      baseMastery: {
+        sword: "D+",
+        lance: "E",
+        axe: "E+",
+        bow: "E+",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "D"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Hunting and hide tanning, studying, swimming in the ocean, sunshine, climbing trees, family, her homeland",
+      dislikes: "Mathematics, idleness, discrimination"
+    },
     restrictions: {
       isLord: false,
       isMan: false,
@@ -181,8 +509,51 @@ export const charactersDetails = {
     name: "Dimitri",
     fullName: "Dimitri Alexandre Blaiddyd",
     house: "Blue Lions",
-    crest: "Blaiddyd",
+    crest: [
+      10
+    ],
     personalAbility: "Royal Bloodline",
+    masteryLearning: {
+      strong: [
+        "Sword", "Lance", "Authority"
+      ],
+      weak: [
+        "Axe", "Reason"
+      ],
+      budding: [
+        "Riding"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E+",
+        lance: "D",
+        axe: "E",
+        bow: "E",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "D",
+        heavyArmor: "E",
+        riding: "D",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Battle training, weapon maitenance, combat, high-quality weapons, strength training, going for long rides, physically laborious work",
+      dislikes: "Delicate work, fragile objects, scorching heat, selfish people"
+    },
     restrictions: {
       isLord: true,
       isMan: true,
@@ -193,8 +564,47 @@ export const charactersDetails = {
     name: "Dedue",
     fullName: "Dedue Molinaro",
     house: "Blue Lions",
-    crest: "",
+    crest: [],
     personalAbility: "Liege's Shield",
+    masteryLearning: {
+      strong: [
+        "Lance", "Axe", "Brawling", "Heavy Armor"
+      ],
+      weak: [
+        "Riding", "Flying"
+      ],
+      budding: []
+    },
+    baseInformations: {
+      baseClasse: "Commoner",
+      baseMastery: {
+        sword: "E",
+        lance: "E+",
+        axe: "D+",
+        bow: "E",
+        brawling: "E+",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "D",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Housekeeping, cooking, flowers, gardening, needlework, arts and crafts",
+      dislikes: "Anyone who attempts to harm Dimitri"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -205,8 +615,49 @@ export const charactersDetails = {
     name: "Annette",
     fullName: "Annette Fantine Dominique",
     house: "Blue Lions",
-    crest: "Dominique",
+    crest: [
+      6
+    ],
     personalAbility: "Hard Worker",
+    masteryLearning: {
+      strong: [
+        "Axe", "Reason", "Authority"
+      ],
+      weak: [
+        "Bow", "Heavy Armor"
+      ],
+      budding: []
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E",
+        lance: "E",
+        axe: "E+",
+        bow: "E",
+        brawling: "E",
+        reason: "D+",
+        faith: "E",
+        authority: "E+",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Studying, singing, dancing, cleaning, doing laundry, morning walks, getting dressed up",
+      dislikes: "Indolence, dark places, hard-to-reach places that need a good dusting, coffee"
+    },
     restrictions: {
       isLord: false,
       isMan: false,
@@ -217,8 +668,49 @@ export const charactersDetails = {
     name: "Ashe",
     fullName: "Ashe Duran",
     house: "Blue Lions",
-    crest: "",
+    crest: [],
     personalAbility: "Wisdom to Live",
+    masteryLearning: {
+      strong: [
+        "Axe", "Bow"
+      ],
+      weak: [
+        "Reason"
+      ],
+      budding: [
+        "Lance"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Commoner",
+      baseMastery: {
+        sword: "E",
+        lance: "E",
+        axe: "E+",
+        bow: "D",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Reading, cooking, sweets, tales of chivalry, travel journals, looking after children, violets",
+      dislikes: "Ghosts, enclosed spaces, violence, deception"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -229,8 +721,51 @@ export const charactersDetails = {
     name: "Felix",
     fullName: "Felix Hugo Fraldarius",
     house: "Blue Lions",
-    crest: "Fraldarius",
+    crest: [
+      7
+    ],
     personalAbility: "Solitary Wolf",
+    masteryLearning: {
+      strong: [
+        "Sword", "Bow", "Brawling"
+      ],
+      weak: [
+        "Reason", "Authority"
+      ],
+      budding: [
+        "Reason"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "D",
+        lance: "E",
+        axe: "E",
+        bow: "E+",
+        brawling: "E+",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Sword practice, weapon maitenance, fighting, high-quality weapons, spicy foods, hunting, meat",
+      dislikes: "Levity, sweets, chivalry, his father"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -241,8 +776,51 @@ export const charactersDetails = {
     name: "Mercedes",
     fullName: "Mercedes von Marltritz",
     house: "Blue Lions",
-    crest: "Lamine",
+    crest: [
+      20
+    ],
     personalAbility: "Live to Serve",
+    masteryLearning: {
+      strong: [
+        "Reason", "Faith"
+      ],
+      weak: [
+        "Sword", "Lance", "Axe", "Heavy Armor"
+      ],
+      budding: [
+        "Bow"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Commoner",
+      baseMastery: {
+        sword: "E",
+        lance: "E",
+        axe: "E",
+        bow: "E",
+        brawling: "E",
+        reason: "E+",
+        faith: "D",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Praying, baking, sweets, needlework, ghost stories, adorable things, painting, reading, fragrant flowers",
+      dislikes: "Spicy foods, exercise"
+    },
     restrictions: {
       isLord: false,
       isMan: false,
@@ -253,8 +831,51 @@ export const charactersDetails = {
     name: "Sylvain",
     fullName: "Sylvain Jose Gautier",
     house: "Blue Lions",
-    crest: "Gautier",
+    crest: [
+      14
+    ],
     personalAbility: "Ladies' Man",
+    masteryLearning: {
+      strong: [
+        "Lance", "Axe", "Riding"
+      ],
+      weak: [
+        "Bow"
+      ],
+      budding: [
+        "Reason"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E",
+        lance: "D",
+        axe: "D",
+        bow: "E",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "D",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Fine art, theater, women, lively places, board games",
+      dislikes: "Unclean spaces, jealousy, hot days"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -265,8 +886,47 @@ export const charactersDetails = {
     name: "Ingrid",
     fullName: "Ingrid Brandol Galatea",
     house: "Blue Lions",
-    crest: "Daphnel",
+    crest: [
+      9
+    ],
     personalAbility: "Lady Knight",
+    masteryLearning: {
+      strong: [
+        "Sword", "Lance", "Riding", "Flying"
+      ],
+      weak: [],
+      budding: []
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E+",
+        lance: "D",
+        axe: "E",
+        bow: "E",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "D",
+        flying: "D"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Reading, eating, food samples, meaty meals, looking after horses, tales of chivalry, virtuous knights",
+      dislikes: "Extravagance, hunger, the people of Duscur"
+    },
     restrictions: {
       isLord: false,
       isMan: false,
@@ -290,8 +950,51 @@ export const charactersDetails = {
     name: "Claude",
     fullName: "Claude von Riegan",
     house: "Golden Deer",
-    crest: "Riegan",
+    crest: [
+      18
+    ],
     personalAbility: "Alliance Bloodline",
+    masteryLearning: {
+      strong: [
+        "Sword", "Bow", "Authority", "Flying"
+      ],
+      weak: [
+        "Lance", "Faith"
+      ],
+      budding: [
+        "Axe"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E+",
+        lance: "E",
+        axe: "E",
+        bow: "D",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "D",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "D"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Tactical scheming, planning feasts, long rides, archery, poetry, topics of curiosity",
+      dislikes: "Blind reliance on gods, leaving things to chance, being bound by common sense"
+    },
     restrictions: {
       isLord: true,
       isMan: true,
@@ -302,8 +1005,49 @@ export const charactersDetails = {
     name: "Lorenz",
     fullName: "Lorenz Hermann Gloucester",
     house: "Golden Deer",
-    crest: "Gloucester",
+    crest: [
+      10
+    ],
     personalAbility: "Prestigious Noble",
+    masteryLearning: {
+      strong: [
+        "Lance", "Reason", "Riding"
+      ],
+      weak: [
+        "Brawling"
+      ],
+      budding: []
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E",
+        lance: "D",
+        axe: "E",
+        bow: "E",
+        brawling: "E",
+        reason: "E+",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "D",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Monitoring Claude, Writing poetry, tea, red roses, art, worthy women, anything that befits the nobility",
+      dislikes: "Coffee, injustice, filth, foul odors, vulgarity"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -314,8 +1058,51 @@ export const charactersDetails = {
     name: "Hilda",
     fullName: "Hilda Valentin Goneril",
     house: "Golden Deer",
-    crest: "Goneril",
+    crest: [
+      11
+    ],
     personalAbility: "Plead",
+    masteryLearning: {
+      strong: [
+        "Lance", "Axe"
+      ],
+      weak: [
+        "Reason", "Faith"
+      ],
+      budding: [
+        "Heavy Armor"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E",
+        lance: "E+",
+        axe: "D",
+        bow: "E",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Chatting, making accesories, fashion, persuasion, singing, dancing, colorful flowers",
+      dislikes: "Effort, exhaustion, responsibility, extreme heat or cold"
+    },
     restrictions: {
       isLord: false,
       isMan: false,
@@ -326,8 +1113,51 @@ export const charactersDetails = {
     name: "Marianne",
     fullName: "Marianne von Edmund",
     house: "Golden Deer",
-    crest: "",
+    crest: [
+      15
+    ],
     personalAbility: "Animal Lover",
+    masteryLearning: {
+      strong: [
+        "Sword", "Faith", "Riding", "Flying"
+      ],
+      weak: [
+        "Brawling", "Heavy Armor"
+      ],
+      budding: [
+        "Lance"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E+",
+        lance: "E",
+        axe: "E",
+        bow: "E",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "D+",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Praying, talking to animals, the goddess, birds, reading, delicate flowers",
+      dislikes: "Herself, Crests, tidying up"
+    },
     restrictions: {
       isLord: false,
       isMan: false,
@@ -338,8 +1168,49 @@ export const charactersDetails = {
     name: "Ignatz",
     fullName: "Ignatz Victor",
     house: "Golden Deer",
-    crest: "",
+    crest: [],
     personalAbility: "Keen Observation",
+    masteryLearning: {
+      strong: [
+        "Sword", "Bow", "Authority"
+      ],
+      weak: [
+        "Flying"
+      ],
+      budding: [
+        "Reason"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Commoner",
+      baseMastery: {
+        sword: "E+",
+        lance: "E",
+        axe: "E",
+        bow: "D",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "E+",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Painting, collecting art supplies, arts, the goddess, the four saints, striking landscapes, faraway lands, peace and quiet, beautiful flowers",
+      dislikes: "People who don't appreciate art, stressful situations, lightning"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -350,8 +1221,51 @@ export const charactersDetails = {
     name: "Lysithea",
     fullName: "Lysithea von Cordelia",
     house: "Golden Deer",
-    crest: "Charon",
+    crest: [
+      11, 16
+    ],
     personalAbility: "Prodigy",
+    masteryLearning: {
+      strong: [
+        "Reason", "Faith", "Authority"
+      ],
+      weak: [
+        "Sword", "Lance", "Axe"
+      ],
+      budding: [
+        "Sword"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Noble",
+      baseMastery: {
+        sword: "E",
+        lance: "E",
+        axe: "E",
+        bow: "E",
+        brawling: "E",
+        reason: "D",
+        faith: "E+",
+        authority: "E+",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Magic and tactics research, eating sweets, cute things, lilies",
+      dislikes: "Being treated like a child, anything physically laborious, ghosts, bitter foods"
+    },
     restrictions: {
       isLord: false,
       isMan: false,
@@ -362,8 +1276,45 @@ export const charactersDetails = {
     name: "Leonie",
     fullName: "Leonie Pinelli",
     house: "Golden Deer",
-    crest: "",
+    crest: [],
     personalAbility: "Hates to Lose",
+    masteryLearning: {
+      strong: [
+        "Lance", "Bow", "Riding"
+      ],
+      weak: [],
+      budding: []
+    },
+    baseInformations: {
+      baseClasse: "Commoner",
+      baseMastery: {
+        sword: "E",
+        lance: "D+",
+        axe: "E",
+        bow: "E+",
+        brawling: "E",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "E",
+        riding: "E+",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Saving money, bow maintenance, Captain Jeralt, military arts, competition, hunting, fishing, gardening, collecting and reusing discarded objects",
+      dislikes: "Defeat, decadence, debt, poisonous creatures"
+    },
     restrictions: {
       isLord: false,
       isMan: false,
@@ -376,6 +1327,45 @@ export const charactersDetails = {
     house: "Golden Deer",
     crest: "",
     personalAbility: "Scavenge",
+    masteryLearning: {
+      strong: [
+        "Axe", "Brawling", "Heavy Armor"
+      ],
+      weak: [
+        "Bow", "Reason", "Riding"
+      ],
+      budding: []
+    },
+    baseInformations: {
+      baseClasse: "Commoner",
+      baseMastery: {
+        sword: "E",
+        lance: "E",
+        axe: "E+",
+        bow: "E",
+        brawling: "D",
+        reason: "E",
+        faith: "E",
+        authority: "E",
+        heavyArmor: "D",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      }
+    },
+    personality: {
+      likes: "Bodybuilding, eating, pure protein, muscles, training, his baby sister",
+      dislikes: "Book learning, unfinished meals"
+    },
     restrictions: {
       isLord: false,
       isMan: true,
@@ -389,141 +1379,141 @@ export const charactersDetails = {
 /****************************************************************************************/
 export const crests = [
   {
+    id: 0,
     name: "",
     status: "Major",
-    owner: "Byleth",
     effect: ""
   },
   {
+    id: 1,
     name: "Flames",
     status: "Major",
-    owner: "Byleth",
     effect: ""
   },
   {
+    id: 2,
     name: "Seiros",
     status: "Minor",
-    owner: "Edelgard",
     effect: ""
   },
   {
+    id: 3,
     name: "Cichol",
     status: "Minor",
-    owner: "Ferdinand",
     effect: ""
   },
   {
+    id: 4,
     name: "",
     status: "",
-    owner: "",
     effect: ""
   },
   {
+    id: 5,
     name: "",
     status: "",
-    owner: "",
     effect: ""
   },
   {
+    id: 6,
     name: "Dominique",
     status: "Minor",
-    owner: "Annette",
     effect: ""
   },
   {
+    id: 7,
     name: "Fraldarius",
     status: "Major",
-    owner: "Felix",
     effect: ""
   },
   {
+    id: 8,
     name: "",
     status: "",
-    owner: "",
     effect: ""
   },
   {
+    id: 9,
     name: "Daphnel",
     status: "Minor",
-    owner: "Ingrid",
     effect: ""
   },
   {
+    id: 10,
     name: "Blaiddyd",
     status: "Minor",
-    owner: "Dimitri",
     effect: ""
   },
   {
+    id: 11,
     name: "Gloucester",
     status: "Minor",
-    owner: "Lorenz",
     effect: ""
   },
   {
+    id: 12,
     name: "Goneril",
     status: "Minor",
-    owner: "Hilda",
     effect: ""
   },
   {
+    id: 13,
     name: "",
     status: "",
-    owner: "",
     effect: ""
   },
   {
+    id: 14,
     name: "Gautier",
     status: "Minor",
-    owner: "Sylvain",
     effect: ""
   },
   {
+    id: 15,
     name: "",
     status: "Minor",
-    owner: "Marianne",
     effect: ""
   },
   {
+    id: 16,
     name: "Charon",
     status: "Minor",
-    owner: "Lysithea",
     effect: ""
   },
   {
+    id: 17,
     name: "",
     status: "",
-    owner: "",
     effect: ""
   },
   {
+    id: 18,
     name: "Riegan",
     status: "Minor",
-    owner: "Claude",
     effect: ""
   },
   {
+    id: 19,
     name: "",
     status: "",
-    owner: "",
     effect: ""
   },
   {
+    id: 20,
     name: "Lamine",
     status: "Minor",
-    owner: "Mercedes",
     effect: ""
   },
   {
+    id: 21,
     name: "Indech",
     status: "Minor",
-    owner: "Bernadetta",
     effect: ""
   },
   {
+    id: 22,
     name: "Cethlenn",
     status: "Minor",
-    owner: "Linhardt",
     effect: ""
   }
 ];
@@ -566,7 +1556,7 @@ export const personalAbilities = {
     name: "	Liege's Shield",
     effect: "If user waits without acting, Defence +4 for one turn"
   },
-  SolitaryWolf	: {
+  SolitaryWolf: {
     name: "Solitary Wolf	",
     effect: "When a battalion is not deployed or when battalion health is zero, damage dealt +5"
   },

@@ -10,7 +10,7 @@
 /******************************************************************************/
 
 ion-grid {
-  padding-top: 30px;
+    padding-top: 30px;
 }
 
 /******************************************************************************/
@@ -21,13 +21,13 @@ ion-grid {
 /*************************** IONIC SLIDES PAGINATION **************************/
 /******************************************************************************/
 
-.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom {
-  bottom: 0px;
+    bottom: 0px;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 8px;
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
 }
 
 /******************************************************************************/
@@ -39,133 +39,140 @@ ion-grid {
 /******************************************************************************/
 
 .group {
-  position: relative;
+    position: relative;
 
-  text-align: center;
+    text-align: center;
 
-  .basicInput {
-    padding: 10px 10px 10px 5px;
-    width: 80vw;
+    .basicInput {
+        padding: 10px 10px 10px 5px;
+        width: 80vw;
 
-    border: none;
-    border-bottom: 1px solid #757575;
+        border: none;
+        border-bottom: 1px solid #757575;
 
-    &:focus {
-      outline: none;
+        &:focus {
+            outline: none;
+        }
     }
-  }
 }
 
 /* LABEL ======================================= */
 label {
-  position: absolute;
-  top: 10px;
-  left: 9vw;
+    position: absolute;
+    top: 10px;
+    left: 9vw;
 
-  font-size: 1.125rem;
-  font-weight: normal;
-  color: #999;
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: #999;
 
-  pointer-events: none;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
 }
 
 /* active state */
-.basicInput:focus ~ label,
-.basicInput:valid ~ label {
-  top: -20px;
+.basicInput:focus~label,
+.basicInput:valid~label {
+    top: -20px;
 
-  font-size: 0.875rem;
+    font-size: 0.875rem;
 
-  color: #5264ae;
+    color: #5264ae;
 }
 
 /* BOTTOM BARS ================================= */
 .bar {
-  position: relative;
+    position: relative;
 
-  display: block;
-  width: 80vw;
+    display: block;
+    width: 80vw;
 
-  &:before,
-  &:after {
-    position: absolute;
-    bottom: 1px;
+    &:before,
+    &:after {
+        position: absolute;
+        bottom: 1px;
 
-    width: 0;
-    height: 2px;
+        width: 0;
+        height: 2px;
 
-    background: #5264ae;
+        background: #5264ae;
 
-    content: "";
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-  }
-  &:before {
-    left: 47vw;
-  }
-  &:after {
-    right: 33vw;
-  }
+        content: "";
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    &:before {
+        left: 47vw;
+    }
+
+    &:after {
+        right: 33vw;
+    }
 }
 
 /* active state */
-.basicInput:focus ~ .bar:before,
-.basicInput:focus ~ .bar:after {
-  width: 40vw;
+.basicInput:focus~.bar:before,
+.basicInput:focus~.bar:after {
+    width: 40vw;
 }
 
 /* HIGHLIGHTER ================================== */
 .highlight {
-  position: absolute;
-  top: 25%;
-  left: 0;
+    position: absolute;
+    top: 25%;
+    left: 0;
 
-  width: 100px;
-  height: 60%;
+    width: 100px;
+    height: 60%;
 
-  pointer-events: none;
-  opacity: 0.5;
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 /* active state */
-.basicInput:focus ~ .highlight {
-  animation: inputHighlighter 0.3s ease;
-  -moz-animation: inputHighlighter 0.3s ease;
-  -webkit-animation: inputHighlighter 0.3s ease;
+.basicInput:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    -webkit-animation: inputHighlighter 0.3s ease;
 }
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-  from {
-    background: #5264ae;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-@-moz-keyframes inputHighlighter {
-  from {
-    background: #5264ae;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-@keyframes inputHighlighter {
-  from {
-    background: #5264ae;
-  }
-  to {
-    width: 0;
+    from {
+        background: #5264ae;
+    }
 
-    background: transparent;
-  }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264ae;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264ae;
+    }
+
+    to {
+        width: 0;
+
+        background: transparent;
+    }
 }
 
 /******************************************************************************/

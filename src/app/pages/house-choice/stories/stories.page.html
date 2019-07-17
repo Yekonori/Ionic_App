@@ -9,10 +9,21 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let story of allStories" id="story{{ story.id }}">
+    <ion-item *ngFor="let story of allStories">
+      <ng-container [ngSwitch]="story.house">
+        <ion-thumbnail slot="start" *ngSwitchCase="'blackEagles'">
+          <img src="/assets/images/Houses/Black_Eagles.png" alt="Black Eagles Banner" title="Black Eagles Banner">
+        </ion-thumbnail>
+        <ion-thumbnail slot="start" *ngSwitchCase="'blueLions'">
+          <img src="/assets/images/Houses/Blue_Lions.png" alt="Blue Lions Banner" title="Blue Lions Banner">
+        </ion-thumbnail>
+        <ion-thumbnail slot="start" *ngSwitchCase="'goldenDeer'">
+          <img src="/assets/images/Houses/Golden_Deer.png" alt="Golden Deer Banner" title="Golden Deer Banner">
+        </ion-thumbnail>
+      </ng-container>
       <ion-label (click)="newCurrentStory(story)">
         {{ story.name }}
-        <span *ngIf="story.id === currentStory.id"><br>Current</span>
+        <span class="currentStory" *ngIf="story.id === currentStory.id"><br>Current</span>
       </ion-label>
       <ion-icon name="more" slot="end" (click)="presentPopover($event, story)"></ion-icon>
     </ion-item>

@@ -76,8 +76,6 @@ export class CharacterClassesPage implements OnInit {
         this.classes.push(classesDetails[classe.name.replace(" ", "")]);
       }
     })
-
-    console.log(this.classes);
   }
 
 }

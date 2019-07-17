@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { PopoverController, Events } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 import { PopoverStoriesComponent } from 'src/app/components/popover/popover-stories/popover-stories.component';
 
@@ -19,7 +20,8 @@ export class StoriesPage implements OnInit {
   constructor(
     private storage: Storage,
     private popoverController: PopoverController,
-    private events: Events
+    private events: Events,
+    private router: Router
   ) { }
 
   /**
@@ -41,9 +43,10 @@ export class StoriesPage implements OnInit {
    * Change the `currentStory` local by story
    */
   newCurrentStory(story) {
-    console.log(story);
     this.storage.set("currentStory", story).then(current => {
       this.currentStory = current;
+
+      this.router.navigate(['/all-characters']);
     })
   }
 
@@ -57,9 +60,9 @@ export class StoriesPage implements OnInit {
       event: ev
     });
 
-    this.events.subscribe("stories", removeStory => {
-      console.log(removeStory);
-      this.allStories = removeStory;
+    this.events.subscribe("stories", newStories => {
+      this.allStories = newStories;
+      console.log(newStories);
     })
 
     return await popover.present();

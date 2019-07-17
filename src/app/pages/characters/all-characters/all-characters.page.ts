@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+
 import { housesCharacters } from 'src/environments/environment';
 
 import { Storage } from '@ionic/storage';
@@ -37,7 +38,7 @@ export class AllCharactersPage implements OnInit {
           this.getGoldenDeerCharacters();
           break;
       }
-    })
+    });
   }
 
   /**

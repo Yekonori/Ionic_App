@@ -1,49 +1,50 @@
 .selectedElement,
-.selectedSlide > div {
-  border: thick solid #333;
+.selectedSlide>div {
+    border: thick solid #333;
 }
 
 .keyboardOpen {
-  display: none;
+    display: none;
 }
 
 ion-content {
-  ion-grid {
-    ion-row {
-      &.bylethRow {
-        margin-top: 25px;
+    ion-grid {
+        ion-row {
+            &.bylethRow {
+                margin-top: 25px;
 
-        .bylethNameCol {
-          margin-top: 15px;
+                .bylethNameCol {
+                    margin-top: 15px;
+                }
+            }
+
+            ion-slides {
+                --bullet-background-active: #5264ae;
+
+                .swiper-slide {
+                    height: 310px;
+                }
+
+                ion-slide {
+                    flex-direction: column;
+                }
+            }
         }
-      }
-
-      ion-slides {
-        --bullet-background-active: #5264ae;
-
-        .swiper-slide {
-          height: 310px;
-        }
-
-        ion-slide {
-          flex-direction: column;
-        }
-      }
     }
-  }
 
-  ion-fab {
-    margin-right: 20px;
-    margin-bottom: 20px;
+    ion-fab {
+        margin-right: 20px;
+        margin-bottom: 20px;
 
-    ion-fab-button {
-      &.fabButton {
-        --background: #5264ae;
-        --background-activated: #485899;
-      }
-      &.disableFabButton {
-        --background: #6374b6;
-      }
+        ion-fab-button {
+            &.fabButton {
+                --background: #5264ae;
+                --background-activated: #485899;
+            }
+
+            &.disableFabButton {
+                --background: #6374b6;
+            }
+        }
     }
-  }
 }

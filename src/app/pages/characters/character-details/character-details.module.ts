@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { CharacterDetailsPage } from './character-details.page';
+import { PopoverCrestComponent } from 'src/app/components/popover/popover-crest/popover-crest.component';
 import { PopoverPersonalAbilityComponent } from 'src/app/components/popover/popover-personal-ability/popover-personal-ability.component';
 
 const routes: Routes = [
@@ -20,6 +21,14 @@ const routes: Routes = [
       {
         path: 'classes',
         loadChildren: './character-classes/character-classes.module#CharacterClassesPageModule'
+      },
+      {
+        path: 'personality',
+        loadChildren: './character-personality/character-personality.module#CharacterPersonalityPageModule'
+      },
+      {
+        path: 'gestion',
+        loadChildren: './character-gestion/character-gestion.module#CharacterGestionPageModule'
       }
     ]
   }
@@ -33,11 +42,13 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   entryComponents: [
-    PopoverPersonalAbilityComponent
+    PopoverPersonalAbilityComponent,
+    PopoverCrestComponent
   ],
   declarations: [
     CharacterDetailsPage,
-    PopoverPersonalAbilityComponent
+    PopoverPersonalAbilityComponent,
+    PopoverCrestComponent
   ]
 })
 export class CharacterDetailsPageModule { }

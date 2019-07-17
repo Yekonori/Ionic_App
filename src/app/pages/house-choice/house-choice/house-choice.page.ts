@@ -65,8 +65,12 @@ export class HouseChoicePage implements OnInit {
     // this.storage.clear();
   }
 
-  ionViewWillEnter(){
-   this.menuCtrl.enable(false);
+  ionViewWillEnter() {
+    this.menuCtrl.enable(false);
+  }
+
+  ionViewDidLeave() {
+    this.menuCtrl.enable(true);
   }
 
   /**

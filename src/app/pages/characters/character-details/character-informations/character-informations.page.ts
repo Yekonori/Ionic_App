@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { PopoverController } from '@ionic/angular';
 
 import { charactersDetails, crests, personalAbilities } from 'src/environments/environment';
+import { PopoverCrestComponent } from 'src/app/components/popover/popover-crest/popover-crest.component';
 import { PopoverPersonalAbilityComponent } from 'src/app/components/popover/popover-personal-ability/popover-personal-ability.component';
 
 @Component({
@@ -20,7 +21,7 @@ export class CharacterInformationsPage implements OnInit {
   /**
    * Crest's Details Object
    */
-  crest;
+  crest = [];
 
   /**
    * Personal Ability's Details Object
@@ -54,15 +55,28 @@ export class CharacterInformationsPage implements OnInit {
   }
 
   getCrest() {
-    this.crest = crests.find(crest => crest.owner === this.characterDetails.name);
+    this.characterDetails.crest.forEach(characterCrest => {
+      this.crest.push(crests.find(crest => crest.id === characterCrest));
+    });
   }
 
   getPersonalAbilityDetails() {
     this.personalAbility = personalAbilities[this.characterDetails.personalAbility.replace(/\ |\'/g, '')];
-    console.log(this.personalAbility);
   }
 
-  async presentPopover(ev: any, story: Object) {
+  async presentPopoverCrest(ev: any, index: number) {
+    const popover = await this.popoverController.create({
+      component: PopoverCrestComponent,
+      componentProps: {
+        crest: this.crest[index]
+      },
+      event: ev
+    });
+
+    return await popover.present();
+  }
+
+  async presentPopoverPersonalAbility(ev: any) {
     const popover = await this.popoverController.create({
       component: PopoverPersonalAbilityComponent,
       componentProps: {

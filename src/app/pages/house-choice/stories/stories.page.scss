@@ -1,0 +1,40 @@
+ion-content {
+    ion-list {
+        ion-item {
+            ion-thumbnail {
+                width: auto;
+
+                img {
+                    width: auto;
+                }
+            }
+
+            ion-label {
+                line-height: 1.3;
+
+                height: auto;
+                margin: 0;
+                padding: 2.3vh 0;
+
+                span {
+                    &.currentStory {
+                        font-style: italic;
+                        font-size: 0.9rem;
+
+                        color: #888;
+                    }
+                }
+            }
+        }
+    }
+
+    ion-fab {
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+        ion-fab-button {
+            --background: #5264ae;
+            --background-activated: #485899;
+        }
+    }
+}
