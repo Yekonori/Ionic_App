@@ -75,7 +75,7 @@ export const charactersDetails = {
     crest: [
       2
     ],
-    personalAbility: "Imperial Bloodline",
+    personalAbility: 1,
     masteryLearning: {
       strong: [
         "Sword", "Axe", "Authority", "Heavy Armor"
@@ -111,6 +111,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -128,7 +138,7 @@ export const charactersDetails = {
     fullName: "Hubert von Bestla",
     house: "Black Eagles",
     crest: [],
-    personalAbility: "Strategist",
+    personalAbility: 4,
     masteryLearning: {
       strong: [
         "Bow", "Reason", "Authority"
@@ -164,6 +174,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -183,7 +203,7 @@ export const charactersDetails = {
     crest: [
       21
     ],
-    personalAbility: "Paranoia",
+    personalAbility: 13,
     masteryLearning: {
       strong: [
         "Lance", "Bow"
@@ -219,6 +239,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -238,7 +268,7 @@ export const charactersDetails = {
     crest: [
       22
     ],
-    personalAbility: "Doze Off",
+    personalAbility: 22,
     masteryLearning: {
       strong: [
         "Reason", "Faith"
@@ -272,6 +302,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -291,7 +331,7 @@ export const charactersDetails = {
     crest: [
       3
     ],
-    personalAbility: "Confidence",
+    personalAbility: 10,
     masteryLearning: {
       strong: [
         "Sword", "Lance", "Axe", "Riding"
@@ -325,6 +365,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -342,7 +392,7 @@ export const charactersDetails = {
     fullName: "Dorothea Arnold",
     house: "Black Eagles",
     crest: [],
-    personalAbility: "Songstress",
+    personalAbility: 5,
     masteryLearning: {
       strong: [
         "Sword", "Reason"
@@ -378,6 +428,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -395,7 +455,7 @@ export const charactersDetails = {
     fullName: "Caspar von Bergliez",
     house: "Black Eagles",
     crest: [],
-    personalAbility: "Quarreler",
+    personalAbility: 16,
     masteryLearning: {
       strong: [
         "Axe", "Brawling"
@@ -429,6 +489,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -446,7 +516,7 @@ export const charactersDetails = {
     fullName: "Petra McNairy",
     house: "Black Eagles",
     crest: [],
-    personalAbility: "Hunter's Law",
+    personalAbility: 19,
     masteryLearning: {
       strong: [
         "Sword", "Axe", "Bow", "Flying"
@@ -472,6 +542,16 @@ export const charactersDetails = {
         flying: "D"
       },
       growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      },
+      statsModifier: {
         HP: 0,
         STR: 0,
         DEF: 0,
@@ -512,7 +592,7 @@ export const charactersDetails = {
     crest: [
       10
     ],
-    personalAbility: "Royal Bloodline",
+    personalAbility: 2,
     masteryLearning: {
       strong: [
         "Sword", "Lance", "Authority"
@@ -548,6 +628,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -565,7 +655,7 @@ export const charactersDetails = {
     fullName: "Dedue Molinaro",
     house: "Blue Lions",
     crest: [],
-    personalAbility: "Liege's Shield",
+    personalAbility: 6,
     masteryLearning: {
       strong: [
         "Lance", "Axe", "Brawling", "Heavy Armor"
@@ -599,6 +689,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -618,7 +718,7 @@ export const charactersDetails = {
     crest: [
       6
     ],
-    personalAbility: "Hard Worker",
+    personalAbility: 17,
     masteryLearning: {
       strong: [
         "Axe", "Reason", "Authority"
@@ -652,6 +752,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -669,7 +779,7 @@ export const charactersDetails = {
     fullName: "Ashe Duran",
     house: "Blue Lions",
     crest: [],
-    personalAbility: "Wisdom to Live",
+    personalAbility: 14,
     masteryLearning: {
       strong: [
         "Axe", "Bow"
@@ -705,6 +815,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -724,7 +844,7 @@ export const charactersDetails = {
     crest: [
       7
     ],
-    personalAbility: "Solitary Wolf",
+    personalAbility: 7,
     masteryLearning: {
       strong: [
         "Sword", "Bow", "Brawling"
@@ -760,6 +880,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -779,7 +909,7 @@ export const charactersDetails = {
     crest: [
       20
     ],
-    personalAbility: "Live to Serve",
+    personalAbility: 11,
     masteryLearning: {
       strong: [
         "Reason", "Faith"
@@ -815,6 +945,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -834,7 +974,7 @@ export const charactersDetails = {
     crest: [
       14
     ],
-    personalAbility: "Ladies' Man",
+    personalAbility: 20,
     masteryLearning: {
       strong: [
         "Lance", "Axe", "Riding"
@@ -870,6 +1010,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -889,7 +1039,7 @@ export const charactersDetails = {
     crest: [
       9
     ],
-    personalAbility: "Lady Knight",
+    personalAbility: 23,
     masteryLearning: {
       strong: [
         "Sword", "Lance", "Riding", "Flying"
@@ -913,6 +1063,16 @@ export const charactersDetails = {
         flying: "D"
       },
       growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
+      },
+      statsModifier: {
         HP: 0,
         STR: 0,
         DEF: 0,
@@ -953,7 +1113,7 @@ export const charactersDetails = {
     crest: [
       18
     ],
-    personalAbility: "Alliance Bloodline",
+    personalAbility: 3,
     masteryLearning: {
       strong: [
         "Sword", "Bow", "Authority", "Flying"
@@ -989,6 +1149,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -1008,7 +1178,7 @@ export const charactersDetails = {
     crest: [
       10
     ],
-    personalAbility: "Prestigious Noble",
+    personalAbility: 8,
     masteryLearning: {
       strong: [
         "Lance", "Reason", "Riding"
@@ -1042,6 +1212,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -1061,7 +1241,7 @@ export const charactersDetails = {
     crest: [
       11
     ],
-    personalAbility: "Plead",
+    personalAbility: 9,
     masteryLearning: {
       strong: [
         "Lance", "Axe"
@@ -1097,6 +1277,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -1116,7 +1306,7 @@ export const charactersDetails = {
     crest: [
       15
     ],
-    personalAbility: "Animal Lover",
+    personalAbility: 21,
     masteryLearning: {
       strong: [
         "Sword", "Faith", "Riding", "Flying"
@@ -1152,6 +1342,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -1169,7 +1369,7 @@ export const charactersDetails = {
     fullName: "Ignatz Victor",
     house: "Golden Deer",
     crest: [],
-    personalAbility: "Keen Observation",
+    personalAbility: 18,
     masteryLearning: {
       strong: [
         "Sword", "Bow", "Authority"
@@ -1205,6 +1405,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -1224,7 +1434,7 @@ export const charactersDetails = {
     crest: [
       11, 16
     ],
-    personalAbility: "Prodigy",
+    personalAbility: 15,
     masteryLearning: {
       strong: [
         "Reason", "Faith", "Authority"
@@ -1260,6 +1470,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -1277,7 +1497,7 @@ export const charactersDetails = {
     fullName: "Leonie Pinelli",
     house: "Golden Deer",
     crest: [],
-    personalAbility: "Hates to Lose",
+    personalAbility: 24,
     masteryLearning: {
       strong: [
         "Lance", "Bow", "Riding"
@@ -1309,6 +1529,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -1326,7 +1556,7 @@ export const charactersDetails = {
     fullName: "Raphael Kirsten",
     house: "Golden Deer",
     crest: "",
-    personalAbility: "Scavenge",
+    personalAbility: 12,
     masteryLearning: {
       strong: [
         "Axe", "Brawling", "Heavy Armor"
@@ -1360,6 +1590,16 @@ export const charactersDetails = {
         MAG: 0,
         RES: 0,
         MOV: 0
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+        MOV: 0
       }
     },
     personality: {
@@ -1378,6 +1618,7 @@ export const charactersDetails = {
 /**************************************** CRESTS ****************************************/
 /****************************************************************************************/
 export const crests = [
+
   {
     id: 0,
     name: "",
@@ -1521,114 +1762,159 @@ export const crests = [
 /****************************************************************************************/
 /********************************** PERSONAL ABILITIES **********************************/
 /****************************************************************************************/
-export const personalAbilities = {
+export const personalAbilities = [
 
-  /**
-   * Personal Abilities
-   */
-  TeachersGuidance: {
+  {
+    id: 0,
+    linkID: 0,
     name: "Teacher's Guidance",
     effect: "Boosts user and adjacent ally's experience gain by 1.2"
   },
-
-  ImperialBloodline: {
+  {
+    id: 1,
+    linkID: 1,
     name: "Imperial Bloodline",
     effect: "Boosts user's experience gain by 1.2"
   },
-  RoyalBloodline: {
+  {
+    id: 2,
+    linkID: 2,
     name: "Royal Bloodline",
     effect: "Boosts user's experience gain by 1.2"
   },
-  AllianceBloodline: {
+  {
+    id: 3,
+    linkID: 3,
     name: "Alliance Bloodline",
     effect: "Boosts user's experience gain by 1.2"
   },
-
-  Strategist: {
+  {
+    id: 4,
+    linkID: 4,
     name: "Strategist",
     effect: "Boosts Gambit Might by 5"
   },
-  Songstress: {
+  {
+    id: 5,
+    linkID: 5,
     name: "Songstress",
     effect: "At the start of each turn, restores adjacent allies' HP by 10%"
   },
-  LiegesShield: {
+  {
+    id: 6,
+    linkID: 6,
     name: "	Liege's Shield",
     effect: "If user waits without acting, Defence +4 for one turn"
   },
-  SolitaryWolf: {
+  {
+    id: 7,
+    linkID: 6,
     name: "Solitary Wolf	",
     effect: "When a battalion is not deployed or when battalion health is zero, damage dealt +5"
   },
-  PrestigiousNoble: {
+  {
+    id: 8,
+    linkID: 7,
     name: "Prestigious Noble",
     effect: "When a battalion is deployed, damage dealt +2"
   },
-  Plead: {
+  {
+    id: 9,
+    linkID: 8,
     name: "Plead",
     effect: "When an adjacent male ally enters battle, ally's damage dealt +3"
   },
-  Confidence: {
+  {
+    id: 10,
+    linkID: 6,
     name: "Confidence",
     effect: "Hit rate and Avoid +15 when user's HP is full"
   },
-  LivetoServe: {
+  {
+    id: 11,
+    linkID: 9,
     name: "Live to Serve",
     effect: ""
   },
-  Scavenge: {
+  {
+    id: 12,
+    linkID: 10,
     name: "Scavenge",
     effect: "User has a Luck% chance to restore 10% HP at the start of each turn"
   },
-  Paranoia: {
+  {
+    id: 13,
+    linkID: 6,
     name: "Paranoia",
     effect: "If user's HP isn't full, Attack +5"
   },
-  WisdomtoLive: {
+  {
+    id: 14,
+    linkID: 11,
     name: "Wisdom to Live",
     effect: "User can open doors and chests without keys"
   },
-  Prodigy: {
+  {
+    id: 15,
+    linkID: 12,
     name: "Prodigy",
     effect: "Experience points towards skill levels earned during battles is doubled"
   },
-  Quarreler: {
+  {
+    id: 16,
+    linkID: 13,
     name: "Quarreler",
     effect: "Adjacent foes receive Avoid -10 during combat"
   },
-  HardWorker: {
+  {
+    id: 17,
+    linkID: 14,
     name: "Hard Worker",
     effect: "When Rally command is used on ally, grants Strength +4 to target"
   },
-  KeenObservation: {
+  {
+    id: 18,
+    linkID: 15,
     name: "Keen Observation",
     effect: "Hit rate +20"
   },
-  HuntersLaw: {
+  {
+    id: 19,
+    linkID: 6,
     name: "Hunter's Law",
     effect: "When foe has less than 50% HP, Critical rate +20"
   },
-  LadiesMan: {
+  {
+    id: 20,
+    linkID: 16,
     name: "Ladies' Man",
     effect: "When adjacent to a female ally, damage dealt to foe +2, damage received from foe -2"
   },
-  AnimalLover: {
+  {
+    id: 21,
+    linkID: 10,
     name: "Animal Lover",
     effect: "When adjacent to a horseback or flying ally, restores 20% HP at the start of the turn"
   },
-  DozeOff: {
+  {
+    id: 22,
+    linkID: 10,
     name: "Doze Off",
     effect: "If unit waits without acting, restores 10% HP"
   },
-  LadyKnight: {
+  {
+    id: 23,
+    linkID: 4,
     name: "Lady Knight",
     effect: "When using a Gambit, Might +3 and Hit Rate +5"
   },
-  HatestoLose: {
+  {
+    id: 24,
+    linkID: 16,
     name: "Hates to Lose",
     effect: "When adjacent to a male ally, damage dealt to foe +2, damage received from foe -2"
   }
-}
+]
 
 /****************************************************************************************/
 /*************************************** CLASSES ****************************************/

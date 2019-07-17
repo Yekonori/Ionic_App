@@ -19,6 +19,28 @@ export class CharacterInformationsPage implements OnInit {
   characterDetails;
 
   /**
+   * Character's Growth Rates
+   */
+  characterGrowthRates = [];
+
+  /**
+   * Character's Growth Rates
+   */
+  characterStatsModifier = [];
+
+  /**
+   * Array of stats use for Growth Rates & Stats Modifier
+   */
+  stats = ["HP", "STR", "DEF", "DEX", "SPD", "MAG", "RES"];
+
+  /**
+   * Array of masteries for Proficiencies
+   */
+  masteries = [
+    "Sword", "Lance", "Axe", "Bow", "Brawling", "Reason", "Faith", "Authority", "Heavy Armor", "Riding", "Flying"
+  ]
+
+  /**
    * Crest's Details Object
    */
   crest = [];
@@ -49,9 +71,27 @@ export class CharacterInformationsPage implements OnInit {
 
     this.characterDetails = charactersDetails[characterParameter];
 
+    this.getCharacterStats();
+
     this.getCrest();
 
     this.getPersonalAbilityDetails();
+  }
+
+  /**
+   * Get the differents value of : 
+   * 
+   * - Growth Rates
+   * - Stats Modifiers
+   */
+  getCharacterStats() {
+    Object.values(this.characterDetails.baseInformations.growthRates).forEach(growthRate => {
+      this.characterGrowthRates.push(growthRate);
+    });
+
+    Object.values(this.characterDetails.baseInformations.statsModifier).forEach(statModifier => {
+      this.characterStatsModifier.push(statModifier);
+    });
   }
 
   getCrest() {
@@ -61,7 +101,19 @@ export class CharacterInformationsPage implements OnInit {
   }
 
   getPersonalAbilityDetails() {
-    this.personalAbility = personalAbilities[this.characterDetails.personalAbility.replace(/\ |\'/g, '')];
+    this.personalAbility = personalAbilities.find(personalAbility => personalAbility.id === this.characterDetails.personalAbility);
+  }
+
+  getMasteryLevel(mastery: string) {
+    if (this.characterDetails.masteryLearning.strong.indexOf(mastery) >= 0) {
+      return "strong"
+    }
+    if (this.characterDetails.masteryLearning.weak.indexOf(mastery) >= 0) {
+      return "weak"
+    }
+    if (this.characterDetails.masteryLearning.budding.indexOf(mastery) >= 0) {
+      return "budding"
+    }
   }
 
   async presentPopoverCrest(ev: any, index: number) {
