@@ -9,7 +9,7 @@
 </ng-container>
 
 <ng-container *ngIf="cardType === 'classe'">
-  <ion-card [routerLink]="['/classe-details', classe.name.replace(' ', '')]">
+  <ion-card [routerLink]="['/classe-details', classe.name.replace(' ', '')]" routerDirection="forward">
     <ion-card-header>
       <img src="#" alt="{{ classe.name }}" title="{{ classe.name }}">
       <ion-card-title>{{ classe.name }}</ion-card-title>

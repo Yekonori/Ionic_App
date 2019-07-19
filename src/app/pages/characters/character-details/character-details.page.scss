@@ -1,0 +1,19 @@
+ion-header {
+    ion-toolbar {
+        ion-buttons {
+            width: 8vw;
+            margin-left: 3vw;
+
+            &:focus,
+            & > *:focus {
+                outline: none;
+            }
+
+            ion-icon {
+                font-size: 1.5rem;
+
+                width: 100%;
+            }
+        }
+    }
+}

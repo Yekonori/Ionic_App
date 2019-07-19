@@ -36,9 +36,7 @@ export class CharacterInformationsPage implements OnInit {
   /**
    * Array of masteries for Proficiencies
    */
-  masteries = [
-    "Sword", "Lance", "Axe", "Bow", "Brawling", "Reason", "Faith", "Authority", "Heavy Armor", "Riding", "Flying"
-  ]
+  masteries = ["Sword", "Lance", "Axe", "Bow", "Brawling", "Reason", "Faith", "Authority", "Heavy Armor", "Riding", "Flying"];
 
   /**
    * Crest's Details Object
@@ -104,15 +102,21 @@ export class CharacterInformationsPage implements OnInit {
     this.personalAbility = personalAbilities.find(personalAbility => personalAbility.id === this.characterDetails.personalAbility);
   }
 
-  getMasteryLevel(mastery: string) {
+  getStrongMastery(mastery: string) {
     if (this.characterDetails.masteryLearning.strong.indexOf(mastery) >= 0) {
-      return "strong"
+      return true;
     }
+  }
+
+  getWeakMastery(mastery: string) {
     if (this.characterDetails.masteryLearning.weak.indexOf(mastery) >= 0) {
-      return "weak"
+      return true;
     }
+  }
+
+  getBuddingMastery(mastery: string) {
     if (this.characterDetails.masteryLearning.budding.indexOf(mastery) >= 0) {
-      return "budding"
+      return true;
     }
   }
 

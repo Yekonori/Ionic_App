@@ -47,7 +47,7 @@ export const housesCharacters = {
     { name: "Lysithea" },
     { name: "Leonie" },
     { name: "Raphael" }
-  ],
+  ]
 };
 
 export const commonCharacters = [
@@ -55,6 +55,68 @@ export const commonCharacters = [
 ];
 
 export const charactersDetails = {
+
+  Byleth: {
+    name: "Byleth",
+    fullName: "Byleth",
+    house: "Black Eagles",
+    crest: [
+      0, 1
+    ],
+    personalAbility: 0,
+    masteryLearning: {
+      strong: [
+        "Sword", "Lance", "Bow", "Brawling", "Authority"
+      ],
+      weak: [],
+      budding: [
+        "Faith"
+      ]
+    },
+    baseInformations: {
+      baseClasse: "Commoner",
+      baseMastery: {
+        sword: "D+",
+        lance: "E",
+        axe: "E",
+        bow: "E",
+        brawling: "E+",
+        reason: "E",
+        faith: "E",
+        authority: "D",
+        heavyArmor: "E",
+        riding: "E",
+        flying: "E"
+      },
+      growthRates: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+      },
+      statsModifier: {
+        HP: 0,
+        STR: 0,
+        DEF: 0,
+        DEX: 0,
+        SPD: 0,
+        MAG: 0,
+        RES: 0,
+      }
+    },
+    personality: {
+      likes: "",
+      dislikes: ""
+    },
+    restrictions: {
+      isLord: false,
+      isMan: false,
+      isWoman: false
+    }
+  },
 
   /**
    * Black Eagles Details :
@@ -110,7 +172,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -120,7 +181,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -173,7 +233,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -183,7 +242,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -206,7 +264,7 @@ export const charactersDetails = {
     personalAbility: 13,
     masteryLearning: {
       strong: [
-        "Lance", "Bow"
+        "Lance", "Bow", "Heavy Armor"
       ],
       weak: [
         "Sword", "Axe", "Brawling"
@@ -238,7 +296,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -248,7 +305,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -301,7 +357,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -311,7 +366,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -364,7 +418,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -374,7 +427,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -427,7 +479,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -437,7 +488,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -488,7 +538,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -498,7 +547,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -549,7 +597,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -559,7 +606,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -627,7 +673,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -637,7 +682,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -688,7 +732,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -698,7 +741,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -751,7 +793,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -761,7 +802,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -814,7 +854,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -824,7 +863,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -879,7 +917,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -889,7 +926,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -944,7 +980,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -954,7 +989,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1009,7 +1043,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -1019,7 +1052,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1070,7 +1102,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -1080,7 +1111,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1148,7 +1178,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -1158,7 +1187,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1211,7 +1239,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -1221,7 +1248,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1276,7 +1302,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -1286,7 +1311,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1341,7 +1365,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -1351,7 +1374,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1404,7 +1426,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -1414,7 +1435,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1440,7 +1460,7 @@ export const charactersDetails = {
         "Reason", "Faith", "Authority"
       ],
       weak: [
-        "Sword", "Lance", "Axe"
+        "Sword", "Lance", "Axe", "Heavy Armor"
       ],
       budding: [
         "Sword"
@@ -1469,7 +1489,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -1479,7 +1498,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1528,7 +1546,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -1538,7 +1555,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1555,7 +1571,7 @@ export const charactersDetails = {
     name: "Raphael",
     fullName: "Raphael Kirsten",
     house: "Golden Deer",
-    crest: "",
+    crest: [],
     personalAbility: 12,
     masteryLearning: {
       strong: [
@@ -1589,7 +1605,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       },
       statsModifier: {
         HP: 0,
@@ -1599,7 +1614,6 @@ export const charactersDetails = {
         SPD: 0,
         MAG: 0,
         RES: 0,
-        MOV: 0
       }
     },
     personality: {
@@ -1622,140 +1636,117 @@ export const crests = [
   {
     id: 0,
     name: "",
-    status: "Major",
     effect: ""
   },
   {
     id: 1,
-    name: "Flames",
-    status: "Major",
-    effect: ""
+    name: "Nemesis",
+    effect: "Occasionally restores HP equal to 30% of damage dealt. Rarely raises Mt and stops counter attacks"
   },
   {
     id: 2,
     name: "Seiros",
-    status: "Minor",
-    effect: ""
+    effect: "Sometimes raises Might when using Combat Arts"
   },
   {
     id: 3,
     name: "Cichol",
-    status: "Minor",
-    effect: ""
+    effect: "	Allows combat arts to sometimes prevent enemy counterattacks"
   },
   {
     id: 4,
     name: "",
-    status: "",
     effect: ""
   },
   {
     id: 5,
     name: "",
-    status: "",
     effect: ""
   },
   {
     id: 6,
     name: "Dominique",
-    status: "Minor",
-    effect: ""
+    effect: "Occasionally conserves use of attack magic"
   },
   {
     id: 7,
     name: "Fraldarius",
-    status: "Major",
-    effect: ""
+    effect: "Sometimes raises Mt when using a weapon"
   },
   {
     id: 8,
     name: "",
-    status: "",
     effect: ""
   },
   {
     id: 9,
     name: "Daphnel",
-    status: "Minor",
-    effect: ""
+    effect: "Sometimes raises Mt when using Combat Arts"
   },
   {
     id: 10,
     name: "Blaiddyd",
-    status: "Minor",
-    effect: ""
+    effect: "Occasionally doubles Attack and weapon uses for Combat Arts"
   },
   {
     id: 11,
     name: "Gloucester",
-    status: "Minor",
-    effect: ""
+    effect: "Occasionally raises Mt during magic attacks"
   },
   {
     id: 12,
     name: "Goneril",
-    status: "Minor",
-    effect: ""
+    effect: "Allows Combat Arts to sometimes prevent enemy counterattacks"
   },
   {
     id: 13,
     name: "",
-    status: "",
     effect: ""
   },
   {
     id: 14,
     name: "Gautier",
-    status: "Minor",
-    effect: ""
+    effect: "Occasionally allows weapon attacks to strike twice"
   },
   {
     id: 15,
     name: "",
-    status: "Minor",
     effect: ""
   },
   {
     id: 16,
     name: "Charon",
-    status: "Minor",
-    effect: ""
+    effect: "Sometimes raises Mt when using Combat Arts"
   },
   {
     id: 17,
     name: "",
-    status: "",
     effect: ""
   },
   {
     id: 18,
     name: "Riegan",
-    status: "Minor",
-    effect: ""
+    effect: "Sometimes restores HP equal to 30% of damage dealt when using Combat Arts"
   },
   {
     id: 19,
     name: "",
-    status: "",
     effect: ""
   },
   {
     id: 20,
     name: "Lamine",
-    status: "Minor",
-    effect: ""
+    effect: "Occasionally conserves uses of recovery magic"
   },
   {
     id: 21,
     name: "Indech",
-    status: "Minor",
-    effect: ""
+    effect: "Occasionally allows weapon attacks to strike twice"
   },
   {
     id: 22,
     name: "Cethlenn",
-    status: "Minor",
-    effect: ""
+    effect: "Sometimes raises Mt when using recovery magic"
   }
 ];
 

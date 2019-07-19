@@ -1,27 +1,89 @@
-ion-content {
-    ion-grid {
-        max-height: calc(100vh - var(--ion-tabs-top) - var(--ion-tabs-bottom));
+ion-grid {
+    max-height: calc(100vh - var(--ion-tabs-top) - var(--ion-tabs-bottom));
 
-        margin-top: var(--ion-tabs-top);
-        margin-bottom: var(--ion-tabs-bottom);
+    margin-top: var(--ion-tabs-top);
+    padding-top: 15px;
+}
 
-        ion-row {
-            ion-col {
-                div {
-                    &.characterIdentity {
-                        position: relative;
+/******************************************************************************/
+/****************************** IDENTITY CARD CSS *****************************/
+/******************************************************************************/
 
-                        img {
-                            &.characterHouse {
-                                position: absolute;
-                                right: 0;
-                                bottom: -15px;
+.characterIdentity {
+    position: relative;
 
-                                height: 55px;
-                            }
-                        }
-                    }
-                }
+    img {
+        &.characterHouse {
+            position: absolute;
+            right: 0;
+            bottom: -20px;
+
+            height: 50px;
+        }
+    }
+}
+
+.characterIdentityCol {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 7vw;
+        margin-right: 3vw;
+
+        &.crestPicto {
+            border: 1px solid #333;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            // box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.85);
+        }
+
+        &.personalAbilityPicto {
+            width: 6vw;
+            margin-left: 0.5vw
+        }
+    }
+}
+
+/******************************************************************************/
+/********************************* TABLES CSS *********************************/
+/******************************************************************************/
+
+.table {
+    margin-top: 40px;
+
+    .tableTitle {
+        font-weight: bold;
+
+        margin: 0;
+    }
+
+    .tableCol {
+        text-align: center;
+
+        p {
+            margin: 4px 0;
+        }
+
+        .colHeader {
+            background: #ccc;
+        }
+
+        .rowBody {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+
+            .colBody {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                border: 1px solid #ccc;
             }
         }
     }

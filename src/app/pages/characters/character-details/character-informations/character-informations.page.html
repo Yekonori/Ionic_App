@@ -11,40 +11,34 @@
         </div>
       </ion-col>
 
-      <ion-col size="8" align-self-start>
-        <ion-row *ngIf="characterDetails.crest; else noCrest">
+      <ion-col size="8" align-self-end>
+        <ion-row>
           <ng-container *ngFor="let crest of crest; let i = index">
-            <ion-col>
-              <img src="/assets/images/Crests/{{ crest.name }}.png" alt="{{ crest.name }}" title="{{ crest.name }}">
-            </ion-col>
-            <ion-col>
+            <ion-col class="characterIdentityCol">
+              <img class="crestPicto" src="/assets/images/Crests/{{ crest.name }}.png" alt="{{ crest.name }}"
+                title="{{ crest.name }}" *ngIf="crest.name != ''">
               <p (click)="presentPopoverCrest($event, i)">{{ crest.name }}</p>
             </ion-col>
           </ng-container>
         </ion-row>
 
-        <ng-template #noCrest>
-          <ion-row></ion-row>
-        </ng-template>
-
-        <ion-row *ngIf="characterDetails.personalAbility">
-          <ion-col>
-            <img src="/assets/images/Abilities/Ability_Picto_{{ personalAbility.linkID }}.png"
+        <ion-row>
+          <ion-col class="characterIdentityCol">
+            <img class="personalAbilityPicto"
+              src="/assets/images/Abilities/Ability_Picto_{{ personalAbility.linkID }}.png"
               alt="{{ personalAbility.name }}" title="{{ personalAbility.name }}">
-          </ion-col>
-          <ion-col>
             <p (click)="presentPopoverPersonalAbility($event)">{{ personalAbility.name }}</p>
           </ion-col>
         </ion-row>
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="table">
       <ion-col size="12">
-        <p>Growth Rates</p>
+        <p class="tableTitle">Growth Rates</p>
       </ion-col>
 
-      <ion-col size="12">
+      <ion-col class="tableCol" size="12">
         <ion-row class="rowHeader">
           <ion-col class="colHeader" *ngFor="let stat of stats">
             <p>{{ stat }}</p>
@@ -59,12 +53,12 @@
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="table">
       <ion-col size="12">
-        <p>Stats Modifier</p>
+        <p class="tableTitle">Stats Modifier</p>
       </ion-col>
 
-      <ion-col size="12">
+      <ion-col class="tableCol" size="12">
         <ion-row class="rowHeader">
           <ion-col class="colHeader" *ngFor="let stat of stats">
             <p>{{ stat }}</p>
@@ -79,12 +73,12 @@
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="table">
       <ion-col size="12">
-        <p>Proficiencies</p>
+        <p class="tableTitle">Proficiencies</p>
       </ion-col>
 
-      <ion-col size="12">
+      <ion-col class="tableCol" size="12">
         <ion-row class="rowHeader">
           <ion-col class="colHeader" *ngFor="let mastery of masteries">
             <img src="/assets/images/Masteries/{{ mastery.replace(' ', '_') }}.png" alt="{{ mastery }}"
@@ -95,11 +89,11 @@
         <ion-row class="rowBody">
           <ion-col class="colBody" *ngFor="let mastery of masteries">
             <img src="/assets/images/Masteries/Mastery_Strong.png" alt="{{ mastery }}" title="{{ mastery }}"
-              *ngIf="getMasteryLevel(mastery) == 'strong'">
+              *ngIf="getStrongMastery(mastery)">
             <img src="/assets/images/Masteries/Mastery_Weak.png" alt="{{ mastery }}" title="{{ mastery }}"
-              *ngIf="getMasteryLevel(mastery) == 'weak'">
+              *ngIf="getWeakMastery(mastery)">
             <img src="/assets/images/Masteries/Mastery_Budding.png" alt="{{ mastery }}" title="{{ mastery }}"
-              *ngIf="getMasteryLevel(mastery) == 'budding'">
+              *ngIf="getBuddingMastery(mastery)">
           </ion-col>
         </ion-row>
       </ion-col>
