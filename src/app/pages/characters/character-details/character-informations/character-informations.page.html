@@ -83,6 +83,8 @@
           <ion-col class="colHeader" *ngFor="let mastery of masteries">
             <img src="/assets/images/Masteries/{{ mastery.replace(' ', '_') }}.png" alt="{{ mastery }}"
               title="{{ mastery }}">
+            <img class="buddingPicto" src="/assets/images/Masteries/Mastery_Budding.png" alt="{{ mastery }}" title="{{ mastery }}"
+              *ngIf="getBuddingMastery(mastery)">
           </ion-col>
         </ion-row>
 
@@ -92,8 +94,6 @@
               *ngIf="getStrongMastery(mastery)">
             <img src="/assets/images/Masteries/Mastery_Weak.png" alt="{{ mastery }}" title="{{ mastery }}"
               *ngIf="getWeakMastery(mastery)">
-            <img src="/assets/images/Masteries/Mastery_Budding.png" alt="{{ mastery }}" title="{{ mastery }}"
-              *ngIf="getBuddingMastery(mastery)">
           </ion-col>
         </ion-row>
       </ion-col>

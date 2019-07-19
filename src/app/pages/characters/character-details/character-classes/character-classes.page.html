@@ -3,9 +3,67 @@
     <ion-row>
       <ion-col>
         <ion-list>
-          <ion-item *ngFor="let classe of classes">
-            <ion-label>{{ classe.name }}</ion-label>
-          </ion-item>
+          <ng-container *ngFor="let classe of classes; let i = index">
+            <ion-item (click)="toggleClasseInformations(i)" detail>
+              <ion-label>{{ classe.name }}</ion-label>
+              <ion-thumbnail *ngFor="let proficiencies of classe.proficiencies">
+                <img src="/assets/images/Masteries/{{ proficiencies.replace(' ', '_') }}.png" alt="{{  proficiencies }}"
+                  title="{{  proficiencies }}">
+              </ion-thumbnail>
+            </ion-item>
+
+            <ion-grid class="classeDetails" *ngIf="classe.open">
+              <ion-row>
+                <ion-col size="12">{{ classe.requirements.description }}</ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col size="12">
+                  Skills
+                </ion-col>
+              </ion-row>
+
+              <ion-row class="table">
+                <ion-col size="12">
+                  <p class="tableTitle">Max Stats</p>
+                </ion-col>
+
+                <ion-col class="tableCol" size="12">
+                  <ion-row class="rowHeader">
+                    <ion-col class="colHeader" *ngFor="let maxStat of maxStats">
+                      <p>{{ maxStat }}</p>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="rowBody">
+                    <ion-col class="colBody" *ngFor="let classeMaxStat of classe.maxStatsArray">
+                      <p>{{ classeMaxStat }}</p>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+
+              <ion-row class="table">
+                <ion-col size="12">
+                  <p class="tableTitle">Growth Rates</p>
+                </ion-col>
+
+                <ion-col class="tableCol" size="12">
+                  <ion-row class="rowHeader">
+                    <ion-col class="colHeader" *ngFor="let growthRate of growthRates">
+                      <p>{{ growthRate }}</p>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="rowBody">
+                    <ion-col class="colBody" *ngFor="let classeGrowthRate of classe.growthRatesArray">
+                      <p>{{ classeGrowthRate }}</p>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ng-container>
         </ion-list>
       </ion-col>
     </ion-row>

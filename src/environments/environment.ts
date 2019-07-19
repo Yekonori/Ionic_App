@@ -114,7 +114,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: false
     }
   },
 
@@ -190,7 +194,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: true,
       isMan: false,
-      isWoman: true
+      isWoman: true,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: false
     }
   },
   Hubert: {
@@ -251,7 +259,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: false
     }
   },
   Bernadetta: {
@@ -314,7 +326,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: true
+      isWoman: true,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Linhardt: {
@@ -375,7 +391,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Ferdinand: {
@@ -436,7 +456,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Dorothea: {
@@ -497,7 +521,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: true
+      isWoman: true,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Caspar: {
@@ -556,7 +584,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Petra: {
@@ -615,7 +647,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: true
+      isWoman: true,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
 
@@ -691,7 +727,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: true,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: false
     }
   },
   Dedue: {
@@ -750,7 +790,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: false
     }
   },
   Annette: {
@@ -811,7 +855,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Ashe: {
@@ -872,7 +920,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Felix: {
@@ -935,7 +987,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Mercedes: {
@@ -998,7 +1054,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: true
+      isWoman: true,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Sylvain: {
@@ -1061,7 +1121,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Ingrid: {
@@ -1120,7 +1184,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: true
+      isWoman: true,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
 
@@ -1196,7 +1264,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: true,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: false
     }
   },
   Lorenz: {
@@ -1257,7 +1329,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Hilda: {
@@ -1320,7 +1396,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: true
+      isWoman: true,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: false
     }
   },
   Marianne: {
@@ -1383,7 +1463,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: true
+      isWoman: true,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Ignatz: {
@@ -1444,7 +1528,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Lysithea: {
@@ -1507,7 +1595,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: true
+      isWoman: true,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Leonie: {
@@ -1564,7 +1656,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: false,
-      isWoman: true
+      isWoman: true,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   },
   Raphael: {
@@ -1623,7 +1719,11 @@ export const charactersDetails = {
     restrictions: {
       isLord: false,
       isMan: true,
-      isWoman: false
+      isWoman: false,
+      isStudent: true
+    },
+    recruitment: {
+      isRectrutalbe: true
     }
   }
 };
@@ -1651,7 +1751,7 @@ export const crests = [
   {
     id: 3,
     name: "Cichol",
-    effect: "	Allows combat arts to sometimes prevent enemy counterattacks"
+    effect: "Allows combat arts to sometimes prevent enemy counterattacks"
   },
   {
     id: 4,
@@ -1794,13 +1894,13 @@ export const personalAbilities = [
   {
     id: 6,
     linkID: 6,
-    name: "	Liege's Shield",
+    name: "Liege's Shield",
     effect: "If user waits without acting, Defence +4 for one turn"
   },
   {
     id: 7,
     linkID: 6,
-    name: "Solitary Wolf	",
+    name: "Solitary Wolf",
     effect: "When a battalion is not deployed or when battalion health is zero, damage dealt +5"
   },
   {
@@ -1994,7 +2094,31 @@ export const classes = {
     { name: "Warlock" },
     { name: "Dark Bishop" },
     { name: "Bishop" },
-  ]
+  ],
+
+  /**
+   * Tier 4 - Master Classes : 
+   * - Falcon Knight
+   * - Wyvern Lord
+   * - Mortal Savant
+   * - Great Knight
+   * - Bow Knight
+   * - Dark Knight
+   * - Holy Knight
+   * - War Master
+   * - Gremory
+   */
+  masterClasses: [
+    { name: "Falcon Knight" },
+    { name: "Wyvern Lord" },
+    { name: "Mortal Savant" },
+    { name: "Great Knight" },
+    { name: "Bow Knight" },
+    { name: "Dark Knight" },
+    { name: "Holy Knight" },
+    { name: "War Master" },
+    { name: "Gremory" },
+  ],
 
 }
 
@@ -2016,10 +2140,35 @@ export const classesDetails = {
       RES: 1,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {},
+    abilities: [],
+    proficiencies: [],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2036,10 +2185,35 @@ export const classesDetails = {
       RES: 1,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {},
+    abilities: [],
+    proficiencies: [],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2061,10 +2235,37 @@ export const classesDetails = {
       RES: 2,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Sword level at D or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2081,10 +2282,37 @@ export const classesDetails = {
       RES: 2,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Lance level at D or higher",
+    },
+    abilities: [],
+    proficiencies: ["Lance"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2101,10 +2329,37 @@ export const classesDetails = {
       RES: 2,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Axe, Bow or Brawl level at D or higher",
+    },
+    abilities: [],
+    proficiencies: ["Axe", "Bow", "Brawling"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2121,10 +2376,37 @@ export const classesDetails = {
       RES: 3,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Reason or Faith level at D or higher",
+    },
+    abilities: [],
+    proficiencies: ["Reason", "Faith"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2145,10 +2427,37 @@ export const classesDetails = {
       RES: 2,
       MOV: 2
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Sword level at D or higher\nAuthority level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Lance", "Authority"],
     restrictions: {
       isLordOnly: true,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: false
     }
   },
@@ -2165,10 +2474,37 @@ export const classesDetails = {
       RES: 2,
       MOV: 2
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Sword level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Axe"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2185,10 +2521,37 @@ export const classesDetails = {
       RES: 2,
       MOV: 2
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Sword level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Bow"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2205,10 +2568,37 @@ export const classesDetails = {
       RES: 1,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Axe level at C or higher\nHeavy Armor level at D or higher",
+    },
+    abilities: [],
+    proficiencies: ["Lance", "Axe", "Heavy Armor"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2225,10 +2615,37 @@ export const classesDetails = {
       RES: 3,
       MOV: 4
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Lance level at C or higher\nRiding level at D or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Lance", "Riding"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2245,10 +2662,37 @@ export const classesDetails = {
       RES: 2,
       MOV: 2
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Axe level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Axe", "Brawling"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2265,10 +2709,37 @@ export const classesDetails = {
       RES: 2,
       MOV: 2
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Bow level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Bow"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2285,10 +2756,37 @@ export const classesDetails = {
       RES: 1,
       MOV: 2
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Brawl level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Axe", "Brawling"],
     restrictions: {
       isLordOnly: false,
       isManOnly: true,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: false
     }
   },
@@ -2305,10 +2803,37 @@ export const classesDetails = {
       RES: 4,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Reason level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Reason", "Faith"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2325,10 +2850,37 @@ export const classesDetails = {
       RES: 4,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Reason level at C or higher\nDark Seal",
+    },
+    abilities: [],
+    proficiencies: ["Reason", "Faith"],
     restrictions: {
       isLordOnly: false,
       isManOnly: true,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: false
     }
   },
@@ -2345,10 +2897,37 @@ export const classesDetails = {
       RES: 4,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Faith level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Reason", "Faith"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2365,10 +2944,37 @@ export const classesDetails = {
       RES: 4,
       MOV: 3
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Lance level at C or highe\nFlying level at D or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Lance", "Flying"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: true,
+      isStudentOnly: false,
       noRestricted: false
     }
   },
@@ -2389,10 +2995,37 @@ export const classesDetails = {
       RES: 3,
       MOV: 2
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Sword level at B or higher\nAxe level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Axe"],
     restrictions: {
       isLordOnly: false,
       isManOnly: true,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: false
     }
   },
@@ -2409,10 +3042,37 @@ export const classesDetails = {
       RES: 3,
       MOV: 2
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Sword level at A or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2429,10 +3089,37 @@ export const classesDetails = {
       RES: 3,
       MOV: 3
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Sword level at B or higher\nBow level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Bow"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2449,10 +3136,37 @@ export const classesDetails = {
       RES: 3,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Axe level at A or higher\nHeavy Armor level at B or higher",
+    },
+    abilities: [],
+    proficiencies: ["Lance", "Axe", "Heavy Armor"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2469,10 +3183,37 @@ export const classesDetails = {
       RES: 4,
       MOV: 5
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Lance level at B or higher\nRiding level at B or higher",
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Lance", "Riding"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2489,10 +3230,37 @@ export const classesDetails = {
       RES: 3,
       MOV: 4
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Axe level at B or higher\nFlying level at C or higher",
+    },
+    abilities: [],
+    proficiencies: ["Axe", "Flying"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2509,10 +3277,37 @@ export const classesDetails = {
       RES: 3,
       MOV: 2
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Axe level at A or higher",
+    },
+    abilities: [],
+    proficiencies: ["Axe"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2529,10 +3324,37 @@ export const classesDetails = {
       RES: 3,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Bow level at A or higher",
+    },
+    abilities: [],
+    proficiencies: ["Bow"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2549,10 +3371,37 @@ export const classesDetails = {
       RES: 2,
       MOV: 3
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Brawl level at A or higher",
+    },
+    abilities: [],
+    proficiencies: ["Brawling"],
     restrictions: {
       isLordOnly: false,
       isManOnly: true,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: false
     }
   },
@@ -2569,10 +3418,37 @@ export const classesDetails = {
       RES: 4,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Reason level at A or higher",
+    },
+    abilities: [],
+    proficiencies: ["Reason", "Faith"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
   },
@@ -2589,10 +3465,37 @@ export const classesDetails = {
       RES: 4,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Reason level at A or higher",
+    },
+    abilities: [],
+    proficiencies: ["Reason", "Faith"],
     restrictions: {
       isLordOnly: false,
       isManOnly: true,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: false
     }
   },
@@ -2609,14 +3512,470 @@ export const classesDetails = {
       RES: 5,
       MOV: 1
     },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Faith level at A or higher",
+    },
+    abilities: [],
+    proficiencies: ["Reason", "Faith"],
     restrictions: {
       isLordOnly: false,
       isManOnly: false,
       isWomanOnly: false,
+      isStudentOnly: false,
       noRestricted: true
     }
-  }
+  },
+
+  /**
+   * Tier 4 - Master Classes
+   */
+  FalconKnight: {
+    name: "Falcon Knight",
+    tier: "Master",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: ""
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Lance", "Flying"],
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: true,
+      isStudentOnly: false,
+      noRestricted: true
+    }
+  },
+  WyvernLord: {
+    name: "Wyvern Lord",
+    tier: "Master",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Axe Level at A or higher\nFlying level at A or higher\nLance level at C or higher"
+    },
+    abilities: [],
+    proficiencies: ["Lance", "Axe", "Flying"],
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      isStudentOnly: false,
+      noRestricted: true
+    }
+  },
+  MortalSavant: {
+    name: "Mortal Savant",
+    tier: "Master",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: ""
+    },
+    abilities: [],
+    proficiencies: ["Sword", "Reason"],
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      isStudentOnly: false,
+      noRestricted: true
+    }
+  },
+  GreatKnight: {
+    name: "Great Knight",
+    tier: "Master",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Heavy Armour at A or higher\nAxe level at B+ or higher\nRiding level at B+ or higher"
+    },
+    abilities: [],
+    proficiencies: ["Lance", "Axe", "Heavy Armor"],
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      isStudentOnly: false,
+      noRestricted: true
+    }
+  },
+  BowKnight: {
+    name: "Bow Knight",
+    tier: "Master",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Bow level at A or higher\nRiding level at A or higher\nLance level at C or higher"
+    },
+    abilities: [],
+    proficiencies: ["Lance", "Bow", "Riding"],
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      isStudentOnly: false,
+      noRestricted: true
+    }
+  },
+  DarkKnight: {
+    name: "DarkKnight",
+    tier: "Master",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Riding level at A or higher\nReason level B+ or higher\nLance level at C or higher"
+    },
+    abilities: [],
+    proficiencies: ["Lance", "Reason", "Riding"],
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      isStudentOnly: false,
+      noRestricted: true
+    }
+  },
+  HolyKnight: {
+    name: "Holy Knight",
+    tier: "Master",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: "Riding level at A or higher\nFaith level B+ or higher\nLance level at C or higher"
+    },
+    abilities: [],
+    proficiencies: ["Lance", "Faith", "Riding"],
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: false,
+      isStudentOnly: false,
+      noRestricted: true
+    }
+  },
+  WarMaster: {
+    name: "War Master",
+    tier: "Master",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: ""
+    },
+    abilities: [],
+    proficiencies: ["Axe", "Brawling"],
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: true,
+      isWomanOnly: false,
+      isStudentOnly: false,
+      noRestricted: true
+    }
+  },
+  Gremory: {
+    name: "Gremory",
+    tier: "Master",
+    stats: {
+      HP: 1,
+      STR: 1,
+      DEF: 1,
+      DEX: 1,
+      SPD: 1,
+      MAG: 1,
+      RES: 1,
+      MOV: 1
+    },
+    growthRates: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+    },
+    growthRatesArray: ["0", "0", "0", "0", "0", "0", "0"],
+    maxStats: {
+      HP: 0,
+      STR: 0,
+      DEF: 0,
+      DEX: 0,
+      SPD: 0,
+      MAG: 0,
+      RES: 0,
+      MOV: 0
+    },
+    maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
+    requirements: {
+      description: ""
+    },
+    abilities: [],
+    proficiencies: ["Reason", "Faith"],
+    restrictions: {
+      isLordOnly: false,
+      isManOnly: false,
+      isWomanOnly: true,
+      isStudentOnly: false,
+      noRestricted: true
+    }
+  },
 }
+
+export const classesAbilities = [];
 
 /*
  * For easier debugging in development mode, you can import the following file

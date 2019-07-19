@@ -20,6 +20,13 @@ export class CharacterClassesPage implements OnInit {
    */
   classes = [];
 
+  /**
+   * Array of stats use for Max Stats & Growth Rates
+   */
+  stats = ["HP", "STR", "DEF", "DEX", "SPD", "MAG", "RES"];
+  maxStats = ["HP", "STR", "DEF", "DEX", "SPD", "MAG", "RES", "MOV"];
+  growthRates = ["HP", "STR", "DEF", "DEX", "SPD", "MAG", "RES"];
+
   constructor(
     private activatedRoute: ActivatedRoute
   ) { }
@@ -40,19 +47,22 @@ export class CharacterClassesPage implements OnInit {
     this.characterDetails = charactersDetails[characterParameter];
   }
 
+  /**
+   * Get all Classes character have acces
+   */
   getClassesAcces() {
-    let allClasses = classes.initialClasses.concat(classes.beginnerClasses, classes.intermediateClasses, classes.advancedClasses);
+    let initialClasse = [classesDetails[this.characterDetails.baseInformations.baseClasse]];
+
+    let allClasses = initialClasse.concat(classes.beginnerClasses, classes.intermediateClasses, classes.advancedClasses);
 
     allClasses.forEach(classe => {
       /**
        * 
-       * Check if the classe noRestricted
-       * 
-       * Check if the classe isLordOnly and if the character isLord
-       * 
-       * Check if the classe isManOnly and if the character isMan
-       * 
-       * Check if the classe isWomanOnly and if the character isWoman
+       * Check if the classe : 
+       * - noRestricted
+       * - isLordOnly and if the character isLord
+       * - isManOnly and if the character isMan
+       * - isWomanOnly and if the character isWoman
        */
 
       if (
@@ -74,8 +84,17 @@ export class CharacterClassesPage implements OnInit {
         this.characterDetails.restrictions.isWoman
       ) {
         this.classes.push(classesDetails[classe.name.replace(" ", "")]);
+      } else if (
+        classesDetails[classe.name.replace(" ", "")].restrictions.isStudentOnly &&
+        this.characterDetails.restrictions.isStudent
+      ) {
+        this.classes.push(classesDetails[classe.name.replace(" ", "")]);
       }
-    })
+    });
   }
 
+  toggleClasseInformations(i) {
+    this.classes[i].open = !this.classes[i].open;
+    console.log(this.classes[i].proficiencies);
+  }
 }
