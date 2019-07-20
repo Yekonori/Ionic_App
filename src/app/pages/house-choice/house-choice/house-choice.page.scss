@@ -1,50 +1,62 @@
-.selectedElement,
-.selectedSlide>div {
-    border: thick solid #333;
-}
+/******************************************************************************/
+/************************* BYLETH & HOUSES BANNER CSS *************************/
+/******************************************************************************/
 
-.keyboardOpen {
-    display: none;
-}
+ion-row {
+    &.bylethRow {
+        margin-top: 25px;
 
-ion-content {
-    ion-grid {
-        ion-row {
-            &.bylethRow {
-                margin-top: 25px;
+        img {
+            border: thick solid rgba(0, 0, 0, 0);
 
-                .bylethNameCol {
-                    margin-top: 15px;
-                }
+            &.selectedElement {
+                border-color: #333;
             }
 
-            ion-slides {
-                --bullet-background-active: #5264ae;
+        }
 
-                .swiper-slide {
-                    height: 310px;
-                }
-
-                ion-slide {
-                    flex-direction: column;
-                }
-            }
+        .bylethNameCol {
+            margin-top: 15px;
         }
     }
 
-    ion-fab {
-        margin-right: 20px;
-        margin-bottom: 20px;
+    ion-slides {
+        --bullet-background-active: #5264ae;
 
-        ion-fab-button {
-            &.fabButton {
-                --background: #5264ae;
-                --background-activated: #485899;
-            }
+        .swiper-slide {
+            height: 310px;
+        }
 
-            &.disableFabButton {
-                --background: #6374b6;
+        ion-slide {
+            flex-direction: column;
+
+            img {
+                width: 150px;
             }
+        }
+    }
+}
+
+/******************************************************************************/
+/****************************** FLOAT BUTTON CSS ******************************/
+/******************************************************************************/
+
+ion-fab {
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    &.keyboardOpen {
+        display: none;
+    }
+
+    ion-fab-button {
+        &.fabButton {
+            --background: #5264ae;
+            --background-activated: #485899;
+        }
+
+        &.disableFabButton {
+            --background: #6374b6;
         }
     }
 }

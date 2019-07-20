@@ -23,9 +23,8 @@ export class CharacterDetailsPage implements OnInit {
     this.getCharacterParameter();
   }
 
-  ionViewWillEnter(){
-    // this.characterTab.select("informations");
-    this.characterTab.select("classes");
+  ionViewWillEnter() {
+    this.characterTab.select("informations");
   }
 
   /**

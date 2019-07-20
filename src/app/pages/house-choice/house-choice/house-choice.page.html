@@ -27,13 +27,10 @@
     <ion-row class="bylethRow">
       <ion-col size="12">
         <ion-row text-center>
-          <ion-col size="6">
-            <img src="https://via.placeholder.com/150" alt="Byleth M" title="Byleth M" (click)="setBylethSex('Male')"
-              [ngClass]="storyObject.byleth.sex === 'Male' ? 'selectedElement' : ''">
-          </ion-col>
-          <ion-col size="6">
-            <img src="https://via.placeholder.com/150" alt="Byleth F" title="Byleth F" (click)="setBylethSex('Female')"
-              [ngClass]="storyObject.byleth.sex === 'Female' ? 'selectedElement' : ''">
+          <ion-col size="6" *ngFor="let bylethSex of bylethSexChoice">
+            <img src="/assets/images/Characters/Portraits/Common/Byleth_{{ bylethSex }}_Portrait.png"
+              alt="Byleth {{ bylethSex }}" title="Byleth {{ bylethSex }}" (click)="setBylethSex(bylethSex)"
+              [ngClass]="storyObject.byleth.sex === bylethSex ? 'selectedElement' : ''">
           </ion-col>
         </ion-row>
       </ion-col>
@@ -51,22 +48,10 @@
     <!-- House Choice -->
     <ion-row>
       <ion-slides pager="true" [options]=slideOpts (ionSlideDidChange)="setStoryHouse()" #houseSlides>
-        <ion-slide>
+        <ion-slide *ngFor="let house of houseChoice">
           <div>
-            <img src="https://via.placeholder.com/150" alt="Black Eagles" title="Black Eagles">
-            <p>Black Eagles</p>
-          </div>
-        </ion-slide>
-        <ion-slide>
-          <div>
-            <img src="https://via.placeholder.com/150" alt="Blue Lions" title="Blue Lions">
-            <p>Blue Lions</p>
-          </div>
-        </ion-slide>
-        <ion-slide>
-          <div>
-            <img src="https://via.placeholder.com/150" alt="Golden Deer" title="Golden Deer">
-            <p>Golden Deer</p>
+            <img src="/assets/images/Houses/{{ house }}.png" alt="{{ house.replace('_', ' ') }} Banner"
+              title="{{ house.replace('_', ' ') }} Banner">
           </div>
         </ion-slide>
       </ion-slides>
@@ -74,7 +59,8 @@
 
   </ion-grid>
 
-  <ion-fab vertical="bottom" horizontal="end" [ngClass]="keyboardOpen ? 'keyboardOpen' : ''" slot="fixed" *ngIf="statusParameter === 'edit'; else noEdit">
+  <ion-fab vertical="bottom" horizontal="end" [ngClass]="keyboardOpen ? 'keyboardOpen' : ''" slot="fixed"
+    *ngIf="statusParameter === 'edit'; else noEdit">
     <ion-fab-button class="fabButton" (click)="applyEdit()">
       <ion-icon name="save"></ion-icon>
     </ion-fab-button>

@@ -38,6 +38,16 @@ export class HouseChoicePage implements OnInit {
     }
   };
 
+  /**
+   * Possibles choices for : 
+   * 
+   * - Byleth Sex
+   * - House
+   */
+
+   bylethSexChoice = ["Male", "Female"];
+   houseChoice = ["Black_Eagles", "Blue_Lions", "Golden_Deer"];
+
   confirmStoryName = false;
 
   statusParameter = "";
