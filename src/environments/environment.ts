@@ -2257,7 +2257,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Sword level at D or higher",
+      description: ["Sword level at D or higher"],
     },
     abilities: [],
     proficiencies: ["Sword"],
@@ -2304,7 +2304,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Lance level at D or higher",
+      description: ["Lance level at D or higher"],
     },
     abilities: [],
     proficiencies: ["Lance"],
@@ -2351,7 +2351,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Axe, Bow or Brawl level at D or higher",
+      description: ["Axe, Bow or Brawl level at D or higher"],
     },
     abilities: [],
     proficiencies: ["Axe", "Bow", "Brawling"],
@@ -2398,7 +2398,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Reason or Faith level at D or higher",
+      description: ["Reason or Faith level at D or higher"],
     },
     abilities: [],
     proficiencies: ["Reason", "Faith"],
@@ -2449,7 +2449,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Sword level at D or higher\nAuthority level at C or higher",
+      description: ["Sword level at D or higher", "Authority level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Sword", "Lance", "Authority"],
@@ -2496,7 +2496,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Sword level at C or higher",
+      description: ["Sword level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Sword", "Axe"],
@@ -2543,7 +2543,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Sword level at C or higher",
+      description: ["Sword level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Sword", "Bow"],
@@ -2590,7 +2590,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Axe level at C or higher\nHeavy Armor level at D or higher",
+      description: ["Axe level at C or higher", "Heavy Armor level at D or higher"],
     },
     abilities: [],
     proficiencies: ["Lance", "Axe", "Heavy Armor"],
@@ -2637,7 +2637,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Lance level at C or higher\nRiding level at D or higher",
+      description: ["Lance level at C or higher", "Riding level at D or higher"],
     },
     abilities: [],
     proficiencies: ["Sword", "Lance", "Riding"],
@@ -2684,7 +2684,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Axe level at C or higher",
+      description: ["Axe level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Axe", "Brawling"],
@@ -2731,7 +2731,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Bow level at C or higher",
+      description: ["Bow level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Sword", "Bow"],
@@ -2778,7 +2778,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Brawl level at C or higher",
+      description: ["Brawl level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Axe", "Brawling"],
@@ -2825,7 +2825,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Reason level at C or higher",
+      description: ["Reason level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Reason", "Faith"],
@@ -2872,7 +2872,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Reason level at C or higher\nDark Seal",
+      description: ["Reason level at C or higher", "Dark Seal"],
     },
     abilities: [],
     proficiencies: ["Reason", "Faith"],
@@ -2919,7 +2919,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Faith level at C or higher",
+      description: ["Faith level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Reason", "Faith"],
@@ -2966,7 +2966,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Lance level at C or highe\nFlying level at D or higher",
+      description: ["Lance level at C or highe", "Flying level at D or higher"],
     },
     abilities: [],
     proficiencies: ["Sword", "Lance", "Flying"],
@@ -3017,7 +3017,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Sword level at B or higher\nAxe level at C or higher",
+      description: ["Sword level at B or higher", "Axe level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Sword", "Axe"],
@@ -3064,7 +3064,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Sword level at A or higher",
+      description: ["Sword level at A or higher"],
     },
     abilities: [],
     proficiencies: ["Sword"],
@@ -3111,7 +3111,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Sword level at B or higher\nBow level at C or higher",
+      description: ["Sword level at B or higher", "Bow level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Sword", "Bow"],
@@ -3158,7 +3158,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Axe level at A or higher\nHeavy Armor level at B or higher",
+      description: ["Axe level at A or higher", "Heavy Armor level at B or higher"],
     },
     abilities: [],
     proficiencies: ["Lance", "Axe", "Heavy Armor"],
@@ -3205,7 +3205,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Lance level at B or higher\nRiding level at B or higher",
+      description: ["Lance level at B or higher", "Riding level at B or higher"],
     },
     abilities: [],
     proficiencies: ["Sword", "Lance", "Riding"],
@@ -3252,7 +3252,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Axe level at B or higher\nFlying level at C or higher",
+      description: ["Axe level at B or higher", "Flying level at C or higher"],
     },
     abilities: [],
     proficiencies: ["Axe", "Flying"],
@@ -3299,7 +3299,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Axe level at A or higher",
+      description: ["Axe level at A or higher"],
     },
     abilities: [],
     proficiencies: ["Axe"],
@@ -3346,7 +3346,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Bow level at A or higher",
+      description: ["Bow level at A or higher"],
     },
     abilities: [],
     proficiencies: ["Bow"],
@@ -3393,7 +3393,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Brawl level at A or higher",
+      description: ["Brawl level at A or higher"],
     },
     abilities: [],
     proficiencies: ["Brawling"],
@@ -3440,7 +3440,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Reason level at A or higher",
+      description: ["Reason level at A or higher"],
     },
     abilities: [],
     proficiencies: ["Reason", "Faith"],
@@ -3487,7 +3487,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Reason level at A or higher",
+      description: ["Reason level at A or higher"],
     },
     abilities: [],
     proficiencies: ["Reason", "Faith"],
@@ -3534,7 +3534,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Faith level at A or higher",
+      description: ["Faith level at A or higher"],
     },
     abilities: [],
     proficiencies: ["Reason", "Faith"],
@@ -3584,9 +3584,7 @@ export const classesDetails = {
       MOV: 0
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
-    requirements: {
-      description: ""
-    },
+    requirements: {},
     abilities: [],
     proficiencies: ["Sword", "Lance", "Flying"],
     restrictions: {
@@ -3632,7 +3630,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Axe Level at A or higher\nFlying level at A or higher\nLance level at C or higher"
+      description: ["Axe Level at A or higher", "Flying level at A or higher", "Lance level at C or higher"]
     },
     abilities: [],
     proficiencies: ["Lance", "Axe", "Flying"],
@@ -3678,9 +3676,7 @@ export const classesDetails = {
       MOV: 0
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
-    requirements: {
-      description: ""
-    },
+    requirements: {},
     abilities: [],
     proficiencies: ["Sword", "Reason"],
     restrictions: {
@@ -3726,7 +3722,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Heavy Armour at A or higher\nAxe level at B+ or higher\nRiding level at B+ or higher"
+      description: ["Heavy Armour at A or higher", "Axe level at B+ or higher", "Riding level at B+ or higher"]
     },
     abilities: [],
     proficiencies: ["Lance", "Axe", "Heavy Armor"],
@@ -3773,7 +3769,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Bow level at A or higher\nRiding level at A or higher\nLance level at C or higher"
+      description: ["Bow level at A or higher", "Riding level at A or higher", "Lance level at C or higher"]
     },
     abilities: [],
     proficiencies: ["Lance", "Bow", "Riding"],
@@ -3820,7 +3816,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Riding level at A or higher\nReason level B+ or higher\nLance level at C or higher"
+      description: ["Riding level at A or higher", "Reason level B+ or higher", "Lance level at C or higher"]
     },
     abilities: [],
     proficiencies: ["Lance", "Reason", "Riding"],
@@ -3867,7 +3863,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: "Riding level at A or higher\nFaith level B+ or higher\nLance level at C or higher"
+      description: ["Riding level at A or higher", "Faith level B+ or higher", "Lance level at C or higher"]
     },
     abilities: [],
     proficiencies: ["Lance", "Faith", "Riding"],
@@ -3913,9 +3909,7 @@ export const classesDetails = {
       MOV: 0
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
-    requirements: {
-      description: ""
-    },
+    requirements: {},
     abilities: [],
     proficiencies: ["Axe", "Brawling"],
     restrictions: {
@@ -3960,9 +3954,7 @@ export const classesDetails = {
       MOV: 0
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
-    requirements: {
-      description: ""
-    },
+    requirements: {},
     abilities: [],
     proficiencies: ["Reason", "Faith"],
     restrictions: {

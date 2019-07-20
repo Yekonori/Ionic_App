@@ -1,9 +1,108 @@
 ion-content {
     ion-grid {
-        max-height: calc( 100vh - var(--ion-tabs-top) - var(--ion-tabs-bottom) );
+        max-height: calc(100vh - var(--ion-tabs-top) - var(--ion-tabs-bottom));
 
         margin-top: var(--ion-tabs-top);
         margin-bottom: var(--ion-tabs-bottom);
         padding-top: 15px;
+    }
+}
+
+/******************************************************************************/
+/******************************* LABEL PART CSS *******************************/
+/******************************************************************************/
+
+ion-list {
+    padding-top: 0px;
+
+    ion-item {
+        width: 96%;
+        --padding-start: 10px;
+        --inner-padding-end: 3px;
+
+        ion-label {
+            padding-left: 5px;
+        }
+
+        ion-thumbnail {
+            display: flex;
+            align-items: center;
+
+            height: auto;
+            width: 20px;
+            margin-left: 0;
+            margin-right: 5px;
+
+            img {
+                height: auto;
+                width: 20px;
+            }
+        }
+
+        ion-icon {
+            margin: 0;
+        }
+    }
+}
+
+/******************************************************************************/
+/***************************** EXPANDABLE PART CSS ****************************/
+/******************************************************************************/
+
+.classeDetails {
+    margin-top: 0 !important;
+
+    .partRow {
+        margin-top: 40px;
+    }
+
+    .partTitle {
+        font-weight: bold;
+
+        margin: 0;
+    }
+}
+
+/******************************************************************************/
+/********************************* TABLES CSS *********************************/
+/******************************************************************************/
+
+.table {
+    margin-top: 40px;
+
+    .tableCol {
+        text-align: center;
+
+        p {
+            margin: 4px 0;
+        }
+
+        .colHeader {
+            position: relative;
+
+            background: #ccc;
+
+            .buddingPicto {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 50%;
+            }
+        }
+
+        .rowBody {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+
+            .colBody {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                border: 1px solid #ccc;
+            }
+        }
     }
 }

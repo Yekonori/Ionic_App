@@ -4,28 +4,37 @@
       <ion-col>
         <ion-list>
           <ng-container *ngFor="let classe of classes; let i = index">
-            <ion-item (click)="toggleClasseInformations(i)" detail>
+            <ion-item (click)="toggleClasseInformations(i)">
               <ion-label>{{ classe.name }}</ion-label>
-              <ion-thumbnail *ngFor="let proficiencies of classe.proficiencies">
+              <ion-thumbnail slot="end" *ngFor="let proficiencies of classe.proficiencies">
                 <img src="/assets/images/Masteries/{{ proficiencies.replace(' ', '_') }}.png" alt="{{  proficiencies }}"
                   title="{{  proficiencies }}">
               </ion-thumbnail>
+              <ion-icon name="arrow-dropright" slot="end" *ngIf="!classe.open"></ion-icon>
+              <ion-icon name="arrow-dropdown" slot="end" *ngIf="classe.open"></ion-icon>
             </ion-item>
 
             <ion-grid class="classeDetails" *ngIf="classe.open">
-              <ion-row>
-                <ion-col size="12">{{ classe.requirements.description }}</ion-col>
-              </ion-row>
-
-              <ion-row>
+              <ion-row *ngIf="classe.requirements.description">
                 <ion-col size="12">
-                  Skills
+                  <p class="partTitle">Requirements Conditions</p>
+                  <ul>
+                    <li *ngFor="let requirementsConditions of classe.requirements.description">
+                      {{ requirementsConditions }}
+                    </li>
+                  </ul>
                 </ion-col>
               </ion-row>
 
-              <ion-row class="table">
+              <ion-row class="partRow">
                 <ion-col size="12">
-                  <p class="tableTitle">Max Stats</p>
+                  <p class="partTitle">Skills</p>
+                </ion-col>
+              </ion-row>
+
+              <ion-row class="partRow table">
+                <ion-col size="12">
+                  <p class="partTitle">Max Stats</p>
                 </ion-col>
 
                 <ion-col class="tableCol" size="12">
@@ -43,9 +52,9 @@
                 </ion-col>
               </ion-row>
 
-              <ion-row class="table">
+              <ion-row class="partRow table">
                 <ion-col size="12">
-                  <p class="tableTitle">Growth Rates</p>
+                  <p class="partTitle">Growth Rates</p>
                 </ion-col>
 
                 <ion-col class="tableCol" size="12">

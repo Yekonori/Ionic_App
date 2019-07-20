@@ -23,7 +23,6 @@ export class CharacterClassesPage implements OnInit {
   /**
    * Array of stats use for Max Stats & Growth Rates
    */
-  stats = ["HP", "STR", "DEF", "DEX", "SPD", "MAG", "RES"];
   maxStats = ["HP", "STR", "DEF", "DEX", "SPD", "MAG", "RES", "MOV"];
   growthRates = ["HP", "STR", "DEF", "DEX", "SPD", "MAG", "RES"];
 
