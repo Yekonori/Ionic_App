@@ -1,8 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-
-import { housesCharacters } from 'src/environments/environment';
-
 import { Storage } from '@ionic/storage';
+
+import { charactersDetails } from 'src/environments/environment';
 
 @Component({
   selector: 'app-all-characters',
@@ -18,7 +17,7 @@ export class AllCharactersPage implements OnInit {
   /**
    * Students Characters Array
    */
-  studentsHouseCharacter: Array<any> = [];
+  characters: Array<any> = [];
   studentsHouseName: string = "";
 
   constructor(
@@ -27,36 +26,27 @@ export class AllCharactersPage implements OnInit {
 
   ngOnInit() {
     this.storage.get("currentStory").then(currentStory => {
-      switch (currentStory.house) {
-        case "blackEagles":
-          this.getBlackEaglesCharacters();
-          break;
-        case "blueLions":
-          this.getBlueLionsCharacters();
-          break;
-        case "goldenDeer":
-          this.getGoldenDeerCharacters();
-          break;
-      }
+      this.characters = currentStory.storyCharacters;
+
+      // switch (currentStory.house) {
+      //   case "blackEagles":
+      //     this.getBlackEaglesCharacters();
+      //     break;
+      //   case "blueLions":
+      //     this.getBlueLionsCharacters();
+      //     break;
+      //   case "goldenDeer":
+      //     this.getGoldenDeerCharacters();
+      //     break;
+      // }
     });
   }
 
   /**
-   * Get the House's Characters
+   * Get the House's File for the Character
    */
-  getBlackEaglesCharacters() {
-    this.studentsHouseCharacter = housesCharacters.blackEagles;
-    this.studentsHouseName = "Black_Eagles";
-  }
-
-  getBlueLionsCharacters() {
-    this.studentsHouseCharacter = housesCharacters.blueLions;
-    this.studentsHouseName = "Blue_Lions";
-  }
-
-  getGoldenDeerCharacters() {
-    this.studentsHouseCharacter = housesCharacters.goldenDeer;
-    this.studentsHouseName = "Golden_Deer";
+  getHouseName(characterName: string) {
+    return charactersDetails[characterName].house.replace(/ /g, '_');
   }
 
 }

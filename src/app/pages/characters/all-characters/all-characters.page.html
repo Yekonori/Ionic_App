@@ -11,8 +11,8 @@
   <ion-grid>
 
     <ion-row text-center>
-      <ion-col size="6" *ngFor="let studentHouseCharacter of studentsHouseCharacter">
-        <app-card [cardType]="'character'" [character]="studentHouseCharacter" [houseNameFile]=studentsHouseName></app-card>
+      <ion-col size="6" *ngFor="let character of characters">
+        <app-card [cardType]="'character'" [character]="character" [houseNameFile]=getHouseName(character.name)></app-card>
       </ion-col>
     </ion-row>
 

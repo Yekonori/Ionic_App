@@ -59,7 +59,7 @@ export const charactersDetails = {
   Byleth: {
     name: "Byleth",
     fullName: "Byleth",
-    house: "Black Eagles",
+    house: "",
     crest: [
       0, 1
     ],
@@ -74,7 +74,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Commoner",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "D+",
         lance: "E",
@@ -107,7 +109,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "",
       dislikes: ""
     },
@@ -154,7 +156,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E+",
         lance: "E",
@@ -187,7 +191,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Reading, solitary exploration, talented individuals, debating historical viewpoints and strategies, nature, beautiful scenery",
       dislikes: "Outdated values, crests, rats, chains, swimming, losing control"
     },
@@ -219,7 +223,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E",
@@ -252,7 +258,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Strategy and tactics research, protecting Edelgard, irony, coffee, intelligence, useful people",
       dislikes: "The Church of Seiros, those who bother Edelgard, gambling, heights, nostalgia, laziness"
     },
@@ -286,7 +292,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E+",
@@ -319,7 +327,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Knitting and embroidery, writing and illustrating novels, reading, drawing, music, unusual creatures, stuffed animals, solitude",
       dislikes: "Speaking to people, imposing figures, overbearing fathers"
     },
@@ -351,7 +359,9 @@ export const charactersDetails = {
       budding: []
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E",
@@ -384,7 +394,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Sleeping, crest research, middnay naps, reading, fishing, sweets, freedomic, unusual creatures, stuffed animals, solitude",
       dislikes: "Fighting, blood, weapons, duty, self-restraint, politics, ghosts"
     },
@@ -416,7 +426,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E+",
         lance: "D",
@@ -449,7 +461,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Being noble, collecting armor, horseback riding, tea, justice, heights",
       dislikes: "Slothfulness, nobles who are not noble"
     },
@@ -481,7 +493,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Commoner",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E+",
         lance: "E",
@@ -514,7 +528,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Singing, a bit of everything, acting, music, decorative ornaments and accessories, small animals",
       dislikes: "Arrogant nobles, herself"
     },
@@ -544,7 +558,9 @@ export const charactersDetails = {
       budding: []
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E",
@@ -577,7 +593,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Training, early mornings and quick breakfasts, fighting, vanquishing evil",
       dislikes: "Liars, injustice, wasting time, the rain"
     },
@@ -607,7 +623,9 @@ export const charactersDetails = {
       budding: []
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Commoner",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "D+",
         lance: "E",
@@ -640,7 +658,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Hunting and hide tanning, studying, swimming in the ocean, sunshine, climbing trees, family, her homeland",
       dislikes: "Mathematics, idleness, discrimination"
     },
@@ -687,7 +705,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E+",
         lance: "D",
@@ -720,7 +740,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Battle training, weapon maitenance, combat, high-quality weapons, strength training, going for long rides, physically laborious work",
       dislikes: "Delicate work, fragile objects, scorching heat, selfish people"
     },
@@ -750,7 +770,9 @@ export const charactersDetails = {
       budding: []
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Commoner",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E+",
@@ -783,7 +805,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Housekeeping, cooking, flowers, gardening, needlework, arts and crafts",
       dislikes: "Anyone who attempts to harm Dimitri"
     },
@@ -815,7 +837,9 @@ export const charactersDetails = {
       budding: []
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E",
@@ -848,7 +872,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Studying, singing, dancing, cleaning, doing laundry, morning walks, getting dressed up",
       dislikes: "Indolence, dark places, hard-to-reach places that need a good dusting, coffee"
     },
@@ -880,7 +904,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Commoner",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E",
@@ -913,7 +939,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Reading, cooking, sweets, tales of chivalry, travel journals, looking after children, violets",
       dislikes: "Ghosts, enclosed spaces, violence, deception"
     },
@@ -947,7 +973,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "D",
         lance: "E",
@@ -980,7 +1008,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Sword practice, weapon maitenance, fighting, high-quality weapons, spicy foods, hunting, meat",
       dislikes: "Levity, sweets, chivalry, his father"
     },
@@ -1014,7 +1042,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Commoner",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E",
@@ -1047,7 +1077,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Praying, baking, sweets, needlework, ghost stories, adorable things, painting, reading, fragrant flowers",
       dislikes: "Spicy foods, exercise"
     },
@@ -1081,7 +1111,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "D",
@@ -1114,7 +1146,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Fine art, theater, women, lively places, board games",
       dislikes: "Unclean spaces, jealousy, hot days"
     },
@@ -1144,7 +1176,9 @@ export const charactersDetails = {
       budding: []
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E+",
         lance: "D",
@@ -1177,7 +1211,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Reading, eating, food samples, meaty meals, looking after horses, tales of chivalry, virtuous knights",
       dislikes: "Extravagance, hunger, the people of Duscur"
     },
@@ -1224,7 +1258,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E+",
         lance: "E",
@@ -1257,7 +1293,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Tactical scheming, planning feasts, long rides, archery, poetry, topics of curiosity",
       dislikes: "Blind reliance on gods, leaving things to chance, being bound by common sense"
     },
@@ -1289,7 +1325,9 @@ export const charactersDetails = {
       budding: []
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "D",
@@ -1322,7 +1360,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Monitoring Claude, Writing poetry, tea, red roses, art, worthy women, anything that befits the nobility",
       dislikes: "Coffee, injustice, filth, foul odors, vulgarity"
     },
@@ -1356,7 +1394,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E+",
@@ -1389,7 +1429,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Chatting, making accesories, fashion, persuasion, singing, dancing, colorful flowers",
       dislikes: "Effort, exhaustion, responsibility, extreme heat or cold"
     },
@@ -1423,7 +1463,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E+",
         lance: "E",
@@ -1456,7 +1498,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Praying, talking to animals, the goddess, birds, reading, delicate flowers",
       dislikes: "Herself, Crests, tidying up"
     },
@@ -1488,7 +1530,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Commoner",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E+",
         lance: "E",
@@ -1521,7 +1565,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Painting, collecting art supplies, arts, the goddess, the four saints, striking landscapes, faraway lands, peace and quiet, beautiful flowers",
       dislikes: "People who don't appreciate art, stressful situations, lightning"
     },
@@ -1555,7 +1599,9 @@ export const charactersDetails = {
       ]
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Noble",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E",
@@ -1588,7 +1634,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Magic and tactics research, eating sweets, cute things, lilies",
       dislikes: "Being treated like a child, anything physically laborious, ghosts, bitter foods"
     },
@@ -1616,7 +1662,9 @@ export const charactersDetails = {
       budding: []
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Commoner",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "D+",
@@ -1649,7 +1697,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Saving money, bow maintenance, Captain Jeralt, military arts, competition, hunting, fishing, gardening, collecting and reusing discarded objects",
       dislikes: "Defeat, decadence, debt, poisonous creatures"
     },
@@ -1679,7 +1727,9 @@ export const charactersDetails = {
       budding: []
     },
     baseInformations: {
+      baseLevel: 1,
       baseClasse: "Commoner",
+      baseClasseLevel: 1,
       baseMastery: {
         sword: "E",
         lance: "E",
@@ -1712,7 +1762,7 @@ export const charactersDetails = {
         RES: 0,
       }
     },
-    personality: {
+    biography: {
       likes: "Bodybuilding, eating, pure protein, muscles, training, his baby sister",
       dislikes: "Book learning, unfinished meals"
     },
@@ -3722,7 +3772,7 @@ export const classesDetails = {
     },
     maxStatsArray: ["0", "0", "0", "0", "0", "0", "0", "0"],
     requirements: {
-      description: ["Heavy Armour at A or higher", "Axe level at B+ or higher", "Riding level at B+ or higher"]
+      description: ["Heavy Armor at A or higher", "Axe level at B+ or higher", "Riding level at B+ or higher"]
     },
     abilities: [],
     proficiencies: ["Lance", "Axe", "Heavy Armor"],

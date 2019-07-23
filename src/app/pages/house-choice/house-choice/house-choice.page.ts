@@ -3,6 +3,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
 import { Events, MenuController, IonSlides } from '@ionic/angular';
 
+import { housesCharacters, charactersDetails } from 'src/environments/environment';
+
+
 @Component({
   selector: 'app-house-choice',
   templateUrl: './house-choice.page.html',
@@ -35,7 +38,9 @@ export class HouseChoicePage implements OnInit {
     byleth: {
       sex: "",
       name: ""
-    }
+    },
+    storyCharacters: [],
+    storyCharactersDetail: []
   };
 
   /**
@@ -44,9 +49,13 @@ export class HouseChoicePage implements OnInit {
    * - Byleth Sex
    * - House
    */
+  bylethSexChoice = ["Male", "Female"];
+  houseChoice = ["Black_Eagles", "Blue_Lions", "Golden_Deer"];
 
-   bylethSexChoice = ["Male", "Female"];
-   houseChoice = ["Black_Eagles", "Blue_Lions", "Golden_Deer"];
+  /**
+   * All of the charcters you can have in your party
+   */
+  storyCharacters = [];
 
   confirmStoryName = false;
 
@@ -204,6 +213,8 @@ export class HouseChoicePage implements OnInit {
   createStory() {
     this.storage.get("stories").then(storiesLocal => {
 
+      this.addStoryCharacters(false);
+
       storiesLocal.push(this.storyObject);
 
       this.storage.set("stories", storiesLocal).then(actualizeStories => {
@@ -259,23 +270,105 @@ export class HouseChoicePage implements OnInit {
    * Edit the `stories` with the new values of `editStory`
    */
   applyEdit() {
+    /**
+     * Check if the storyObject.name isn't empty
+     */
     if (this.storyObject.name != "") {
+
+      let storyIndex;
+
+      /**
+       * Get the index of the story
+       */
       this.storage.get("stories").then(stories => {
-        // Get the index of the story
-        let storyIndex = stories.findIndex(story => story.id === this.storyObject.id);
+        storyIndex = stories.findIndex(story => story.id === this.storyObject.id);
+
+        this.addStoryCharacters(true);
 
         // Replace the story with here new values
         stories.splice(storyIndex, 1, this.storyObject);
 
         // Set the new value for the local stories
         this.storage.set("stories", stories).then(actualizeStories => {
-          this.events.publish("stories", actualizeStories);
+          this.storage.set("stories", actualizeStories).then(editedStories => {
+            this.events.publish("stories", editedStories);
 
-          this.storage.remove("editStory").then(() => {
-            this.setCurrentStory();
+            this.storage.remove("editStory").then(() => {
+              this.setCurrentStory();
+            });
           });
         });
       });
     }
+  }
+
+  /*************************************************************************************************/
+  /************************************* Characters Local Part *************************************/
+  /*************************************************************************************************/
+
+  addStoryCharacters(isEdit: boolean) {
+    this.storyCharacters = housesCharacters[this.storyObject.house];
+
+    if (isEdit) {
+      /**
+       * Get the `editStory` ionic storage
+       * 
+       * Stock in `storyCharacters` the `housesCharacters[houseName]` array
+       */
+      this.storage.get("editStory").then(editStory => {
+        /**
+         * Check if need to change the `storyCharacters` array values
+         */
+        if (editStory.storyCharacters) {
+          if (editStory.house != this.storyObject.house) {
+            this.storyObject.storyCharacters = this.storyCharacters;
+            this.addStoryCharactersDetails();
+          }
+        } else {
+          this.storyObject.storyCharacters = this.storyCharacters;
+          this.addStoryCharactersDetails();
+        }
+      });
+    } else {
+      this.storyObject.storyCharacters = this.storyCharacters;
+      this.addStoryCharactersDetails();
+    }
+  }
+
+  addStoryCharactersDetails() {
+    this.storyObject.storyCharactersDetail = [];
+
+    this.storyObject.storyCharacters.forEach(character => {
+
+      let characterDetails = charactersDetails[character.name];
+
+      let storyCharacterDetailsObject = {
+        informations: {
+          name: characterDetails.name,
+          house: characterDetails.house,
+          crest: characterDetails.crest,
+          personalAbility: characterDetails.personalAbility
+        },
+        stats: {
+          level: characterDetails.baseInformations.baseLevel,
+          classe: characterDetails.baseInformations.baseClasse,
+          classeLevel: characterDetails.baseInformations.baseClasseLevel,
+          masteries: {
+            sword: characterDetails.baseInformations.baseMastery.sword,
+            lance: characterDetails.baseInformations.baseMastery.lance,
+            axe: characterDetails.baseInformations.baseMastery.axe,
+            brawling: characterDetails.baseInformations.baseMastery.brawling,
+            reason: characterDetails.baseInformations.baseMastery.reason,
+            faith: characterDetails.baseInformations.baseMastery.faith,
+            authority: characterDetails.baseInformations.baseMastery.authority,
+            heavyArmor: characterDetails.baseInformations.baseMastery.heavyArmor,
+            riding: characterDetails.baseInformations.baseMastery.riding,
+            flying: characterDetails.baseInformations.baseMastery.flying
+          }
+        }
+      }
+
+      this.storyObject.storyCharactersDetail.push(storyCharacterDetailsObject);
+    });
   }
 }

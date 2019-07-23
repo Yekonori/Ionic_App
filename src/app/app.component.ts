@@ -27,11 +27,11 @@ export class AppComponent {
       url: '/all-characters',
       icon: 'person'
     },
-    {
-      title: 'Classes',
-      url: '/all-classes',
-      icon: 'ribbon'
-    }
+    // {
+    //   title: 'Classes',
+    //   url: '/all-classes',
+    //   icon: 'ribbon'
+    // }
   ];
 
   constructor(
